@@ -1,0 +1,51 @@
+# Tiny Tapeout project information
+project:
+  title:        "TTSKY25A Register File Test"
+  author:       "Sylvain Munaut"
+  discord:      "246tnt"
+  description:  "Test structures for a future register file macro"
+  language:     "Analog"
+  clock_hz:     0
+  tiles:        "1x2"
+  analog_pins:  0
+  uses_3v3:     false
+  top_module:   "tt_um_tnt_rf_test"
+  source_files:        
+    - "project.v"
+
+pinout:
+  ui[0]: "tbd"
+  ui[1]: "tbd"
+  ui[2]: "tbd"
+  ui[3]: "tbd"
+  ui[4]: "tbd"
+  ui[5]: "tbd"
+  ui[6]: "tbd"
+  ui[7]: "tbd"
+
+  uo[0]: "tbd"
+  uo[1]: "tbd"
+  uo[2]: "tbd"
+  uo[3]: "tbd"
+  uo[4]: "tbd"
+  uo[5]: "tbd"
+  uo[6]: "tbd"
+  uo[7]: "tbd"
+
+  uio[0]: "tbd"
+  uio[1]: "tbd"
+  uio[2]: "tbd"
+  uio[3]: "tbd"
+  uio[4]: "tbd"
+  uio[5]: "tbd"
+  uio[6]: "tbd"
+  uio[7]: "tbd"
+
+  ua[0]: ""
+  ua[1]: ""
+  ua[2]: ""
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
+
+yaml_version: 6
