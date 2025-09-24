@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/yuushabio/tiny-tapeout-gds-export",
+  "commit": "fddbbe1587eb0f86e7cacf0b8f720b51e5592744",
+  "workflow_url": "https://github.com/yuushabio/tiny-tapeout-gds-export/actions/runs/17979265783",
+  "project_id": 3052,
+  "sort_id": 1758724736589,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
