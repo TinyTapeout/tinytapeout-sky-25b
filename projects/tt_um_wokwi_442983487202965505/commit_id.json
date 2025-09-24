@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/RubaEm220048/emilschip",
+  "commit": "bfcbb10b377e3b38e1029e8052b9d08097763184",
+  "workflow_url": "https://github.com/RubaEm220048/emilschip/actions/runs/17979315023",
+  "project_id": 3082,
+  "sort_id": 1758725189040,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
