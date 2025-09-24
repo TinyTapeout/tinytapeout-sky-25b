@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     442977603880750081       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "My first Wokwi project"      # Project title
+  author:       "Yevhenii Konyshev"      # Your name
+  discord:      "shallow_dive"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A project that shows the first letter of my name when the correct number code is inputed"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "1st digit of the binary number code"
+  ui[1]: "2nd digit of the binary number code"
+  ui[2]: "3rd digit of the binary number code"
+  ui[3]: "4th digit of the binary number code"
+  ui[4]: "5th digit of the binary number code"
+  ui[5]: "6th digit of the binary number code"
+  ui[6]: "7th digit of the binary number code"
+  ui[7]: "8th digit of the binary number code"
+
+  # Outputs
+  uo[0]: "Pin connected to the SEG_A pin of the 7-segment display"
+  uo[1]: "Pin connected to the SEG_B pin of the 7-segment display"
+  uo[2]: "Pin connected to the SEG_C pin of the 7-segment display"
+  uo[3]: "Pin connected to the SEG_D pin of the 7-segment display"
+  uo[4]: "Pin connected to the SEG_E pin of the 7-segment display"
+  uo[5]: "Pin connected to the SEG_F pin of the 7-segment display"
+  uo[6]: "Pin connected to the SEG_G pin of the 7-segment display"
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6

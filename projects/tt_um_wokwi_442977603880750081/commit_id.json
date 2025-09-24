@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/ykonyshev/my-wokwi-project-from-tiny-tapeout",
+  "commit": "aab5093b047dcc4fcfe6356a52bd898a03117284",
+  "workflow_url": "https://github.com/ykonyshev/my-wokwi-project-from-tiny-tapeout/actions/runs/17979089542",
+  "project_id": 3015,
+  "sort_id": 1758724574671,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
