@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/Le0n19/Tiny-Tapeout-Wokwi-Bsp",
+  "commit": "29f965a0ce7a45e18098100bad41dbeebd474e6b",
+  "workflow_url": "https://github.com/Le0n19/Tiny-Tapeout-Wokwi-Bsp/actions/runs/17979177926",
+  "project_id": 3039,
+  "sort_id": 1758724748041,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
