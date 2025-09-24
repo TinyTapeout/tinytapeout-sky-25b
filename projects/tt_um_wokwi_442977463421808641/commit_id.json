@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/siebsi/Patricks-first-TT-chip",
+  "commit": "23f096877eb4d9a7223473ff549a087ba3bd1aac",
+  "workflow_url": "https://github.com/siebsi/Patricks-first-TT-chip/actions/runs/17978677306",
+  "project_id": 3034,
+  "sort_id": 1758724767841,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
