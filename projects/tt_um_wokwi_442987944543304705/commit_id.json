@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/HE210317/Lauflichterweiterung",
+  "commit": "e80fb177821ad5327c46d35a5af6d15fae8e634d",
+  "workflow_url": "https://github.com/HE210317/Lauflichterweiterung/actions/runs/17980412078",
+  "project_id": 3100,
+  "sort_id": 1758725471234,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
