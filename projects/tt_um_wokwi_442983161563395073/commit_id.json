@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/floll/tt_primitiv_rotating_7segment",
+  "commit": "a051dbbebcaf1b34f392ae314b4d3e640f8870a3",
+  "workflow_url": "https://github.com/floll/tt_primitiv_rotating_7segment/actions/runs/17980253651",
+  "project_id": 3026,
+  "sort_id": 1758725066747,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
