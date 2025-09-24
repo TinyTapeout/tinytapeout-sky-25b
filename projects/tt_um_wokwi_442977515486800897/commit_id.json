@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/Bawady/austrochip_tt_workshop",
+  "commit": "bf2c0bf3aaee7b7d9e3b7b66d80b9f6153a1dd11",
+  "workflow_url": "https://github.com/Bawady/austrochip_tt_workshop/actions/runs/17980265267",
+  "project_id": 3032,
+  "sort_id": 1758725106866,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
