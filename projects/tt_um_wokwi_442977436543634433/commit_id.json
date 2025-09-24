@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/Nicojpg67/TinyTapeout2BitCounter",
+  "commit": "a9a0c829ab405453171b8131856c1b19f892b63f",
+  "workflow_url": "https://github.com/Nicojpg67/TinyTapeout2BitCounter/actions/runs/17979006425",
+  "project_id": 3033,
+  "sort_id": 1758724832143,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
