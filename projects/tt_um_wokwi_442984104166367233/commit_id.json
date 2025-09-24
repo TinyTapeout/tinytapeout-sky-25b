@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/fhuemer/austrochip_tinytapeout_workshop",
+  "commit": "3bb5bcf37021a7cac3da0f2b3f5075feefd263df",
+  "workflow_url": "https://github.com/fhuemer/austrochip_tinytapeout_workshop/actions/runs/17980348351",
+  "project_id": 3073,
+  "sort_id": 1758725230299,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
