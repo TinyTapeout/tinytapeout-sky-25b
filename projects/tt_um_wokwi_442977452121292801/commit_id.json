@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/SmashHandTV/TinyTapeoutToShiftRegister",
+  "commit": "7da223ee241cb8d1261f35de4e948c0fc6460b21",
+  "workflow_url": "https://github.com/SmashHandTV/TinyTapeoutToShiftRegister/actions/runs/17980073229",
+  "project_id": 3046,
+  "sort_id": 1758724833143,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
