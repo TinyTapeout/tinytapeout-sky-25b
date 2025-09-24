@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/DavidWeissensteiner/TyniyTapoutDavidsFirstWokwiDesign",
+  "commit": "47dbf3c167f456c7ca56ad0524c744ed0a3952a9",
+  "workflow_url": "https://github.com/DavidWeissensteiner/TyniyTapoutDavidsFirstWokwiDesign/actions/runs/17978950435",
+  "project_id": 3027,
+  "sort_id": 1758724829527,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
