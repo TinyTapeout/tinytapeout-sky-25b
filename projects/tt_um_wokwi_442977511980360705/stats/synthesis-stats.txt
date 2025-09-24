@@ -1,0 +1,64 @@
+102. Printing statistics.
+
+=== dff_cell ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sky130_fd_sc_hd__dfxtp_2        1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\dff_cell': 25.024000
+     of which used for sequential elements: 21.270400 (85.00%)
+
+=== tt_um_wokwi_442977511980360705 ===
+
+   Number of wires:                 16
+   Number of wire bits:             51
+   Number of public wires:          16
+   Number of public wire bits:      51
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     dff_cell                        4
+     sky130_fd_sc_hd__buf_2          4
+     sky130_fd_sc_hd__conb_1        20
+
+   Area for cell type \dff_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_442977511980360705': 95.091200
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== design hierarchy ===
+
+   tt_um_wokwi_442977511980360705      1
+     dff_cell                        4
+
+   Number of wires:                 32
+   Number of wire bits:             67
+   Number of public wires:          32
+   Number of public wire bits:      67
+   Number of ports:                 24
+   Number of port bits:             59
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     sky130_fd_sc_hd__buf_2          4
+     sky130_fd_sc_hd__conb_1        20
+     sky130_fd_sc_hd__dfxtp_2        4
+     sky130_fd_sc_hd__inv_2          4
+
+   Chip area for top module '\tt_um_wokwi_442977511980360705': 195.187200
+     of which used for sequential elements: 21.270400 (10.90%)
+
