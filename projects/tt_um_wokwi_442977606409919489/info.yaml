@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     442977606409919489                                # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Tiney Tapeout Test Gates"                        # Project title
+  author:       "Theo Kreisel"                                    # Your name
+  discord:      ""                                                # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Test some logic gates and a clock divider."      # One line description of what your project does
+  language:     "Wokwi"                                           # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     1000                                              # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "not uesd"
+  ui[1]: "not uesd"
+  ui[2]: "not uesd"
+  ui[3]: "not uesd"
+  ui[4]: "not uesd"
+  ui[5]: "not uesd"
+  ui[6]: "not uesd"
+  ui[7]: "not uesd"
+
+  # Outputs
+  uo[0]: "not uesd"
+  uo[1]: "not uesd"
+  uo[2]: "not uesd"
+  uo[3]: "not uesd"
+  uo[4]: "not uesd"
+  uo[5]: "not uesd"
+  uo[6]: "not uesd"
+  uo[7]: "not uesd"
+
+  # Bidirectional pins
+  uio[0]: "not uesd"
+  uio[1]: "not uesd"
+  uio[2]: "not uesd"
+  uio[3]: "not uesd"
+  uio[4]: "not uesd"
+  uio[5]: "not uesed"
+  uio[6]: "not uesd"
+  uio[7]: "not uesd"
+
+# Do not change!
+yaml_version: 6
