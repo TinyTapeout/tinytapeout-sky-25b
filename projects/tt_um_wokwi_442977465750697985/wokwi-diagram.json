@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-clock-generator",
+      "id": "clock1",
+      "top": -355.2,
+      "left": -115.2,
+      "attrs": { "frequency": "10000" }
+    },
+    { "type": "wokwi-gnd", "id": "pwr2", "top": -115.2, "left": 1199.4, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "pwr1", "top": -229.64, "left": -115.2, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": -235.02,
+      "left": 1185.88,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin",
+      "top": -228.13,
+      "left": 4.8,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -301,
+      "left": -134.4,
+      "attrs": { "color": "grey", "label": "RESET", "bounce": "0", "key": "r" }
+    },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": -259.2, "left": -163.8, "attrs": {} },
+    {
+      "type": "board-tt-block-output",
+      "id": "ttout",
+      "top": -256.93,
+      "left": 907.2,
+      "attrs": { "verilogRole": "output" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -293.65,
+      "left": -211.2,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-vcc", "id": "pwr5", "top": -325.64, "left": -230.4, "attrs": {} },
+    { "type": "wokwi-flip-flop-d", "id": "flop4", "top": -201.6, "left": 384, "attrs": {} },
+    { "type": "wokwi-flip-flop-d", "id": "flop5", "top": -201.6, "left": 249.6, "attrs": {} },
+    { "type": "wokwi-flip-flop-d", "id": "flop2", "top": -201.6, "left": 652.8, "attrs": {} },
+    { "type": "wokwi-flip-flop-d", "id": "flop3", "top": -201.6, "left": 518.4, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "pwr4", "top": -239.24, "left": -57.6, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and1", "top": -326.4, "left": 585.6, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and2", "top": -326.4, "left": 451.2, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and3", "top": -595.2, "left": -624, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and4", "top": -105.6, "left": 192, "attrs": {} }
+  ],
+  "connections": [
+    [ "ttout:EXTOUT0", "sevseg1:A", "green", [ "h21.01", "v-28.8", "h96" ] ],
+    [ "ttout:EXTOUT1", "sevseg1:B", "green", [ "h11.41", "v-48", "h122.99", "v41.34" ] ],
+    [
+      "ttout:EXTOUT2",
+      "sevseg1:C",
+      "green",
+      [ "h30.61", "v-38.4", "h115.2", "v105.6", "h-28.8" ]
+    ],
+    [ "ttout:EXTOUT3", "sevseg1:D", "green", [ "h57.6", "v57.6", "h48" ] ],
+    [ "sevseg1:E", "ttout:EXTOUT4", "green", [ "v9.6", "h-48", "v-38.4" ] ],
+    [ "ttout:EXTOUT5", "sevseg1:F", "green", [ "h69.01", "v-57.6", "h28.8" ] ],
+    [ "ttout:EXTOUT6", "sevseg1:G", "green", [ "h78.61", "v-57.6" ] ],
+    [ "ttout:EXTOUT7", "sevseg1:DP", "green", [ "v28.8", "h136.21" ] ],
+    [ "pwr2:GND", "sevseg1:COM.1", "black", [ "v0" ] ],
+    [ "btn2:2.l", "gnd1:GND", "black", [ "h0" ] ],
+    [ "btn2:1.l", "r2:2", "green", [ "h0" ] ],
+    [ "pwr5:VCC", "r2:1", "red", [ "v0" ] ],
+    [ "ttin:CLK", "flop5:CLK", "green", [ "v0", "h115.2", "v28.8" ] ],
+    [ "pwr4:VCC", "ttin:EXTIN0", "red", [ "v0" ] ],
+    [ "flop5:Q", "flop4:D", "green", [ "v0" ] ],
+    [ "flop4:CLK", "ttin:CLK", "green", [ "h0", "v19.2", "h-163.2", "v-48" ] ],
+    [ "flop3:CLK", "ttin:CLK", "green", [ "h0", "v19.2", "h-297.6", "v-48" ] ],
+    [ "flop2:CLK", "ttin:CLK", "green", [ "h0", "v19.2", "h-432", "v-48" ] ],
+    [ "and2:B", "flop4:Q", "green", [ "h-19.2", "v86.4", "h48" ] ],
+    [ "and2:A", "flop5:Q", "green", [ "h0" ] ],
+    [ "and2:OUT", "flop3:D", "green", [ "v76.8", "h-38.4" ] ],
+    [ "flop3:Q", "and1:B", "green", [ "v0" ] ],
+    [ "and2:OUT", "and1:A", "green", [ "v0" ] ],
+    [ "and1:OUT", "flop2:D", "green", [ "v48", "h-28.8" ] ],
+    [ "flop2:Q", "ttout:OUT0", "green", [ "v0" ] ],
+    [ "flop3:Q", "ttout:OUT1", "green", [ "v0" ] ],
+    [ "flop4:Q", "ttout:OUT2", "green", [ "v0" ] ],
+    [ "flop5:Q", "ttout:OUT3", "green", [ "v0", "h19.2", "v48", "h508.8", "v-57.6" ] ],
+    [ "ttin:EXTCLK", "btn2:1.r", "green", [ "h0" ] ],
+    [ "flop2:NOTQ", "and4:B", "green", [ "h38.4", "v124.8", "h-624" ] ],
+    [ "and4:OUT", "flop5:D", "green", [ "v0" ] ],
+    [ "ttin:IN0", "and4:A", "green", [ "h86.4", "v76.8" ] ]
+  ],
+  "dependencies": {}
+}
