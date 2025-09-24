@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/HackerGecko/Lauflicht_HTL_Leonding",
+  "commit": "3c11aef0b6c140823f64a06259b7703692499976",
+  "workflow_url": "https://github.com/HackerGecko/Lauflicht_HTL_Leonding/actions/runs/17979280665",
+  "project_id": 3051,
+  "sort_id": 1758724594825,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
