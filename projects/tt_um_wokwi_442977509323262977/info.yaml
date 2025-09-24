@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     442977509323262977       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "der Chip der Chips"      # Project title
+  author:       "Alexander Brandstetter"      # Your name
+  discord:      "monarchofaether"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "notalot"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "with ui1 activates uo0 or uo6"
+  ui[1]: "with ui0 activates uo0 or uo6"
+  ui[2]: "with ui2,3,4 buttons you can push that activate uo1 if all then uo7"
+  ui[3]: "with ui2,3,4 buttons you can push that activate uo1 if all then uo7"
+  ui[4]: "with ui2,3,4 buttons you can push that activate uo1 if all then uo7"
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "ui0 and ui1 pressed"
+  uo[1]: "ui1,ui2,ui3 pressed 1 or 2 pressed not all 3 pins"
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: "warning for ui0/1"
+  uo[7]: "warning for ui2/3/4"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
