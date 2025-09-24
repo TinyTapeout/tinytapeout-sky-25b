@@ -1,0 +1,478 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-clock-generator",
+      "id": "clock1",
+      "top": -355.2,
+      "left": -115.2,
+      "attrs": { "frequency": "10000" }
+    },
+    { "type": "wokwi-gnd", "id": "pwr2", "top": 902.4, "left": 1717.8, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": 792.18,
+      "left": 1704.28,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "sw2",
+      "top": -370,
+      "left": -35.3,
+      "attrs": { "value": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -349,
+      "left": 19.2,
+      "attrs": { "color": "grey", "label": "Step", "bounce": "0", "key": "s" }
+    },
+    { "type": "wokwi-vcc", "id": "pwr3", "top": -373.64, "left": 105.6, "attrs": {} },
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin",
+      "top": -228.13,
+      "left": 4.8,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -301,
+      "left": -134.4,
+      "attrs": { "color": "grey", "label": "RESET", "bounce": "0", "key": "r" }
+    },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": -259.2, "left": -163.8, "attrs": {} },
+    {
+      "type": "board-tt-block-output",
+      "id": "ttout",
+      "top": 770.27,
+      "left": 1512,
+      "attrs": { "verilogRole": "output" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -293.65,
+      "left": -211.2,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-vcc", "id": "pwr5", "top": -325.64, "left": -230.4, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not1", "top": -249.6, "left": 288, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not2", "top": -144, "left": 297.6, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not3", "top": -76.8, "left": 307.2, "attrs": {} },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand1",
+      "top": 19.4,
+      "left": 413,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand2",
+      "top": 19.4,
+      "left": 451.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand3",
+      "top": 19.4,
+      "left": 653,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand4",
+      "top": 19.4,
+      "left": 691.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand5",
+      "top": 19.4,
+      "left": 893,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand6",
+      "top": 19.4,
+      "left": 931.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand7",
+      "top": 19.4,
+      "left": 969.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand8",
+      "top": 19.4,
+      "left": 1219.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand9",
+      "top": 19.4,
+      "left": 1257.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-gate-not", "id": "not4", "top": -403.2, "left": 288, "attrs": {} },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand10",
+      "top": 201.8,
+      "left": 979.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand11",
+      "top": 326.6,
+      "left": 413,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand12",
+      "top": 326.6,
+      "left": 451.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand13",
+      "top": 566.6,
+      "left": 432.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand14",
+      "top": 326.6,
+      "left": 605,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand16",
+      "top": 614.6,
+      "left": 624.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand17",
+      "top": 326.6,
+      "left": 720.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand19",
+      "top": 605,
+      "left": 739.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand20",
+      "top": 336.2,
+      "left": 912.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand21",
+      "top": 336.2,
+      "left": 950.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand23",
+      "top": 537.8,
+      "left": 931.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand25",
+      "top": 691.4,
+      "left": 950.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand26",
+      "top": 336.2,
+      "left": 1085,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand27",
+      "top": 336.2,
+      "left": 1257.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand28",
+      "top": 336.2,
+      "left": 1296.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand29",
+      "top": 585.8,
+      "left": 1286.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand30",
+      "top": 336.2,
+      "left": 1392.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand31",
+      "top": 336.2,
+      "left": 1430.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-nand-2",
+      "id": "nand32",
+      "top": 595.4,
+      "left": 1411.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-dip-switch-8", "id": "sw1", "top": 985.5, "left": 1489.5, "attrs": {} },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not5",
+      "top": 432.2,
+      "left": 413,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not6",
+      "top": 432.2,
+      "left": 451.4,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not10",
+      "top": 432.2,
+      "left": 893,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not11",
+      "top": 441.8,
+      "left": 960.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not12",
+      "top": 461,
+      "left": 1257.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not13",
+      "top": 461,
+      "left": 1296.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not14",
+      "top": 461,
+      "left": 1392.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not15",
+      "top": 461,
+      "left": 1430.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not16",
+      "top": 115.4,
+      "left": 950.6,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-vcc", "id": "pwr1", "top": 979.96, "left": 1411.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "ttout:EXTOUT0", "sevseg1:A", "green", [ "h21.01", "v-28.8", "h96" ] ],
+    [ "ttout:EXTOUT1", "sevseg1:B", "green", [ "h11.41", "v-48", "h122.99", "v41.34" ] ],
+    [
+      "ttout:EXTOUT2",
+      "sevseg1:C",
+      "green",
+      [ "h30.61", "v-38.4", "h115.2", "v105.6", "h-28.8" ]
+    ],
+    [ "ttout:EXTOUT3", "sevseg1:D", "green", [ "h57.6", "v57.6", "h48" ] ],
+    [ "sevseg1:E", "ttout:EXTOUT4", "green", [ "v9.6", "h-48", "v-38.4" ] ],
+    [ "ttout:EXTOUT5", "sevseg1:F", "green", [ "h69.01", "v-57.6", "h28.8" ] ],
+    [ "ttout:EXTOUT6", "sevseg1:G", "green", [ "h78.61", "v-57.6" ] ],
+    [ "ttout:EXTOUT7", "sevseg1:DP", "green", [ "v28.8", "h136.21" ] ],
+    [ "pwr2:GND", "sevseg1:COM.1", "black", [ "v0" ] ],
+    [ "sw2:1", "clock1:CLK", "blue", [ "h-19.2", "v-57.6" ] ],
+    [ "sw2:2", "ttin:EXTCLK", "blue", [ "v0" ] ],
+    [ "btn1:1.l", "sw2:3", "blue", [ "h0" ] ],
+    [ "pwr3:VCC", "btn1:2.r", "red", [ "v0" ] ],
+    [ "btn2:2.l", "gnd1:GND", "black", [ "h0" ] ],
+    [ "ttin:EXTRST_N", "btn2:1.r", "orange", [ "h-38.4", "v-96" ] ],
+    [ "btn2:1.l", "r2:2", "green", [ "h0" ] ],
+    [ "pwr5:VCC", "r2:1", "red", [ "v0" ] ],
+    [ "ttin:IN0", "not4:IN", "green", [ "h144", "v-86.4" ] ],
+    [ "ttin:IN1", "not1:IN", "green", [ "h163.2", "v-9.6" ] ],
+    [ "ttin:IN2", "not2:IN", "green", [ "h172.8", "v67.2" ] ],
+    [ "ttin:IN3", "not3:IN", "green", [ "h144", "v38.4" ] ],
+    [ "nand1:B", "not4:IN", "green", [ "v-268.8", "h-153.6" ] ],
+    [ "nand1:A", "not2:IN", "green", [ "v-96", "h-163.2" ] ],
+    [ "nand2:B", "not4:OUT", "green", [ "v0" ] ],
+    [ "nand2:A", "not2:OUT", "green", [ "v0" ] ],
+    [ "nand3:B", "not4:IN", "green", [ "v-268.8", "h-393.6" ] ],
+    [ "nand3:A", "not1:IN", "green", [ "v-172.8", "h-393.6" ] ],
+    [ "nand4:B", "not4:OUT", "green", [ "v0" ] ],
+    [ "nand4:A", "not1:OUT", "green", [ "v0" ] ],
+    [ "nand5:B", "not4:OUT", "green", [ "v0" ] ],
+    [ "nand5:A", "not4:IN", "green", [ "v-268.8", "h-614.4" ] ],
+    [ "nand6:B", "not1:IN", "green", [ "v-172.8", "h-652.8" ] ],
+    [ "nand6:A", "not2:OUT", "green", [ "v0" ] ],
+    [ "nand7:B", "not4:OUT", "green", [ "v0" ] ],
+    [ "nand7:A", "not1:OUT", "green", [ "v0" ] ],
+    [ "nand10:A", "not2:IN", "green", [ "v-201.6", "h-652.8" ] ],
+    [ "nand8:B", "not1:OUT", "green", [ "v0" ] ],
+    [ "nand8:A", "not2:IN", "green", [ "v-96", "h-902.4" ] ],
+    [ "nand9:B", "not4:OUT", "green", [ "v0" ] ],
+    [ "nand9:A", "not2:IN", "green", [ "v-96", "h-988.8" ] ],
+    [ "nand11:B", "nand1:OUT", "green", [ "v-163.2", "h9.6" ] ],
+    [ "nand11:A", "nand2:OUT", "green", [ "v0" ] ],
+    [ "nand12:A", "not3:OUT", "green", [ "v-28.8", "h57.6", "v-288" ] ],
+    [ "nand3:OUT", "nand14:B", "green", [ "v48", "h-57.6" ] ],
+    [ "nand4:OUT", "nand14:A", "green", [ "v76.8", "h-57.6" ] ],
+    [ "nand14:OUT", "nand16:B", "green", [ "v9.6", "h9.6" ] ],
+    [ "nand17:B", "not4:OUT", "green", [ "v-48", "h28.8", "v-508.8" ] ],
+    [ "nand17:A", "not1:IN", "green", [ "v-28.8", "h38.4", "v-403.2", "h-499.2" ] ],
+    [ "nand17:OUT", "nand19:B", "green", [ "v0" ] ],
+    [ "nand5:OUT", "nand20:B", "green", [ "v0" ] ],
+    [ "nand6:OUT", "nand20:A", "green", [ "v0" ] ],
+    [ "nand10:OUT", "nand21:B", "green", [ "v38.4", "h-38.4", "v28.8" ] ],
+    [ "nand2:OUT", "nand21:A", "green", [ "v144", "h393.6", "v-19.2", "h105.6" ] ],
+    [ "nand26:B", "nand2:OUT", "green", [ "v-48", "h-230.4", "v19.2", "h-393.6", "v-48" ] ],
+    [ "nand23:OUT", "nand25:B", "green", [ "v0" ] ],
+    [ "nand5:OUT", "nand26:A", "green", [ "v115.2", "h201.6" ] ],
+    [ "nand8:OUT", "nand27:B", "green", [ "v0" ] ],
+    [ "nand8:OUT", "nand30:B", "green", [ "v134.4", "h163.2", "v38.4" ] ],
+    [ "nand27:A", "nand4:OUT", "green", [ "v-144", "h-681.6" ] ],
+    [ "nand9:OUT", "nand28:B", "green", [ "v96", "h28.8", "v76.8" ] ],
+    [ "not3:OUT", "nand28:A", "green", [ "v0", "h950.4" ] ],
+    [ "not3:OUT", "nand31:A", "green", [ "v0", "h998.4" ] ],
+    [ "nand5:OUT", "nand31:B", "green", [ "v57.6", "h518.4" ] ],
+    [ "nand30:A", "nand6:OUT", "green", [ "v-76.8", "h-460.8" ] ],
+    [ "nand13:OUT", "ttout:OUT0", "green", [ "v0" ] ],
+    [ "nand16:OUT", "ttout:OUT1", "green", [ "v0" ] ],
+    [ "nand19:OUT", "ttout:OUT2", "green", [ "v0" ] ],
+    [ "nand25:OUT", "ttout:OUT3", "green", [ "v0" ] ],
+    [ "nand26:OUT", "ttout:OUT4", "green", [ "v0" ] ],
+    [ "nand29:OUT", "ttout:OUT5", "green", [ "v0" ] ],
+    [ "nand32:OUT", "ttout:OUT6", "green", [ "v0" ] ],
+    [ "ttin:EXTIN0", "sw1:1b", "green", [ "h0" ] ],
+    [ "ttin:EXTIN1", "sw1:2b", "green", [ "h0" ] ],
+    [ "ttin:EXTIN2", "sw1:3b", "green", [ "h0" ] ],
+    [ "ttin:EXTIN3", "sw1:4b", "green", [ "h0" ] ],
+    [ "nand12:B", "not1:OUT", "green", [ "v-86.4", "h48", "v-384" ] ],
+    [ "not5:IN", "nand11:OUT", "green", [ "h0" ] ],
+    [ "not6:IN", "nand12:OUT", "green", [ "h0" ] ],
+    [ "not5:OUT", "nand13:B", "green", [ "h0" ] ],
+    [ "not6:OUT", "nand13:A", "green", [ "h0" ] ],
+    [ "nand21:OUT", "not11:IN", "green", [ "v0" ] ],
+    [ "nand20:OUT", "not10:IN", "green", [ "v0" ] ],
+    [ "not10:OUT", "nand23:B", "green", [ "h0" ] ],
+    [ "nand23:A", "not11:OUT", "green", [ "v0" ] ],
+    [ "nand27:OUT", "not12:IN", "green", [ "v28.8" ] ],
+    [ "nand28:OUT", "not13:IN", "green", [ "v0" ] ],
+    [ "nand30:OUT", "not14:IN", "green", [ "v0" ] ],
+    [ "nand31:OUT", "not15:IN", "green", [ "v0" ] ],
+    [ "not12:OUT", "nand29:B", "green", [ "h0" ] ],
+    [ "not13:OUT", "nand29:A", "green", [ "h0" ] ],
+    [ "not14:OUT", "nand32:B", "green", [ "h0" ] ],
+    [ "not15:OUT", "nand32:A", "green", [ "h0" ] ],
+    [ "not16:IN", "nand7:OUT", "green", [ "h0" ] ],
+    [ "not16:OUT", "nand10:B", "green", [ "h0" ] ],
+    [ "pwr1:VCC", "sw1:1a", "red", [ "v0" ] ],
+    [ "pwr1:VCC", "sw1:2a", "red", [ "v0" ] ],
+    [ "pwr1:VCC", "sw1:3a", "red", [ "v0" ] ],
+    [ "pwr1:VCC", "sw1:4a", "red", [ "v0" ] ],
+    [ "not3:OUT", "nand25:A", "green", [ "v0", "h681.6", "v662.4" ] ],
+    [ "nand16:A", "not2:IN", "green", [ "v-393.6", "h-268.8" ] ],
+    [ "nand19:A", "not2:OUT", "green", [ "v-220.8", "h48", "v-422.4" ] ]
+  ],
+  "dependencies": {}
+}

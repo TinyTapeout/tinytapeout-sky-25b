@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/MrF83/TinyTapeoutLinz",
+  "commit": "0ccab178064db2ac1e5cb5fd88a95d5d7e0e9443",
+  "workflow_url": "https://github.com/MrF83/TinyTapeoutLinz/actions/runs/17979050519",
+  "project_id": 3016,
+  "sort_id": 1758724836432,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
