@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/Lukasseirl/Tiny_Tapeout_Scoreboard",
+  "commit": "40635d0d3fb578f26c5ec18fced2ff3ad9cb432b",
+  "workflow_url": "https://github.com/Lukasseirl/Tiny_Tapeout_Scoreboard/actions/runs/17978945983",
+  "project_id": 3036,
+  "sort_id": 1758724844372,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
