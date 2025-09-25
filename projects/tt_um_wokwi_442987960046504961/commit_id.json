@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/florian-c-a/Lauflicht_Erweiterung_HTL_LEONGING",
+  "commit": "51d0115b65a7a888b69de2e3de96309fde821e9a",
+  "workflow_url": "https://github.com/florian-c-a/Lauflicht_Erweiterung_HTL_LEONGING/actions/runs/17980457884",
+  "project_id": 3111,
+  "sort_id": 1758778264814,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
