@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Function Generator"      # Project title
+  author:       "Dominik Brandstetter"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "An 8-bit TinyTapeout function generator targeting the AD5330 parallel DAC. By default it outputs a sine wave. Via a simple write-only register interface you can switch to a constant DC level or a programmable trapezoid/pulse, and tune amplitude, offset, phase, and timing. An on-chip timer (prescaler + counter) sets the sample rate, a CORDIC core computes the sine, and a small FSM drives the trapezoid. Data goes out on uo_out[7:0], with active-low DAC control (dac_wr_n, dac_pd_n, dac_clr_n) on uio_out[2:0]."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     20000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_FG_TOP_Dominik_Brandstetter"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_FG_TOP_Dominik_Brandstetter.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "DATA_IN_0"
+  ui[1]: "DATA_IN_1"
+  ui[2]: "DATA_IN_2"
+  ui[3]: "DATA_IN_3"
+  ui[4]: "DATA_IN_4"
+  ui[5]: "DATA_IN_5"
+  ui[6]: "DATA_IN_6"
+  ui[7]: "DATA_IN_7"
+
+  # Outputs
+  uo[0]: "DAC_OUT_0"
+  uo[1]: "DAC_OUT_1"
+  uo[2]: "DAC_OUT_2"
+  uo[3]: "DAC_OUT_3"
+  uo[4]: "DAC_OUT_4"
+  uo[5]: "DAC_OUT_5"
+  uo[6]: "DAC_OUT_6"
+  uo[7]: "DAC_OUT_7"
+
+  # Bidirectional pins
+  uio[0]: "dac_clr_OUT (active low)"
+  uio[1]: "dac_pd_OUT (active low)"
+  uio[2]: "dac_wr_OUT (active low)"
+  uio[3]: "CONFIG ADDR_0_IN"
+  uio[4]: "CONFIG ADDR_1_IN"
+  uio[5]: "CONFIG ADDR_2_IN"
+  uio[6]: "WR_enable_IN (active low)"
+  uio[7]: "Enable_IN (active low)"
+
+# Do not change!
+yaml_version: 6
