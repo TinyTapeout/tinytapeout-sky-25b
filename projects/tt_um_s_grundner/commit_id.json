@@ -1,11 +1,8 @@
 {
-  "app": "Tiny Tapeout main d14142e4",
+  "app": "Tiny Tapeout main 131f64ce",
   "repo": "https://github.com/s-grundner/LVA-TinyTapeout-Workshop",
-  "commit": "7f95a93d3979f783414804f5a259346a2dba5579",
-  "workflow_url": "https://github.com/s-grundner/LVA-TinyTapeout-Workshop/actions/runs/18065582823",
+  "commit": "52d8c629b6aa63ef7fd5f2e635219d066d386e36",
+  "workflow_url": "https://github.com/s-grundner/LVA-TinyTapeout-Workshop/actions/runs/18180896142",
   "project_id": 3056,
-  "sort_id": 1758725021598,
-  "flow_version": "LibreLane 2.4.2",
-  "pdk_name": "open_pdks",
-  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+  "sort_id": 1758725021598
 }

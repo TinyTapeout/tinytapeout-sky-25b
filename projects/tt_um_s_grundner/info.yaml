@@ -4,7 +4,7 @@ project:
   author:       "Simon Grundner"      # Your name
   discord:      "sm.ino"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Decodes MIDI and outputs several square waves to a max of 7 output pins, which can be mixed together externally" 
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
@@ -17,14 +17,20 @@ project:
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "top_level.v"
-    - "counter.v"
+    - top_level.v
+    - global.v
+    - synth.v
+    - osc.v
+    - midi.v
+    - rx.v
+    - pwm.v
+    - counter.v
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
+  ui[0]: "midi_rx"
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -34,14 +40,14 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "cnt_bit0"
-  uo[1]: "cnt_bit1"
-  uo[2]: "cnt_bit2"
-  uo[3]: "cnt_bit3"
-  uo[4]: "cnt_bit4"
-  uo[5]: "cnt_bit5"
-  uo[6]: "cnt_bit6"
-  uo[7]: "cnt_bit7"
+  uo[0]: "osc_0"
+  uo[1]: "osc_1"
+  uo[2]: "osc_2"
+  uo[3]: "osc_3"
+  uo[4]: "osc_4"
+  uo[5]: "osc_5"
+  uo[6]: "osc_6"
+  uo[7]: "pwm"
 
   # Bidirectional pins
   uio[0]: ""
