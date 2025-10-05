@@ -5,3 +5,14 @@ end_date: '2025-11-10'
 project_dir: 'projects'
 top_level_macro: 'openframe_project_wrapper'
 powered_netlists: true
+
+datasheet_config:
+  theme_override_colour: tt.colours.THEME_SKY_BLUE
+  link_override_colour: tt.colours.THEME_SKY_BLUE
+
+  # include:
+    # - docs/chip_map.typ
+    # - docs/funding.typ
+
+  disabled:
+    - tt_um_FG_TOP_Dominik_Brandstetter
