@@ -11,6 +11,9 @@ on:
     paths-ignore:
       - projects/tt_um_*/**
 
+env:
+  DATASHEET_TEMPLATE_VERSION: "1.0.0"
+
 jobs:
   build_datasheet:
     runs-on: ubuntu-24.04
@@ -29,13 +32,33 @@ jobs:
           cache: 'pip'
       - run: pip install -r tt/requirements.txt -r tt-multiplexer/py/requirements.txt
 
-      - name: Pandoc deps
+      - name: Setup environment
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y pandoc texlive-xetex librsvg2-bin
+          sudo apt-get install -y pandoc
+          wget https://github.com/typst/typst/releases/download/v0.13.1/typst-x86_64-unknown-linux-musl.tar.xz
+          tar -xvf typst-x86_64-unknown-linux-musl.tar.xz
+          mv typst-x86_64-unknown-linux-musl/typst /usr/bin
+      
+      - name: Test typst
+        run: |
+          typst --version
+          if [ ! $? -eq 0 ]; then
+            echo "There was a problem running typst --version"
+            exit 1
+          fi
 
-      - name: Generate datasheet
-        run: python ./tt/configure.py --dump-markdown datasheet.md --dump-pdf datasheet.pdf
+      - name: Setup template
+        run: |
+          mkdir -p ~/.local/share/typst/packages/local/tt-datasheet
+          cd ~/.local/share/typst/packages/local/tt-datasheet
+          git clone -v --branch $DATASHEET_TEMPLATE_VERSION https://github.com/TinyTapeout/tt-datasheet-template $DATASHEET_TEMPLATE_VERSION
+
+      - name: Generate datasheet files
+        run: python ./tt/configure.py --build-datasheet --doc-content-config datasheet_config.json --template-version $DATASHEET_TEMPLATE_VERSION
+
+      - name: Create PDF
+        run: typst compile datasheet.typ datasheet.pdf --font-path ~/.local/share/typst/packages/local/tt-datasheet/$DATASHEET_TEMPLATE_VERSION/resources/fonts
 
       - name: Check file existence and content
         run: |
