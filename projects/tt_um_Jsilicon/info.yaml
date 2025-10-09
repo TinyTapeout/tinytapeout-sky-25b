@@ -1,0 +1,59 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     0      # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Jsilicon"      # Project title
+  author:       "JunHyeok Seo (mirseo)"      # Your name
+  discord:      "mirseo0124"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A dual-mode 8-bits CPU/ALU core with Manual and Auto (ROM) modes, built in Verilog."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     12000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  top_module:   "tt_um_Jsilicon" # 최상위 모듈 추가
+  source_files:
+    - "jsilicon.v"
+    - "fsm.v"
+    - "alu.v"
+    - "uart.v"
+    - "pc.v"
+    - "inst.v"
+    - "regfile.v"
+    - "switch.v"
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "Operand B bit[0]"
+  ui[1]: "Operand B bit[1]"
+  ui[2]: "Operand B bit[2]"
+  ui[3]: "Operand B bit[3]"
+  ui[4]: "Operand A bit[0]"
+  ui[5]: "Operand A bit[1]"
+  ui[6]: "Operand A bit[2]"
+  ui[7]: "Operand A bit[3]"
+
+  # Outputs
+  uo[0]: "ALU result[0]"
+  uo[1]: "ALU result[1]"
+  uo[2]: "ALU result[2]"
+  uo[3]: "ALU result[3]"
+  uo[4]: "ALU result[4]"
+  uo[5]: "ALU result[5]"
+  uo[6]: "ALU result[6]"
+  uo[7]: "UART Busy Status"
+
+  # Bidirectional pins
+  uio[0]: "UART TX Output"
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: "Mode Select (0:Manual, 1:CPU)"
+  uio[5]: "Manual Opcode[0] (LSB)"
+  uio[6]: "Manual Opcode[1]"
+  uio[7]: "Manual Opcode[2] (MSB)"
+
+# Do not change!
+yaml_version: 6
