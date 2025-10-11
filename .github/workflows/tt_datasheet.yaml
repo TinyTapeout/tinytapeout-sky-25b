@@ -11,9 +11,6 @@ on:
     paths-ignore:
       - projects/tt_um_*/**
 
-env:
-  DATASHEET_TEMPLATE_VERSION: "1.0.0"
-
 jobs:
   build_datasheet:
     runs-on: ubuntu-24.04
@@ -50,17 +47,8 @@ jobs:
             exit 1
           fi
 
-      - name: Setup template
-        run: |
-          mkdir -p ~/.local/share/typst/packages/local/tt-datasheet
-          cd ~/.local/share/typst/packages/local/tt-datasheet
-          git clone -v --branch $DATASHEET_TEMPLATE_VERSION https://github.com/TinyTapeout/tt-datasheet-template $DATASHEET_TEMPLATE_VERSION
-
       - name: Generate datasheet files
-        run: python ./tt/configure.py --build-datasheet --template-version $DATASHEET_TEMPLATE_VERSION
-
-      - name: Create PDF
-        run: typst compile datasheet.typ datasheet.pdf --font-path ~/.local/share/typst/packages/local/tt-datasheet/$DATASHEET_TEMPLATE_VERSION/resources/fonts
+        run: python ./tt/configure.py --build-datasheet
 
       - name: Check file existence and content
         run: |
