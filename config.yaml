@@ -16,3 +16,4 @@ datasheet_config:
 
   disabled:
     - tt_um_FG_TOP_Dominik_Brandstetter
+    - tt_um_Jsilicon
