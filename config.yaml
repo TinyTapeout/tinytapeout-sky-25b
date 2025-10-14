@@ -13,7 +13,3 @@ datasheet_config:
   # include:
     # - docs/chip_map.typ
     # - docs/funding.typ
-
-  disabled:
-    - tt_um_FG_TOP_Dominik_Brandstetter
-    - tt_um_Jsilicon
