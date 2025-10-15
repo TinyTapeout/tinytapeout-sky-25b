@@ -29,29 +29,20 @@ jobs:
           cache: 'pip'
       - run: pip install -r tt/requirements.txt -r tt-multiplexer/py/requirements.txt
 
-      - name: Setup environment
+      - name: Install Pandoc
         run: |
           sudo apt-get update -y
           sudo apt-get install -y pandoc
 
-          wget https://github.com/typst/typst/releases/download/v0.13.1/typst-x86_64-unknown-linux-musl.tar.xz
-          tar -xvf typst-x86_64-unknown-linux-musl.tar.xz
-          mkdir -p $HOME/.local/bin
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-          mv typst-x86_64-unknown-linux-musl/typst $HOME/.local/bin
-
-          rm tt/docs/typst/resources/external/.gitkeep
-          git clone https://github.com/TinyTapeout/tt-datasheet-artwork tt/docs/typst/resources/external
-
-          wget -P tt/docs/typst/resources/fonts https://github.com/google/fonts/raw/refs/heads/main/ofl/notocoloremoji/NotoColorEmoji-Regular.ttf
-      
-      - name: Test typst
+      - name: Download assets
         run: |
-          typst --version
-          if [ ! $? -eq 0 ]; then
-            echo "There was a problem running typst --version"
-            exit 1
-          fi
+          git clone https://github.com/TinyTapeout/tt-datasheet-artwork tt/docs/typst/resources/external
+          wget -P tt/docs/typst/resources/fonts https://github.com/google/fonts/raw/refs/heads/main/ofl/notocoloremoji/NotoColorEmoji-Regular.ttf
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+        with:
+            typst-version: '0.13.1'
 
       - name: Generate datasheet files
         run: python ./tt/configure.py --build-datasheet
