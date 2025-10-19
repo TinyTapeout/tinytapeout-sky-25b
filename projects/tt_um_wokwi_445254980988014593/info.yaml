@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     445254980988014593       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Tiny Tapeout Test Gates"      # Project title
+  author:       "Shivam Beepath"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Test some logic gates and a clock driver"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     10000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "Clock (Step button)"
+  ui[1]: "Reset (active LOW)"
+  ui[2]: "IN0 from DIP switch"
+  ui[3]: "IN1 from DIP switch"
+  ui[4]: "IN2 from DIP switch"
+  ui[5]: "IN3 from DIP switch"
+  ui[6]: "IN4 from DIP switch"
+  ui[7]: "IN5–IN7 from DIP switch (unused in logic)"
+
+  # Outputs
+  uo[0]: "Output 0 (to 7-segment display segment a)"
+  uo[1]: "Output 1 (to 7-segment display segment b)"
+  uo[2]: "Output 2 (to 7-segment display segment c)"
+  uo[3]: "Output 3 (to 7-segment display segment d)"
+  uo[4]: "Output 4 (to 7-segment display segment e)"
+  uo[5]: "Output 5 (to 7-segment display segment f)"
+  uo[6]: "Output 6 (to 7-segment display segment g)"
+  uo[7]: "Output 7 (extra/unused output)"
+
+  # Bidirectional pins
+  uio[0]: "Not connected"
+  uio[1]: "Not connected"
+  uio[2]: "Not connected"
+  uio[3]: "Not connected"
+  uio[4]: "Not connected"
+  uio[5]: "Not connected"
+  uio[6]: "Not connected"
+  uio[7]: "Not connected"
+# Do not change!
+yaml_version: 6
