@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:        445254813154997249
+  title:             "Tiny Tapeout Gates"
+  author:       "Rohan Chopra"
+  discord:     ""
+  description:   "Uses AND, OR, NAND and NOT gates to output when conditions are met."
+  language:     "Wokwi" 
+  clock_hz:    10000
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "input a"
+  ui[1]: "input b"
+  ui[2]: "input c"
+  ui[3]: "input d"
+  ui[4]: "input e"
+  ui[5]: "input f"
+  ui[6]: "input g"
+  ui[7]: "input h"
+
+  # Outputs
+  uo[0]: "output and "
+  uo[1]: "output and"
+  uo[2]: "output nand"
+  uo[3]: "output nand"
+  uo[4]: "output or "
+  uo[5]: "output or "
+  uo[6]: "output not"
+  uo[7]: "output h "
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
