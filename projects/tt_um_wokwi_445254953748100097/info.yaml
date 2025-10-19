@@ -1,0 +1,46 @@
+# My Wokwi Project
+project:
+  wokwi_id:     445254953748100097
+  title:        "Tiny Tapeout Test Gates"
+  author:       "Aman Barolia"     
+  discord:      "shadowgamer_95"   
+  description:  "This projects tests logic gates and a clock divider. It has been designed to show a resembilng output of the greek alphabet lambda."    
+  language:     "Wokwi" 
+  clock_hz:     0    
+  
+  tiles: "1x1"      
+
+
+pinout:
+
+  ui[0]: "input a, XOR gate"
+  ui[1]: "input b, XOR gate"
+  ui[2]: "input c, NOT gate"
+  ui[3]: "input d, NOT gate"
+  ui[4]: "input e, NOT gate"
+  ui[5]: "input f, XOR gate"
+  ui[6]: "input g, XOR gate"
+  ui[7]: "input h, NOT gate"
+
+  uio[0]: "input a, XOR gate"
+  uio[1]: "input b, XOR gate"
+  uio[2]: "input c, NOT gate"
+  uio[3]: "input d, NOT gate"
+  uio[4]: "input e, NOT gate"
+  uio[5]: "input f, XOR gate"
+  uio[6]: "input g, XOR gate"
+  uio[7]: "input h, NOT gate"
+  
+
+ 
+  uo[0]: "output a, XOR gate"
+  uo[1]: "output b, NOT gate"
+  uo[2]: "output c, NOT gate"
+  uo[3]: "output d, NOT gate"
+  uo[4]: "output e, XOR gate"
+  uo[5]: "o5"
+  uo[6]: "output g, NOT gate"
+  uo[7]: "o7"
+
+
+yaml_version: 6
