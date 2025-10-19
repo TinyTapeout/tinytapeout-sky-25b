@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     445254731311517697       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Mark's first wokwi design"      # Project title
+  author:       "Mark Angelov"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "This project does nothing for now."      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "controls segment 0 of the display"
+  ui[1]: "controls segment 1 of the display"
+  ui[2]: "controls segment 2 of the display"
+  ui[3]: "controls segment 3 of the display"
+  ui[4]: "controls segment 4 of the display"
+  ui[5]: "controls segment 5 of the display"
+  ui[6]: "controls segment 6 of the display"
+  ui[7]: "controls segment 7 of the display"
+
+  # Outputs
+  uo[0]: "segment 0 of the display"
+  uo[1]: "segment 1 of the display"
+  uo[2]: "segment 2 of the display"
+  uo[3]: "segment 3 of the display"
+  uo[4]: "segment 4 of the display"
+  uo[5]: "segment 5 of the display"
+  uo[6]: "segment 6 of the display"
+  uo[7]: "segment 7 of the display"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
