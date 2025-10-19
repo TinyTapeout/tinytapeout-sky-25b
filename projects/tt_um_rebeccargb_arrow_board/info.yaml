@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "Arrow Board"                         # Project title
+  author:       "Rebecca G. Bettencourt"              # Your name
+  discord:      "YoukaiRempeka"                       # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Displays animated arrow signs."      # One line description of what your project does
+  language:     "Verilog"                             # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     1                                     # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rebeccargb_arrow_board"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "arrow_board.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "pattern[0]"
+  ui[1]: "pattern[1]"
+  ui[2]: "pattern[2]"
+  ui[3]: "pattern[3]"
+  ui[4]: "flashing"
+  ui[5]: "sequential"
+  ui[6]: "/LT (lamp test)"
+  ui[7]: "/AL (active low)"
+
+  # Outputs
+  uo[0]: "lamp A"
+  uo[1]: "lamp B"
+  uo[2]: "lamp C"
+  uo[3]: "lamp D"
+  uo[4]: "lamp E"
+  uo[5]: "lamp F"
+  uo[6]: "lamp G"
+  uo[7]: "lamp H"
+
+  # Bidirectional pins
+  uio[0]: "lamp J"
+  uio[1]: "lamp K"
+  uio[2]: "lamp L"
+  uio[3]: "lamp M"
+  uio[4]: "lamp N"
+  uio[5]: "lamp P"
+  uio[6]: "lamp Q"
+  uio[7]: "lamp R"
+
+# Do not change!
+yaml_version: 6

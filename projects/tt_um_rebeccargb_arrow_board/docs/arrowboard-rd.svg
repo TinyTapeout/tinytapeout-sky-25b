@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="280" height="160" viewBox="0 0 14 8">
+<g>
+<rect width="14" height="8" fill="#333" stroke="none"/>
+<circle class="a" cx="1" cy="4" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="b" cx="3" cy="4" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="c" cx="5" cy="4" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="d" cx="7" cy="4" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="e" cx="9" cy="4" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="f" cx="11" cy="4" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="g" cx="13" cy="4" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="h" cx="2" cy="2.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="j" cx="4" cy="2.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="k" cx="6" cy="2.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="l" cx="8" cy="2.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="m" cx="10" cy="2.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="n" cx="12" cy="2.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="h" cx="2" cy="5.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="j" cx="4" cy="5.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="k" cx="6" cy="5.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="l" cx="8" cy="5.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="m" cx="10" cy="5.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="n" cx="12" cy="5.5" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="p" cx="3" cy="1" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="q" cx="7" cy="1" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="r" cx="11" cy="1" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="p" cx="3" cy="7" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="q" cx="7" cy="7" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<circle class="r" cx="11" cy="7" r="0.5" fill="#FE0" stroke="#000" stroke-width="0.1"/>
+<text x="1" y="4.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">A</text>
+<text x="3" y="4.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">B</text>
+<text x="5" y="4.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">C</text>
+<text x="7" y="4.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">D</text>
+<text x="9" y="4.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">E</text>
+<text x="11" y="4.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">F</text>
+<text x="13" y="4.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">G</text>
+<text x="2" y="2.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">H</text>
+<text x="4" y="2.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">J</text>
+<text x="6" y="2.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">K</text>
+<text x="8" y="2.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">L</text>
+<text x="10" y="2.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">M</text>
+<text x="12" y="2.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">N</text>
+<text x="2" y="5.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">H</text>
+<text x="4" y="5.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">J</text>
+<text x="6" y="5.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">K</text>
+<text x="8" y="5.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">L</text>
+<text x="10" y="5.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">M</text>
+<text x="12" y="5.75" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">N</text>
+<text x="3" y="1.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">P</text>
+<text x="7" y="1.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">Q</text>
+<text x="11" y="1.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">R</text>
+<text x="3" y="7.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">P</text>
+<text x="7" y="7.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">Q</text>
+<text x="11" y="7.25" font-family="Arial, sans-serif" font-size="0.75" text-anchor="middle">R</text>
+</g>
+</svg>
