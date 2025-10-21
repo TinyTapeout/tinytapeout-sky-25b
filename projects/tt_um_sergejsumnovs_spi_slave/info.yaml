@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Cynergy4MIE SPI Slave Component" # Project title
+  author:       "Sergejs Umnovs"                  # Your name
+  discord:      "sergey1694"                      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "An SPI slave demo component for the Cynergy4MIE project (and also my master's thesis). It has GPIO, LFSR and PWM."        # One line description of what your project does
+  language:     "VHDL"    # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     20000000  # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_sergejsumnovs_spi_slave"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "main.v"
+  # Transpiled using GHDL: ghdl synth -Wno-binding --std=08 --out=verilog <VHDL Files> -e > main.v
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Capture 0"
+  ui[1]: "Capture 1"
+  ui[2]: "Capture 2"
+  ui[3]: "Capture 3"
+  ui[4]: "Capture 4"
+  ui[5]: "Capture 5"
+  ui[6]: "Capture 6"
+  ui[7]: "Capture 7"
+
+  # Outputs
+  uo[0]: "CS"
+  uo[1]: "MOSI"
+  uo[2]: "MISO"
+  uo[3]: "SCK"
+  uo[4]: "GPIO 0"
+  uo[5]: "GPIO 1"
+  uo[6]: "GPIO 2"
+  uo[7]: "GPIO 3"
+
+  # Bidirectional pins
+  uio[0]: "PWM 0"
+  uio[1]: "PWM 1"
+  uio[2]: "PWM 2"
+  uio[3]: "PWM 3"
+  uio[4]: "LFSR"
+  uio[5]: "NC"
+  uio[6]: "NC"
+  uio[7]: "NC"
+
+# Do not change!
+yaml_version: 6
