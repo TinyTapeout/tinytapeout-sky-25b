@@ -1,0 +1,66 @@
+# Tiny Tapeout project information
+project:
+  title:        "FemtoRV register file test"      # Project title
+  author:       "Mike Bell"      # Your name
+  discord:      "rebelmike"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Simple FemtoRV SoC using tnt's register file"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rebelmike_femtorv"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "femto_quark_bi.v"
+    - "mem_ctrl.v"
+    - "qspi_ctrl.v"
+    - "rf_top.v"
+    - "latch_reg.v"
+    - "peri/uart/uart_tx.v"
+    - "peri/uart/uart_rx.v"
+    - "peri/spi/spi.v"
+    - "peri/pwm/pwm.v"
+    - "peri/ttgame/ttgame.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: "SPI MISO"
+  ui[3]: ""
+  ui[4]: "Game controller latch"
+  ui[5]: "Game controller clock"
+  ui[6]: "Game controller data"
+  ui[7]: "UART RX"
+
+  # Outputs
+  uo[0]: "UART TX"
+  uo[1]: "UART RTS"
+  uo[2]: "SPI DC"
+  uo[3]: "SPI MOSI"
+  uo[4]: "SPI CS"
+  uo[5]: "SPI SCK"
+  uo[6]: "Debug UART TX"
+  uo[7]: "PWM"
+
+  # Bidirectional pins
+  uio[0]: "Flash CS"
+  uio[1]: "SD0"
+  uio[2]: "SD1"
+  uio[3]: "SCK"
+  uio[4]: "SD2"
+  uio[5]: "SD3"
+  uio[6]: "RAM A CS"
+  uio[7]: "RAM B CS / PWM"
+
+# Do not change!
+yaml_version: 6
