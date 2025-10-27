@@ -1,0 +1,51 @@
+# Tiny Tapeout project information
+project:
+  title:        "TTSKY25B Register File Validation"
+  author:       "Sylvain Munaut"
+  discord:      "246tnt"
+  description:  "Validation design for register file macro"
+  language:     "Analog"
+  clock_hz:     0
+  tiles:        "1x2"
+  analog_pins:  0
+  uses_3v3:     false
+  top_module:   "tt_um_tnt_rf_validation"
+  source_files:        
+    - "project.v"
+
+pinout:
+  ui[0]: "cmp_rst"
+  ui[1]: "cmp_exec"
+  ui[2]: "cap_sel"
+  ui[3]: "gen_dat_in"
+  ui[4]: "we_in"
+  ui[5]: "cap_dat_in"
+  ui[6]: "gen_glb_ena"
+  ui[7]: "gen_glb_mode"
+
+  uo[0]: "cap_dat_out"
+  uo[1]: "k_zero"
+  uo[2]: "cmp_err_msb"
+  uo[3]: "cmp_err_lsb"
+  uo[4]: "k_zero"
+  uo[5]: "k_zero"
+  uo[6]: "fb_out"
+  uo[7]: "k_zero"
+
+  uio[0]: ""
+  uio[1]: "clk_cap"
+  uio[2]: ""
+  uio[3]: "clk_gen"
+  uio[4]: ""
+  uio[5]: "clk_rf"
+  uio[6]: "fb_sel[0]"
+  uio[7]: "fb_sel[1]"
+
+  ua[0]: ""
+  ua[1]: ""
+  ua[2]: ""
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
+
+yaml_version: 6
