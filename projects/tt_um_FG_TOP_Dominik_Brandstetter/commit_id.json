@@ -1,11 +1,8 @@
 {
-  "app": "Tiny Tapeout main cd87f1dc",
+  "app": "Tiny Tapeout main 8132ad6e",
   "repo": "https://github.com/DomnikBrandstetter/jku-sky-FunctionGenerator",
-  "commit": "21811322bae92dff06b3f9a8c58f9894de88150a",
-  "workflow_url": "https://github.com/DomnikBrandstetter/jku-sky-FunctionGenerator/actions/runs/18080970927",
+  "commit": "689aea3c3d32e9b40a79c7656aeee6c1e9c0497c",
+  "workflow_url": "https://github.com/DomnikBrandstetter/jku-sky-FunctionGenerator/actions/runs/18872558106",
   "project_id": 3114,
-  "sort_id": 1759100607733,
-  "flow_version": "LibreLane 2.4.2",
-  "pdk_name": "open_pdks",
-  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+  "sort_id": 1759100607733
 }
