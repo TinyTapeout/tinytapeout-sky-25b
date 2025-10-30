@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-don't know by now
+This project implements a traffic light.
 
 ## How to test
 
-don't know by now
+Connect LED's.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+LED's
