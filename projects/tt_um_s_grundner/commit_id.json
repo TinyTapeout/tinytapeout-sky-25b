@@ -1,8 +1,8 @@
 {
-  "app": "Tiny Tapeout main 131f64ce",
-  "repo": "https://github.com/s-grundner/LVA-TinyTapeout-Workshop",
-  "commit": "52d8c629b6aa63ef7fd5f2e635219d066d386e36",
-  "workflow_url": "https://github.com/s-grundner/LVA-TinyTapeout-Workshop/actions/runs/18180896142",
+  "app": "Tiny Tapeout main 8132ad6e",
+  "repo": "https://github.com/s-grundner/LVA-EIC-KV",
+  "commit": "172521abafc9452591cfd54ccb5b563fadb43b72",
+  "workflow_url": "https://github.com/s-grundner/LVA-EIC-KV/actions/runs/18856528754",
   "project_id": 3056,
   "sort_id": 1758725021598
 }

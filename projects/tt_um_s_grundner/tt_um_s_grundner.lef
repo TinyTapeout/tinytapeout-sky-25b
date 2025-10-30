@@ -333,6 +333,7 @@ MACRO tt_um_s_grundner
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 94.150 110.520 94.450 111.520 ;
@@ -341,6 +342,7 @@ MACRO tt_um_s_grundner
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 91.390 110.520 91.690 111.520 ;
@@ -401,11 +403,11 @@ MACRO tt_um_s_grundner
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 109.440 ;
+        RECT 2.760 2.480 158.240 109.040 ;
       LAYER met2 ;
-        RECT 18.310 2.535 153.080 110.005 ;
+        RECT 6.080 2.535 156.300 110.005 ;
       LAYER met3 ;
-        RECT 18.290 2.555 145.295 109.985 ;
+        RECT 14.785 2.555 146.675 109.985 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.520 ;
         RECT 34.130 110.120 35.790 110.520 ;

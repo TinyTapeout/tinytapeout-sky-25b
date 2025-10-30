@@ -17,14 +17,16 @@ project:
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - top_level.v
+    - tt_um_s_grundner.v
     - global.v
     - synth.v
     - osc.v
+    - note2cnt.v
     - midi.v
     - rx.v
     - pwm.v
     - counter.v
+    - bitcount.v
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
