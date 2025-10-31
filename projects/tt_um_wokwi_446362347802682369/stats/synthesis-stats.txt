@@ -1,0 +1,107 @@
+102. Printing statistics.
+
+=== dffsr_cell ===
+
+   Number of wires:                  9
+   Number of wire bits:              9
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  6
+   Number of port bits:              6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     sky130_fd_sc_hd__dfbbn_2        1
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__nand2b_2       1
+
+   Chip area for module '\dffsr_cell': 51.299200
+     of which used for sequential elements: 35.033600 (68.29%)
+
+=== mux_cell ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__mux2_1         1
+
+   Chip area for module '\mux_cell': 11.260800
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== not_cell ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\not_cell': 3.753600
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== tt_um_wokwi_446362347802682369 ===
+
+   Number of wires:                 16
+   Number of wire bits:             51
+   Number of public wires:          16
+   Number of public wire bits:      51
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     dffsr_cell                      2
+     mux_cell                        2
+     not_cell                        2
+     sky130_fd_sc_hd__buf_2          6
+     sky130_fd_sc_hd__conb_1        18
+
+   Area for cell type \dffsr_cell is unknown!
+   Area for cell type \not_cell is unknown!
+   Area for cell type \mux_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_446362347802682369': 97.593600
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== design hierarchy ===
+
+   tt_um_wokwi_446362347802682369      1
+     dffsr_cell                      2
+     mux_cell                        2
+     not_cell                        2
+
+   Number of wires:                 46
+   Number of wire bits:             81
+   Number of public wires:          40
+   Number of public wire bits:      75
+   Number of ports:                 32
+   Number of port bits:             67
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 36
+     sky130_fd_sc_hd__buf_2          6
+     sky130_fd_sc_hd__conb_1        18
+     sky130_fd_sc_hd__dfbbn_2        2
+     sky130_fd_sc_hd__inv_2          6
+     sky130_fd_sc_hd__mux2_1         2
+     sky130_fd_sc_hd__nand2b_2       2
+
+   Chip area for top module '\tt_um_wokwi_446362347802682369': 230.220800
+     of which used for sequential elements: 0.000000 (0.00%)
+
