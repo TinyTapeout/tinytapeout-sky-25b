@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     442977579441572865      # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Tiny Tapeout Adder"    # Project title
-  author:       "Florian Berger"        # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A simple 1-bit adder"  # One line description of what your project does
-  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  wokwi_id:     442977579441572865                                                      # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Hamming (7,4) Encoder and Decoder"                                     # Project title
+  author:       "Florian Berger"                                                        # Your name
+  discord:      ""                                                                      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "An encoder and decoder for the hamming (7,4) error correction scheme"  # One line description of what your project does
+  language:     "Wokwi"                                                                 # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0                                                                       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -16,24 +16,24 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "Input A"
-  ui[1]: "Input B"
-  ui[2]: "Carry In"
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "Encode: Ignored, Decode: Parity 1"
+  ui[1]: "Encode: Ignored, Decode: Parity 2"
+  ui[2]: "Encode: Data 1, Decode: Data 1"
+  ui[3]: "Encode: Ignored, Decode: Parity 3"
+  ui[4]: "Encode: Data 2, Decode: Data 2"
+  ui[5]: "Encode: Data 3, Decode: Data 3"
+  ui[6]: "Encode: Data 4, Decode: Data 4"
+  ui[7]: "Mode Selection, Encode: 0, Decode: 1"
 
   # Outputs
-  uo[0]: "Adder Out"
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: "Carry Out"
+  uo[0]: "Parity 1"
+  uo[1]: "Parity 2"
+  uo[2]: "Data 1"
+  uo[3]: "Parity 3"
+  uo[4]: "Data 2"
+  uo[5]: "Data 3"
+  uo[6]: "Data 4"
+  uo[7]: "Encode: Ignored, Decode: Single-Bit Correction Occured (1)"
 
   # Bidirectional pins
   uio[0]: ""

@@ -9,13 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Just a simple adder. For now...
-I will replace this by an HDL design later. :)
+This project is an encoder and decoder for the Hamming (7,4) code with automated single-bit error correction.
+Therefore, any multi-bit error are wrongly decoded. However, single-bit errors are corrected and the occurence of an error is reported by the scheme.
+
+Input 7 selects between encode (0) and decode (1) operation. Output 7 reports the correction of a single-bit error in decode operation and is ignored for encoding. Inputs andd outputs 0-6 for the code word as described in the info.yaml.
 
 ## How to test
 
-Adds two numbers and a carry, outputs the result and the carry.
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+For encoding, set the four data bits and observe the output word.
+For decoding apply a valid codeword with less than 2 errors and observe the correct output word.

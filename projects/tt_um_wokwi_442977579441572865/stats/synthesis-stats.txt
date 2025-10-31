@@ -17,6 +17,40 @@
    Chip area for module '\and_cell': 7.507200
      of which used for sequential elements: 0.000000 (0.00%)
 
+=== mux_cell ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__mux2_1         1
+
+   Chip area for module '\mux_cell': 11.260800
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== not_cell ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\not_cell': 3.753600
+     of which used for sequential elements: 0.000000 (0.00%)
+
 === or_cell ===
 
    Number of wires:                  3
@@ -36,27 +70,31 @@
 
 === tt_um_wokwi_442977579441572865 ===
 
-   Number of wires:                 13
-   Number of wire bits:             48
-   Number of public wires:          13
-   Number of public wire bits:      48
+   Number of wires:                 50
+   Number of wire bits:             85
+   Number of public wires:          50
+   Number of public wire bits:      85
    Number of ports:                  8
    Number of port bits:             43
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 29
-     and_cell                        2
-     or_cell                         1
-     sky130_fd_sc_hd__buf_2          2
-     sky130_fd_sc_hd__conb_1        22
-     xor_cell                        2
+   Number of cells:                 66
+     and_cell                       14
+     mux_cell                        8
+     not_cell                        3
+     or_cell                         2
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        16
+     xor_cell                       15
 
    Area for cell type \xor_cell is unknown!
+   Area for cell type \mux_cell is unknown!
+   Area for cell type \not_cell is unknown!
    Area for cell type \and_cell is unknown!
    Area for cell type \or_cell is unknown!
 
-   Chip area for module '\tt_um_wokwi_442977579441572865': 92.588800
+   Chip area for module '\tt_um_wokwi_442977579441572865': 100.096000
      of which used for sequential elements: 0.000000 (0.00%)
 
 === xor_cell ===
@@ -79,26 +117,30 @@
 === design hierarchy ===
 
    tt_um_wokwi_442977579441572865      1
-     and_cell                        2
-     or_cell                         1
-     xor_cell                        2
+     and_cell                       14
+     mux_cell                        8
+     not_cell                        3
+     or_cell                         2
+     xor_cell                       15
 
-   Number of wires:                 28
-   Number of wire bits:             63
-   Number of public wires:          28
-   Number of public wire bits:      63
-   Number of ports:                 23
-   Number of port bits:             58
+   Number of wires:                181
+   Number of wire bits:            216
+   Number of public wires:         181
+   Number of public wire bits:     216
+   Number of ports:                139
+   Number of port bits:            174
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 29
-     sky130_fd_sc_hd__and2_2         2
-     sky130_fd_sc_hd__buf_2          2
-     sky130_fd_sc_hd__conb_1        22
-     sky130_fd_sc_hd__or2_2          1
-     sky130_fd_sc_hd__xor2_2         2
+   Number of cells:                 66
+     sky130_fd_sc_hd__and2_2        14
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__inv_2          3
+     sky130_fd_sc_hd__mux2_1         8
+     sky130_fd_sc_hd__or2_2          2
+     sky130_fd_sc_hd__xor2_2        15
 
-   Chip area for top module '\tt_um_wokwi_442977579441572865': 146.390400
+   Chip area for top module '\tt_um_wokwi_442977579441572865': 563.040000
      of which used for sequential elements: 0.000000 (0.00%)
 
