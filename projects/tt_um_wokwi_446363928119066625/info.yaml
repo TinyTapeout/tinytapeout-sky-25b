@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     446363928119066625       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "mysteryform"      # Project title
+  author:       "tc"      # Your name
+  discord:      "mystery_form"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "segment configs by tc"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "a"
+  ui[1]: "a"
+  ui[2]: "a"
+  ui[3]: "a"
+  ui[4]: "a"
+  ui[5]: "a"
+  ui[6]: "a"
+  ui[7]: "a"
+
+  # Outputs
+  uo[0]: "b"
+  uo[1]: "b"
+  uo[2]: "b"
+  uo[3]: "b"
+  uo[4]: "b"
+  uo[5]: "b"
+  uo[6]: "b"
+  uo[7]: "b"
+
+  # Bidirectional pins
+  uio[0]: "c"
+  uio[1]: "c"
+  uio[2]: "c"
+  uio[3]: "c"
+  uio[4]: "c"
+  uio[5]: "c"
+  uio[6]: "c"
+  uio[7]: "c"
+
+# Do not change!
+yaml_version: 6
