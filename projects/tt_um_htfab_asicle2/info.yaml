@@ -1,0 +1,72 @@
+# Tiny Tapeout project information
+project:
+  title:        "Asicle v2"      # Project title
+  author:       "htfab"          # Your name
+  discord:      "h.tamas"        # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Wordle clone in raw silicon"  # One line description of what your project does
+  language:     "Verilog"        # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25175000         # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_htfab_asicle2"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "input_gamepad.sv"
+    - "input_debounce.sv"
+    - "input_logic.sv"
+    - "input_top.sv"
+    - "vga_grid.sv"
+    - "vga_render.sv"
+    - "vga_top.sv"
+    - "qspi_arbiter.sv"
+    - "qspi_sequencer.sv"
+    - "qspi_sampler.sv"
+    - "qspi_fifo.sv"
+    - "qspi_top.sv"
+    - "game_board.sv"
+    - "game_feedback.sv"
+    - "game_logic.sv"
+    - "game_top.sv"
+    - "project.sv"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "up"
+  ui[1]: "down"
+  ui[2]: "left"
+  ui[3]: "right"
+  ui[4]: "guess / gamepad: latch"
+  ui[5]: "new game / gamepad: clock"
+  ui[6]: "peek (debug) / gamepad: data"
+  ui[7]: "roll (debug)"
+
+  # Outputs
+  uo[0]: "tinyvga: r1"
+  uo[1]: "tinyvga: g1"
+  uo[2]: "tinyvga: b1"
+  uo[3]: "tinyvga: vsync"
+  uo[4]: "tinyvga: r0"
+  uo[5]: "tinyvga: g0"
+  uo[6]: "tinyvga: b0"
+  uo[7]: "tinyvga: hsync"
+
+  # Bidirectional pins
+  uio[0]: "qspi: cs0 (flash)"
+  uio[1]: "qspi: sd0/mosi"
+  uio[2]: "qspi: sd1/miso"
+  uio[3]: "qspi: sck"
+  uio[4]: "qspi: sd2"
+  uio[5]: "qspi: sd3"
+  uio[6]: "qspi: cs1 (unused)"
+  uio[7]: "qspi: cs2 (unused)"
+
+# Do not change!
+yaml_version: 6
