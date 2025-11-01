@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     446368563224770561       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "TinyTapeout1"      # Project title
+  title:        "TinyTapeout2"      # Project title
   author:       "Kevin"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "ALU WIP..."      # One line description of what your project does
+  description:  "Programmable Logic Function"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -16,20 +16,20 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "a0"
-  ui[1]: "a1"
-  ui[2]: "a2"
-  ui[3]: "a3"
-  ui[4]: "b0"
-  ui[5]: "b1"
-  ui[6]: "b2"
-  ui[7]: "b3"
+  ui[0]: "a"
+  ui[1]: "b"
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: "v00"
+  ui[5]: "v01"
+  ui[6]: "v10"
+  ui[7]: "v11"
 
   # Outputs
-  uo[0]: "q0"
-  uo[1]: "q1"
-  uo[2]: "q2"
-  uo[3]: "q3"
+  uo[0]: "q"
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""

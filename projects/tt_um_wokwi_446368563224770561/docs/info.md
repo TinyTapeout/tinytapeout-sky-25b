@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Give it two 4-bit inputs and it will give you a 4-bit output.
+It uses input 4-7 to populate a LUT to implement a simple logic function.
 
 ## How to test
 
-Pending...
+Configure it by presenting a truth table on inputs 4-7. Give it inputs on 0 and 1, and it'll give you the output on 0.
 
 ## External hardware
 
-Pending...
+There is none.
