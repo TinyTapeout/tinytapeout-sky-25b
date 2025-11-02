@@ -1,0 +1,79 @@
+# Tiny Tapeout project information
+project:
+  title:        "LEDs Racer"      # Project title
+  author:       "KerCrafter"      # Your name
+  discord:      "kercrafter"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Funny electronic game with WS2812B LEDs"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_kercrafter_leds_racer"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "devices_entry/tt_um_kercrafter_leds_racer.v"
+    - "LEDs_racer_main.v"
+    - "LEDs_racer_core.v"
+    - "activity_detector.v"
+    - "display_unit.v"
+    - "domain_unit.v"
+    - "end_game_logics.v"
+    - "menu_manager.v"
+    - "player_button.v"
+    - "screen_manager.v"
+    - "button-debouncer/button_debouncer.v"
+    - "WS2812B-driver/WS2812B_driver.v"
+    - "WS2812B-driver/NRZ_sequence.v"
+    - "WS2812B-driver/pipe_tri_bus.v"
+    - "pipe-pulse-generator/pipe_pulse_generator.v"
+    - "timer/timer.v"
+    - "menu_manager/ready_trigger_countdown.v"
+    - "screen_manager/router.v"
+    - "screen_manager/screens/end_screen.v"
+    - "screen_manager/screens/gameplay_screen.v"
+    - "screen_manager/screens/menu_screen.v"
+    - "screen_manager/screens.v"
+    - "screen_manager/is_game_finished.v"
+    - "screen_manager/is_game_started.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "BLUE_BTN"
+  ui[1]: "RED_BTN"
+  ui[2]: "GREEN_BTN"
+  ui[3]: "YELLOW_BTN"
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "LEDS_LINE"
+  uo[1]: "TP_SCREEN_0"
+  uo[2]: "TP_SCREEN_1"
+  uo[3]: "TP_BLUE_READY_TO_PLAY"
+  uo[4]: "TP_RED_READY_TO_PLAY"
+  uo[5]: "TP_GREEN_READY_TO_PLAY"
+  uo[6]: "TP_YELLOW_READY_TO_PLAY"
+  uo[7]: "TP_UPDATE_FRAME"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
