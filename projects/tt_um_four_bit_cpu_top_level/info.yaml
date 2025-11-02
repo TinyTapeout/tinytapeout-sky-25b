@@ -1,0 +1,67 @@
+# Tiny Tapeout project information
+project:
+  title:        "4Bit_CPU"      # Project title
+  author:       "Maximilian Zaglmayr"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "a small custom 4 bit cpu with 16 instructions and 16x4 Bit storage"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_four_bit_cpu_top_level"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "input_synchronizer.v"
+    - "half_adder.v"
+    - "full_adder.v"
+    - "carry_ripple_adder.v"
+    - "alu.v"
+    - "my_register.v"
+    - "reg_memory.v"
+    - "control_unit.v"
+    - "cpu.v"
+    - "uart_rx.v"
+    - "programmer.v"
+    - "cpu_board.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "haha"
+  ui[1]: "du"
+  ui[2]: "kennst"
+  ui[3]: "di"
+  ui[4]: "ned"
+  ui[5]: "aus"
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "asdf"
+  uo[1]: "asdf"
+  uo[2]: "s"
+  uo[3]: "s"
+  uo[4]: "d"
+  uo[5]: "d"
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: "sf"
+  uio[1]: "df"
+  uio[2]: "sf"
+  uio[3]: "sf"
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
