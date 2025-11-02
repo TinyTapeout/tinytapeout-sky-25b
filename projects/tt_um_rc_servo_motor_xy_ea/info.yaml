@@ -36,10 +36,10 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "pwm_pin_x_o"
-  uo[1]: "pwm_pin_y_o"
-  uo[2]: ""
-  uo[3]: ""
+  uo[0]: "pwm_pin_x_o"   #output to rc motor
+  uo[1]: "pwm_pin_y_o"   # output to rc motor
+  uo[2]: "pwm_x_o"       #output to comp
+  uo[3]: "pwm_y_o"      #output to comp
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
