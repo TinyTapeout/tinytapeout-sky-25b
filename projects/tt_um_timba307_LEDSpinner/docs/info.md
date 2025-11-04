@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Just a tiny test, the real project is not ready yet
+TODO at later date
 
 ## How to test
 
-Just test it
+TODO at later date
 
 ## External hardware
 
-No external hardware needed
+Input switch for clock speed setting is needed, 7-seg display for visual is needed
