@@ -1,0 +1,21 @@
+101. Printing statistics.
+
+=== tt_um_user_module ===
+
+   Number of wires:                 10
+   Number of wire bits:             45
+   Number of public wires:           9
+   Number of public wire bits:      44
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__conb_1        24
+     sky130_fd_sc_hd__dfrtp_2        1
+
+   Chip area for module '\tt_um_user_module': 123.868800
+     of which used for sequential elements: 26.275200 (21.21%)
+

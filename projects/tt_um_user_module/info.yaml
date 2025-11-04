@@ -1,12 +1,15 @@
-# Tiny Tapeout project information (Wokwi project)
+# Tiny Tapeout project information
 project:
-  wokwi_id:     446363858667675649       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  wokwi_id:     0       # 0 for non-Wokwi projects
   title:        "Sleepy Chip"      # Project title
   author:       "Ron Sardarian"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "stuff"      # One line description of what your project does
-  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable) 50Mhz
+  top_module:   "tt_um_user_module"  # Top-level module name
+  source_files:                 # List of source files
+    - "tt_um_user_module.v"
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -26,14 +29,14 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "OUT"
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "Q0"
+  uo[1]: "Q1"
+  uo[2]: "Q2"
+  uo[3]: "Q3"
+  uo[4]: "Q4"
+  uo[5]: "Q5"
+  uo[6]: "Q6"
+  uo[7]: "Q7"
 
   # Bidirectional pins
   uio[0]: ""
