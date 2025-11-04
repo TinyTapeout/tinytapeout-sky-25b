@@ -34,18 +34,18 @@ ___Registers___ The behavior of the AY-3-891x is defined by 14 registers.
 | Register| Bits used      | Function         | Description            |
 |---------|----------------|------------------|------------------------|
 | 0       | ```xxxxxxxx``` | Channel A Tone   | 8-bit fine frequency   |
-| 1       | ```....xxxx``` | ---//---         | 4-bit coarse frequency |
+| 1       | ```....xxxx``` | ---/​/---         | 4-bit coarse frequency |
 | 2       | ```xxxxxxxx``` | Channel B Tone   | 8-bit fine frequency   |
-| 3       | ```....xxxx``` | ---//---         | 4-bit coarse frequency |
+| 3       | ```....xxxx``` | ---/​/---         | 4-bit coarse frequency |
 | 4       | ```xxxxxxxx``` | Channel C Tone   | 8-bit fine frequency   |
-| 5       | ```....xxxx``` | ---//---         | 4-bit coarse frequency |
+| 5       | ```....xxxx``` | ---/​/---         | 4-bit coarse frequency |
 | 6       | ```...xxxxx``` | Noise            | 5-bit noise frequency  |
 | 7       | ```..CBACBA``` | Mixer            | Tone and/or Noise per channel |
 | 8       | ```...xxxxx``` | Channel A Volume | Envelope enable or 4-bit amplitude |
 | 9       | ```...xxxxx``` | Channel B Volume | Envelope enable or 4-bit amplitude |
 | 10      | ```...xxxxx``` | Channel C Volume | Envelope enable or 4-bit amplitude |
 | 11      | ```xxxxxxxx``` | Envelope         | 8-bit fine frequency |
-| 12      | ```xxxxxxxx``` | ---//---         | 8-bit coarse frequency |   
+| 12      | ```xxxxxxxx``` | ---/​/---         | 8-bit coarse frequency |   
 | 13      | ```....xxxx``` | Envelope Shape   | 4-bit shape control |
 
 
@@ -151,14 +151,14 @@ ___Inactivate bus___ by pulling both **BDIR** and **BC1** pins **low**.
 | Register | Format     | Description              | Parameters      |
 |---------|------------|--------------------------|-----------------|
 | 0,2,4   | `ffffffff` | A/B/C tone period        | `f` - low bits  |
-| 1,3,5   | `0000FFFF` | ---//---                 | `F` - high bits |
+| 1,3,5   | `0000FFFF` | ---/​/---                 | `F` - high bits |
 | 6       | `000fffff` | Noise period             | `f` - noise period |
 | 7       | `00CBAcba` | Noise / tone per channel | `CBA` - noise off, |
 |         |            |                          | `cba` - tone off |
 | 8,9,10  | `000Evvvv` | A/B/C volume             | `E` - envelope on, |
 |         |            |                          | `v` - volume level |
 | 11      | `ffffffff` | Envelope period          | `f` - low bits  |
-| 12      | `FFFFFFFF` | ---//---                 | `F` - high bits  |
+| 12      | `FFFFFFFF` | ---/​/---                 | `F` - high bits  |
 | 13      | `0000caAh` | Envelope Shape           | `c` - continue,  `a` - attack,  `A` - alternate,  `h` - hold |
 
 
@@ -209,7 +209,7 @@ DA7..DA0_____  ________  ________  ________  ________  ________
 | SEL1 | SEL0 | Description                        | Clock frequency|
 |------|------|------------------------------------|----------------|
 | 0    |    0 | Standard mode, clock divided by 8  | 1.7 .. 2.0 MHz |
-| 1    |    1 |           -----//-----             | 1.7 .. 2.0 MHz |
+| 1    |    1 |           -----/​/-----             | 1.7 .. 2.0 MHz |
 | 0    |    1 | New mode for TT05, no clock divider| 250 .. 500 kHZ |
 | 1    |    0 | New mode for TT05, clock div. 128  |  25 .. 50  MHz |
 
@@ -217,7 +217,7 @@ DA7..DA0_____  ________  ________  ________  ________  ________
 | SEL1 | SEL0 | Formula to calculate the 12-bit tone period value for a note |
 |------|------|--------------------------------------------------------------|
 | 0    |    0 | $clock_{frequency} / (16_{cycles} * note_{frequency})$       |
-| 1    |    1 | -----//-----                                                 |
+| 1    |    1 | -----/​/-----                                                 |
 | 0    |    1 | $clock_{frequency} / (2_{cycles} * note_{frequency})$        |
 | 1    |    0 | $clock_{frequency} / (128_{cycles} * note_{frequency})$      |
 
