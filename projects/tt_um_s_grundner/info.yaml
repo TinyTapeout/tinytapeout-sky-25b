@@ -32,10 +32,10 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "midi_rx"
+  ui[0]: ""
   ui[1]: ""
   ui[2]: ""
-  ui[3]: ""
+  ui[3]: "midi_rx"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
