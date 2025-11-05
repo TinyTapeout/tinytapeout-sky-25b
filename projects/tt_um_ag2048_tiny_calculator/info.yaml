@@ -1,0 +1,61 @@
+# Tiny Tapeout project information
+project:
+  title:        "Tiny Calculator"      # Project title
+  author:       "Andy Gong"      # Your name
+  discord:      "ag2048"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A tiny calculator chip with built-in I/O drivers"      # One line description of what your project does
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_ag2048_tiny_calculator"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "button_reader.sv"
+    - "output_driver.sv"
+    - "calculator_core.sv"
+    - "alu.sv"
+    - "full_adder.sv"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "i_BL0"
+  ui[1]: "i_BL1"
+  ui[2]: "i_BL2"
+  ui[3]: "i_BL3"
+  ui[4]: "i_ADD"
+  ui[5]: "i_SUB"
+  ui[6]: "i_MUL"
+  ui[7]: "i_DIV"
+
+  # Outputs
+  uo[0]: "o_WL0"
+  uo[1]: "o_WL1"
+  uo[2]: "o_WL2"
+  uo[3]: "o_WL3"
+  uo[4]: "o_SER"
+  uo[5]: "o_SRCLK"
+  uo[6]: "o_RCLK"
+  uo[7]: "o_OE_n"
+
+  # Bidirectional pins
+  uio[0]: "o_ADD"
+  uio[1]: "o_SUB"
+  uio[2]: "o_MUL"
+  uio[3]: "o_DIV"
+  uio[4]: "i_EQ"
+  uio[5]: "i_AC"
+  uio[6]: "i_NEG"
+  uio[7]: "i_NEG_EN"
+
+# Do not change!
+yaml_version: 6
