@@ -1,0 +1,60 @@
+# Tiny Tapeout project information
+project:
+  title:        "6bit ALU"      # Project title
+  author:       "Jaipriya Narahari"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "ALU is 6-bit,synchronous with 16 bit opcode"      # One line description of what your project does
+  language:     "VHDL"  # other examples include Verilog, SystemVerilog, Amaranth, etc
+  clock_hz:     100000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_vhdl_ALU_top"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  #
+  # WARNING: VHDL support in Tiny Tapeout is experimental. The template may get changes during
+  #          the shuttle and VHDL support may be dropped for future shuttles if we see low usage.
+  source_files:
+    - "tt_um_vhdl_ALU_top.vhdl"
+    - "Alu_6bit.vhdl"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "A0 (op1[0])"
+  ui[1]: "A1 (op1[1])"
+  ui[2]: "A2 (op1[2])"
+  ui[3]: "A3 (op1[3])"
+  ui[4]: "A4 (op1[4])"
+  ui[5]: "A5 (op1[5])"
+  ui[6]: "OP1 (opcode[1])"
+  ui[7]: "OP0 (opcode[0])"
+
+  # Outputs
+  uo[0]: "OVF (signed overflow flag)"
+  uo[1]: "ZERO (result==0)"
+  uo[2]: "RES0 (result[0])"
+  uo[3]: "RES1 (result[1])"
+  uo[4]: "RES2 (result[2])"
+  uo[5]: "RES3 (result[3])"
+  uo[6]: "RES4 (result[4])"
+  uo[7]: "RES5 (result[5])"
+
+  # Bidirectional pins
+  uio[0]: "OP3 (opcode[3])"
+  uio[1]: "OP2 (opcode[2])"
+  uio[2]: "B0 (op2[0])"
+  uio[3]: "B1 (op2[1])"
+  uio[4]: "B2 (op2[2])"
+  uio[5]: "B3 (op2[3])"
+  uio[6]: "B4 (op2[4])"
+  uio[7]: "B5 (op2[5])"
+
+# Do not change!
+yaml_version: 6
