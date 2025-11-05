@@ -34,34 +34,34 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "haha"
-  ui[1]: "du"
-  ui[2]: "kennst"
-  ui[3]: "di"
-  ui[4]: "ned"
-  ui[5]: "aus"
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: "EN_PROG"
+  ui[3]: "RX"
+  ui[4]: "IN0"
+  ui[5]: "IN1"
+  ui[6]: "IN2"
+  ui[7]: "IN3"
 
   # Outputs
-  uo[0]: "asdf"
-  uo[1]: "asdf"
-  uo[2]: "s"
-  uo[3]: "s"
-  uo[4]: "d"
-  uo[5]: "d"
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "next_data_in_strb"
+  uo[1]: "data_valid_strb"
+  uo[2]: "st_programm"
+  uo[3]: "st_fetch_i"
+  uo[4]: "st_decode"
+  uo[5]: "st_fetch_op"
+  uo[6]: "st_fetch_mdr"
+  uo[7]: "st_execute"
 
   # Bidirectional pins
-  uio[0]: "sf"
-  uio[1]: "df"
-  uio[2]: "sf"
-  uio[3]: "sf"
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "OUT0"
+  uio[1]: "OUT1"
+  uio[2]: "OUT2"
+  uio[3]: "OUT3"
+  uio[4]: "INSTR_REG0"
+  uio[5]: "INSTR_REG1"
+  uio[6]: "INSTR_REG2"
+  uio[7]: "INSTR_REG3"
 
 # Do not change!
 yaml_version: 6

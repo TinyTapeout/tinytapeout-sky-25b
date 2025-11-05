@@ -274,6 +274,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 72.070 110.520 72.370 111.520 ;
@@ -282,6 +283,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 69.310 110.520 69.610 111.520 ;
@@ -290,6 +292,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 66.550 110.520 66.850 111.520 ;
@@ -298,6 +301,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 63.790 110.520 64.090 111.520 ;
@@ -306,6 +310,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 61.030 110.520 61.330 111.520 ;
@@ -314,6 +319,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 58.270 110.520 58.570 111.520 ;
@@ -322,6 +328,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 55.510 110.520 55.810 111.520 ;
@@ -330,6 +337,7 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 52.750 110.520 53.050 111.520 ;
@@ -378,6 +386,8 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 1.498500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 83.110 110.520 83.410 111.520 ;
@@ -386,6 +396,8 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 2.484000 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 80.350 110.520 80.650 111.520 ;
@@ -394,6 +406,8 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 1.120500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -402,6 +416,8 @@ MACRO tt_um_four_bit_cpu_top_level
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 1.498500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 74.830 110.520 75.130 111.520 ;
@@ -415,9 +431,9 @@ MACRO tt_um_four_bit_cpu_top_level
       LAYER met1 ;
         RECT 2.760 2.480 158.240 110.120 ;
       LAYER met2 ;
-        RECT 4.700 2.535 156.760 110.150 ;
+        RECT 6.080 2.535 155.840 110.150 ;
       LAYER met3 ;
-        RECT 13.405 2.555 145.755 109.985 ;
+        RECT 14.325 2.555 147.135 109.985 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.520 ;
         RECT 34.130 110.120 35.790 110.520 ;
@@ -461,13 +477,13 @@ MACRO tt_um_four_bit_cpu_top_level
         RECT 139.010 110.120 140.670 110.520 ;
         RECT 141.770 110.120 143.430 110.520 ;
         RECT 30.655 109.440 144.145 110.120 ;
-        RECT 30.655 44.375 56.750 109.440 ;
-        RECT 59.150 44.375 60.050 109.440 ;
-        RECT 62.450 44.375 95.620 109.440 ;
-        RECT 98.020 44.375 98.920 109.440 ;
-        RECT 101.320 44.375 134.490 109.440 ;
-        RECT 136.890 44.375 137.790 109.440 ;
-        RECT 140.190 44.375 144.145 109.440 ;
+        RECT 30.655 30.775 56.750 109.440 ;
+        RECT 59.150 30.775 60.050 109.440 ;
+        RECT 62.450 30.775 95.620 109.440 ;
+        RECT 98.020 30.775 98.920 109.440 ;
+        RECT 101.320 30.775 134.490 109.440 ;
+        RECT 136.890 30.775 137.790 109.440 ;
+        RECT 140.190 30.775 144.145 109.440 ;
   END
 END tt_um_four_bit_cpu_top_level
 END LIBRARY
