@@ -1,0 +1,59 @@
+# Tiny Tapeout project information
+project:
+  title:        "lime_cic_filter"      # Project title
+  author:       "E Rijnbeek"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Cascaded Integrator-Comb (CIC) Filter"      # One line description of what your project does
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     32000000       # Clock frequency in Hz (or 0 if not applicable) 
+  #ER: Slightly above the intended frequency to account for tolerances
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_lime_cic_filter"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_lime_cic_filter.sv"
+    - "cic.sv"
+    - "cic2.sv"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "MOD_IN"
+  ui[1]: "CIC_SEL"
+  ui[2]: "UIO_TEST"
+  ui[3]: "RESERVED"
+  ui[4]: "DEBUG_SEL0"
+  ui[5]: "DEBUG_SEL1"
+  ui[6]: "DEBUG_SEL2"
+  ui[7]: "DEBUG_SEL3"
+
+  # Outputs
+  uo[0]: "OUT_MSB0"
+  uo[1]: "OUT_MSB1"
+  uo[2]: "OUT_MSB2"
+  uo[3]: "OUT_MSB3"
+  uo[4]: "OUT_MSB4"
+  uo[5]: "OUT_MSB5"
+  uo[6]: "OUT_MSB6"
+  uo[7]: "OUT_MSB7"
+
+  # Bidirectional pins
+  uio[0]: "OUT_LSB0"
+  uio[1]: "OUT_LSB1"
+  uio[2]: "OUT_LSB2"
+  uio[3]: "OUT_LSB3"
+  uio[4]: "OUT_LSB4"
+  uio[5]: "OUT_LSB5"
+  uio[6]: "OUT_LSB6"
+  uio[7]: "OUT_LSB7"
+
+# Do not change!
+yaml_version: 6
