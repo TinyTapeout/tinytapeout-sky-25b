@@ -1,0 +1,53 @@
+# Tiny Tapeout project information
+project:
+  title:        "bytebeat"
+  author:       "proppy"
+  discord:      "proppy"
+  description:  |
+    Attempt implement the formula from one of the original [bytebeat](http://countercomplex.blogspot.com/2011/10/algorithmic-symphonies-from-one-line-of.html) [video](https://www.youtube.com/watch?v=tCRPUv8V22o) in hardware.
+  language:     "xls"
+  clock_hz:     8000
+  tiles: "1x1"
+  top_module:  "tt_um_proppy_bytebeat"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "bytebeat.v"
+    - "tt_um_proppy_bytebeat.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "param `a` bit 0/3"
+  ui[1]: "param `a` bit 1/3"
+  ui[2]: "param `a` bit 2/3"
+  ui[3]: "param `a` bit 3/3"
+  ui[4]: "param `b` bit 0/3"
+  ui[5]: "param `b` bit 1/3"
+  ui[6]: "param `b` bit 2/3"
+  ui[7]: "param `b` bit 3/3"
+
+  # Outputs
+  uo[0]: "pcm sample bit 0/7"
+  uo[1]: "pcm sample bit 1/7"
+  uo[2]: "pcm sample bit 2/7"
+  uo[3]: "pcm sample bit 3/7"
+  uo[4]: "pcm sample bit 4/7"
+  uo[5]: "pcm sample bit 5/7"
+  uo[6]: "pcm sample bit 6/7"
+  uo[7]: "pcm sample bit 7/7"
+
+  # Bidirectional pins
+  uio[0]: "param `c` bit 0/3"
+  uio[1]: "param `c` bit 1/3"
+  uio[2]: "param `c` bit 2/3"
+  uio[3]: "param `c` bit 3/3"
+  uio[4]: "param `d` bit 0/3"
+  uio[5]: "param `d` bit 1/3"
+  uio[6]: "param `d` bit 2/3"
+  uio[7]: "param `d` bit 3/3"
+# Do not change!
+yaml_version: 6
