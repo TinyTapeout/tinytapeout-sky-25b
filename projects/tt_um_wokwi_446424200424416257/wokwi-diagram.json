@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-tt-block-input",
+      "id": "ttin",
+      "top": -237.73,
+      "left": -340.8,
+      "attrs": { "verilogRole": "input" }
+    },
+    {
+      "type": "board-tt-block-output",
+      "id": "ttout",
+      "top": -237.73,
+      "left": 427.2,
+      "attrs": { "verilogRole": "output" }
+    },
+    { "type": "wokwi-gate-nand-2", "id": "nand1", "top": -240, "left": -76.8, "attrs": {} },
+    { "type": "wokwi-gate-nand-2", "id": "nand2", "top": -153.6, "left": -76.8, "attrs": {} },
+    { "type": "wokwi-gate-nand-2", "id": "nand5", "top": -163.2, "left": 9.6, "attrs": {} },
+    { "type": "wokwi-gate-nand-2", "id": "nand6", "top": -230.4, "left": 9.6, "attrs": {} },
+    { "type": "wokwi-gate-nand-2", "id": "nand7", "top": -153.6, "left": 134.4, "attrs": {} },
+    { "type": "wokwi-gate-nand-2", "id": "nand8", "top": -240, "left": 134.4, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and1", "top": -249.6, "left": -163.2, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and2", "top": -144, "left": -163.2, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not1", "top": -76.8, "left": -76.8, "attrs": {} },
+    { "type": "wokwi-gate-nand-2", "id": "nand3", "top": -163.2, "left": 249.6, "attrs": {} },
+    { "type": "wokwi-gate-nand-2", "id": "nand4", "top": -230.4, "left": 249.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "nand1:B", "nand2:A", "green", [ "h-57.6", "v67.2" ] ],
+    [ "ttin:IN1", "nand1:B", "green", [ "h163.2", "v-28.8" ] ],
+    [ "and1:OUT", "nand1:A", "green", [ "h9.6", "v9.6" ] ],
+    [ "and2:OUT", "nand2:B", "green", [ "h9.6", "v-9.6" ] ],
+    [ "and1:B", "ttin:IN0", "green", [ "h0", "v28.8" ] ],
+    [ "and2:A", "ttin:IN2", "green", [ "h0", "v-38.4" ] ],
+    [ "nand2:OUT", "nand5:B", "green", [ "v0" ] ],
+    [ "nand1:OUT", "nand6:A", "green", [ "v0", "h28.8" ] ],
+    [ "nand6:B", "nand5:OUT", "green", [ "h0", "v19.2", "h96" ] ],
+    [ "nand6:OUT", "nand5:A", "green", [ "h9.6", "v38.4", "h-105.6" ] ],
+    [ "nand5:OUT", "nand7:A", "green", [ "v0" ] ],
+    [ "ttin:IN1", "not1:IN", "green", [ "h163.2" ] ],
+    [ "not1:OUT", "nand7:B", "green", [ "v0", "h115.2" ] ],
+    [ "nand6:OUT", "nand8:B", "green", [ "v0" ] ],
+    [ "nand8:A", "not1:OUT", "green", [ "h0", "v172.8" ] ],
+    [ "nand7:OUT", "nand3:B", "green", [ "v0", "h28.8" ] ],
+    [ "nand8:OUT", "nand4:A", "green", [ "v0" ] ],
+    [ "nand3:OUT", "nand4:B", "green", [ "v-38.4", "h-96" ] ],
+    [ "nand4:OUT", "nand3:A", "green", [ "h9.6", "v38.4", "h-105.6" ] ],
+    [ "nand4:OUT", "ttout:OUT0", "green", [ "v0" ] ],
+    [ "nand3:OUT", "ttout:OUT1", "green", [ "v0", "h38.4", "v-57.6" ] ],
+    [ "nand4:B", "and1:A", "green", [ "h0", "v-67.2", "h-412.8" ] ],
+    [ "and2:B", "nand3:A", "green", [ "h0", "v19.2", "h412.8" ] ]
+  ],
+  "dependencies": {}
+}
