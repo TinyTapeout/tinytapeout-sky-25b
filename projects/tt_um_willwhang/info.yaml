@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "60/50Hz AC clock"      # Project title
+  author:       "Will Whang"      # Your name
+  discord:      "@will_whang"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Simple Wall Clock using Mains AC signal"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     60       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_willwhang"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "pps input"
+  ui[1]: "set mode"
+  ui[2]: "increase hours"
+  ui[3]: "increase minutes"
+  ui[4]: "increase seconds"
+  ui[5]: "50/60Hz selection"
+  ui[6]: "hours in 12h display"
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "7-seg display a"
+  uo[1]: "7-seg display b"
+  uo[2]: "7-seg display c"
+  uo[3]: "7-seg display d"
+  uo[4]: "7-seg display e"
+  uo[5]: "7-seg display f"
+  uo[6]: "7-seg display g"
+  uo[7]: "colon LED"
+
+  # Bidirectional pins
+  uio[0]: "Digit 1"
+  uio[1]: "Digit 2"
+  uio[2]: "Digit 3"
+  uio[3]: "Digit 4"
+  uio[4]: "Digit 5"
+  uio[5]: "Digit 6"
+  uio[6]: "PM indicator"
+  uio[7]: "PPS out"
+
+# Do not change!
+yaml_version: 6
