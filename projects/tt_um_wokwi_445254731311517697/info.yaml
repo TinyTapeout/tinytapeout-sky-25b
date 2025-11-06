@@ -4,7 +4,7 @@ project:
   title:        "Single Digit Sums"      # Project title
   author:       "Mark Angelov"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "This project displays the one digit sums created by the numbers inputed."      # One line description of what your project does
+  description:  "This project displays the one-digit sums created by the possible number inputs."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -16,14 +16,14 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "controls segment 0 of the display"
-  ui[1]: "controls segment 1 of the display"
-  ui[2]: "controls segment 2 of the display"
-  ui[3]: "controls segment 3 of the display"
-  ui[4]: "controls segment 4 of the display"
-  ui[5]: "controls segment 5 of the display"
-  ui[6]: "controls segment 6 of the display"
-  ui[7]: "controls segment 7 of the display"
+  ui[0]: "adds 1 to the sum"
+  ui[1]: "adds 2 to the sum"
+  ui[2]: "adds 3 to the sum"
+  ui[3]: "adds 4 to the sum"
+  ui[4]: "adds 5 to the sum"
+  ui[5]: "adds 6 to the sum"
+  ui[6]: "adds 7 to the sum"
+  ui[7]: "adds 8 to the sum"
 
   # Outputs
   uo[0]: "segment 0 of the display"
