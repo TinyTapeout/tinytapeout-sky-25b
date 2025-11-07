@@ -1,6 +1,6 @@
 101. Printing statistics.
 
-=== tt_um_user_module ===
+=== tt_um_sleepy_module ===
 
    Number of wires:                 10
    Number of wire bits:             45
@@ -16,6 +16,6 @@
      sky130_fd_sc_hd__conb_1        24
      sky130_fd_sc_hd__dfrtp_2        1
 
-   Chip area for module '\tt_um_user_module': 123.868800
+   Chip area for module '\tt_um_sleepy_module': 123.868800
      of which used for sequential elements: 26.275200 (21.21%)
 

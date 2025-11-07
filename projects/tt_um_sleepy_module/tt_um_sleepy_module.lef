@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO tt_um_user_module
+MACRO tt_um_sleepy_module
   CLASS BLOCK ;
-  FOREIGN tt_um_user_module ;
+  FOREIGN tt_um_sleepy_module ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 111.520 ;
   PIN VGND
@@ -456,6 +456,6 @@ MACRO tt_um_user_module
         RECT 136.890 108.295 137.790 109.440 ;
         RECT 140.190 108.295 144.145 109.440 ;
   END
-END tt_um_user_module
+END tt_um_sleepy_module
 END LIBRARY
 
