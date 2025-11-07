@@ -5,7 +5,7 @@ project:
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "LED Spinner on 7-Seg display with variable speeds"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     20       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -18,15 +18,20 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "tt_um_timba307_LEDSpinner.v"
+    - "guess_eval.v"
+    - "prescaler.v"
+    - "rng.v"
+    - "seg_driver.v"
+    - "wheel.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "clk_a"
-  ui[1]: "clk_b"
-  ui[2]: "clk_c"
-  ui[3]: "clk_d"
+  ui[0]: "speed_bit0"
+  ui[1]: "speed_bit1"
+  ui[2]: "speed_bit2"
+  ui[3]: "speed_bit3"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
