@@ -1,0 +1,65 @@
+# Tiny Tapeout project information
+project:
+  title:        "Tiny Hardware Authentication Engine"      # Project title
+  author:       "Raghul G, Swedha Pragalya V, Antony Bacil C"      # Your name
+  discord:      "gool1322"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A Tiny Hardware Authentication Engine that generates a 4-digit OTP using a 16-bit LFSR with time-bound validity and multi-attempt lockout. The design is lightweight, Tiny Tapeout friendly, and observable on FPGA using LEDs and 7-segment displays."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_tiny_hardware_authentication_engine"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "top.v"
+    - "top_7_seg.v"
+    - "otp_to_bcd.v"
+    - "seven_seg.v"
+    - "clk_div_2sec.v"
+    - "pos_edge.v"
+    - "clk_div.v"
+    - "lfsr.v"
+    - "fsm.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "user_in[0]"
+  ui[1]: "user_in[1]"
+  ui[2]: "user_in[2]"
+  ui[3]: "user_in[3]"
+  ui[4]: "otp_latch"
+  ui[5]: "user_latch"
+  ui[6]: "Unused"
+  ui[7]: "Unused"
+
+  # Outputs
+  uo[0]: "lfsr_out[0]"
+  uo[1]: "lfsr_out[1]"
+  uo[2]: "lfsr_out[2]"
+  uo[3]: "lfsr_out[3]"
+  uo[4]: "lfsr_out[4]"
+  uo[5]: "lfsr_out[5]"
+  uo[6]: "lfsr_out[6]"
+  uo[7]: "an[1]"
+
+  # Bidirectional pins
+  uio[0]: "user_out[0]"
+  uio[1]: "user_out[1]"
+  uio[2]: "user_out[2]"
+  uio[3]: "user_out[3]"
+  uio[4]: "user_out[4]"
+  uio[5]: "user_out[5]"
+  uio[6]: "user_out[6]"
+  uio[7]: "an[0]"
+
+# Do not change!
+yaml_version: 6
