@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     446992736864284673       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Binary Counter"      # Project title
+  author:       "TJ Johnson"      # Your name
+  discord:      "FlyTJ"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Binary counter that runs on internal 1Hz clock and outputs high logic on each of the outputs to light LEDS to show a binary representation of a counter.  Note that upon boot, the lights might already be in some sequence as I could not figure out to issue a reset on the D Flipflops"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     1       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "LED Bit 1"
+  uo[1]: "LED Bit 2"
+  uo[2]: "LED Bit 3"
+  uo[3]: "LED Bit 4"
+  uo[4]: "LED Bit 5"
+  uo[5]: "LED Bit 6"
+  uo[6]: "LED Bit 7"
+  uo[7]: "LED Bit 8"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
