@@ -4,8 +4,8 @@ project:
   author:       "Simon Grundner"      # Your name
   discord:      "sm.ino"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Decodes MIDI and outputs several square waves to a max of 7 output pins, which can be mixed together externally" 
-  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     3500000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
