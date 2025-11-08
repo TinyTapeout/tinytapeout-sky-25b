@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-IDK, will add later
+This design prints my name on the 7-segment display. (The last letter is '.', just so there is an obvious break to the name, but there is always something lit up, so it is easier for debugging)
 
 ## How to test
 
