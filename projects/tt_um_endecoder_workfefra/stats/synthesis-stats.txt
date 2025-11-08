@@ -1,0 +1,38 @@
+123. Printing statistics.
+
+=== tt_um_endecoder_workfefra ===
+
+   Number of wires:                 56
+   Number of wire bits:             91
+   Number of public wires:          18
+   Number of public wire bits:      53
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 72
+     sky130_fd_sc_hd__a211o_2        1
+     sky130_fd_sc_hd__a21o_2         4
+     sky130_fd_sc_hd__a221o_2        1
+     sky130_fd_sc_hd__a22o_2         4
+     sky130_fd_sc_hd__a2bb2o_2       1
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__and2b_2        2
+     sky130_fd_sc_hd__and3_2         1
+     sky130_fd_sc_hd__and4b_2        1
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__conb_1        19
+     sky130_fd_sc_hd__dfrtp_2       14
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__mux2_1         8
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__or3b_2         2
+     sky130_fd_sc_hd__or4b_2         1
+     sky130_fd_sc_hd__xnor2_2        4
+
+   Chip area for module '\tt_um_endecoder_workfefra': 827.043200
+     of which used for sequential elements: 367.852800 (44.48%)
+
