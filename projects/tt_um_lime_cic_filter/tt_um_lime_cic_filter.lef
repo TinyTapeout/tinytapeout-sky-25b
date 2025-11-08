@@ -68,7 +68,7 @@ MACRO tt_um_lime_cic_filter
   PIN rst_n
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 141.070 110.520 141.370 111.520 ;
@@ -113,7 +113,7 @@ MACRO tt_um_lime_cic_filter
   PIN ui_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 127.270 110.520 127.570 111.520 ;
@@ -122,7 +122,7 @@ MACRO tt_um_lime_cic_filter
   PIN ui_in[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 124.510 110.520 124.810 111.520 ;
@@ -131,7 +131,7 @@ MACRO tt_um_lime_cic_filter
   PIN ui_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 121.750 110.520 122.050 111.520 ;
@@ -140,7 +140,7 @@ MACRO tt_um_lime_cic_filter
   PIN ui_in[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 118.990 110.520 119.290 111.520 ;
@@ -294,7 +294,7 @@ MACRO tt_um_lime_cic_filter
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.462000 ;
     PORT
       LAYER met4 ;
         RECT 72.070 110.520 72.370 111.520 ;
@@ -321,7 +321,7 @@ MACRO tt_um_lime_cic_filter
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.933750 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 63.790 110.520 64.090 111.520 ;
@@ -330,7 +330,7 @@ MACRO tt_um_lime_cic_filter
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.933750 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 61.030 110.520 61.330 111.520 ;
@@ -339,7 +339,7 @@ MACRO tt_um_lime_cic_filter
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.924000 ;
     PORT
       LAYER met4 ;
         RECT 58.270 110.520 58.570 111.520 ;
@@ -420,7 +420,7 @@ MACRO tt_um_lime_cic_filter
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.453750 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -441,11 +441,11 @@ MACRO tt_um_lime_cic_filter
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 109.780 ;
+        RECT 2.760 2.480 158.240 110.120 ;
       LAYER met2 ;
-        RECT 4.240 2.535 156.770 110.685 ;
+        RECT 4.240 2.535 157.220 110.685 ;
       LAYER met3 ;
-        RECT 6.965 2.555 156.795 110.665 ;
+        RECT 17.085 2.555 154.495 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 111.170 ;
         RECT 34.130 110.120 35.790 111.170 ;
@@ -490,13 +490,13 @@ MACRO tt_um_lime_cic_filter
         RECT 141.770 110.120 143.430 111.170 ;
         RECT 144.530 110.120 146.190 111.170 ;
         RECT 30.655 109.440 146.905 110.120 ;
-        RECT 30.655 7.655 56.750 109.440 ;
-        RECT 59.150 7.655 60.050 109.440 ;
-        RECT 62.450 7.655 95.620 109.440 ;
-        RECT 98.020 7.655 98.920 109.440 ;
-        RECT 101.320 7.655 134.490 109.440 ;
-        RECT 136.890 7.655 137.790 109.440 ;
-        RECT 140.190 7.655 146.905 109.440 ;
+        RECT 30.655 4.935 56.750 109.440 ;
+        RECT 59.150 4.935 60.050 109.440 ;
+        RECT 62.450 4.935 95.620 109.440 ;
+        RECT 98.020 4.935 98.920 109.440 ;
+        RECT 101.320 4.935 134.490 109.440 ;
+        RECT 136.890 4.935 137.790 109.440 ;
+        RECT 140.190 4.935 146.905 109.440 ;
   END
 END tt_um_lime_cic_filter
 END LIBRARY
