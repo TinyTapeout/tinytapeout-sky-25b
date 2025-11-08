@@ -59,6 +59,7 @@ MACRO tt_um_sleepy_module
   PIN ena
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 146.590 110.520 146.890 111.520 ;
@@ -76,6 +77,7 @@ MACRO tt_um_sleepy_module
   PIN ui_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 138.310 110.520 138.610 111.520 ;
@@ -84,6 +86,7 @@ MACRO tt_um_sleepy_module
   PIN ui_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 135.550 110.520 135.850 111.520 ;
@@ -140,6 +143,7 @@ MACRO tt_um_sleepy_module
   PIN uio_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 116.230 110.520 116.530 111.520 ;
@@ -148,6 +152,7 @@ MACRO tt_um_sleepy_module
   PIN uio_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 113.470 110.520 113.770 111.520 ;
@@ -156,6 +161,7 @@ MACRO tt_um_sleepy_module
   PIN uio_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 110.710 110.520 111.010 111.520 ;
@@ -332,6 +338,7 @@ MACRO tt_um_sleepy_module
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 94.150 110.520 94.450 111.520 ;
@@ -340,6 +347,7 @@ MACRO tt_um_sleepy_module
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 91.390 110.520 91.690 111.520 ;
@@ -348,6 +356,7 @@ MACRO tt_um_sleepy_module
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 88.630 110.520 88.930 111.520 ;
@@ -356,6 +365,7 @@ MACRO tt_um_sleepy_module
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 85.870 110.520 86.170 111.520 ;
@@ -388,7 +398,6 @@ MACRO tt_um_sleepy_module
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.643500 ;
     PORT
       LAYER met4 ;
         RECT 74.830 110.520 75.130 111.520 ;
@@ -400,11 +409,11 @@ MACRO tt_um_sleepy_module
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 109.040 ;
+        RECT 2.760 2.480 158.240 109.440 ;
       LAYER met2 ;
-        RECT 18.310 2.535 142.510 111.365 ;
+        RECT 4.700 2.535 156.300 110.685 ;
       LAYER met3 ;
-        RECT 18.290 2.555 144.170 111.345 ;
+        RECT 18.290 2.555 147.135 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
@@ -447,14 +456,15 @@ MACRO tt_um_sleepy_module
         RECT 136.250 110.120 137.910 110.665 ;
         RECT 139.010 110.120 140.670 110.665 ;
         RECT 141.770 110.120 143.430 110.665 ;
-        RECT 30.655 109.440 144.145 110.120 ;
-        RECT 30.655 108.295 56.750 109.440 ;
-        RECT 59.150 108.295 60.050 109.440 ;
-        RECT 62.450 108.295 95.620 109.440 ;
-        RECT 98.020 108.295 98.920 109.440 ;
-        RECT 101.320 108.295 134.490 109.440 ;
-        RECT 136.890 108.295 137.790 109.440 ;
-        RECT 140.190 108.295 144.145 109.440 ;
+        RECT 144.530 110.120 146.190 110.665 ;
+        RECT 30.655 109.440 146.905 110.120 ;
+        RECT 30.655 47.775 56.750 109.440 ;
+        RECT 59.150 47.775 60.050 109.440 ;
+        RECT 62.450 47.775 95.620 109.440 ;
+        RECT 98.020 47.775 98.920 109.440 ;
+        RECT 101.320 47.775 134.490 109.440 ;
+        RECT 136.890 47.775 137.790 109.440 ;
+        RECT 140.190 47.775 146.905 109.440 ;
   END
 END tt_um_sleepy_module
 END LIBRARY
