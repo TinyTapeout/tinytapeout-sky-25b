@@ -4,12 +4,17 @@ project:
   title:        "Sleepy Chip"      # Project title
   author:       "Ron Sardarian"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "stuff"      # One line description of what your project does
+  description:  "SPI-controlled 3-waveform synthesizer with streaming mode and delta-sigma DAC"      # One line description of what your project does
   language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable) 50Mhz
   top_module:   "tt_um_sleepy_module"  # Top-level module name
   source_files:                 # List of source files
     - "tt_um_sleepy_module.v"
+    - "spi_rx_registers.v"
+    - "phase_accumulator.v"
+    - "waveform_generators.v"
+    - "waveform_mixer.v"
+    - "delta_sigma_dac.v"
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -19,8 +24,8 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "A"
-  ui[1]: "B"
+  ui[0]: "GATE"
+  ui[1]: "HW_RST"
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -29,19 +34,19 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "Q0"
-  uo[1]: "Q1"
-  uo[2]: "Q2"
-  uo[3]: "Q3"
-  uo[4]: "Q4"
-  uo[5]: "Q5"
-  uo[6]: "Q6"
-  uo[7]: "Q7"
+  uo[0]: "DAC_OUT"
+  uo[1]: "GATE_LED"
+  uo[2]: "OSC_RUN"
+  uo[3]: "SYNC"
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
+  uio[0]: "SPI_MOSI"
+  uio[1]: "SPI_SCK"
+  uio[2]: "SPI_CS"
   uio[3]: ""
   uio[4]: ""
   uio[5]: ""
