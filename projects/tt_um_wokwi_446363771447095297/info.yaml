@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     446363771447095297       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Carson's TinyTapeout at Supercon"      # Project title
+  title:        "Simple Tapped Delay Line"      # Project title
   author:       "Carson"      # Your name
   discord:      "carson"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "random logic"      # One line description of what your project does
+  description:  "Tapped Delay line formed with inverters and FFs"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     10000       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -16,24 +16,24 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "input a"
-  ui[1]: "input b"
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
+  ui[0]: "start"
+  ui[1]: "stop"
+  ui[2]: "mux0"
+  ui[3]: "mux1"
+  ui[4]: "mux2"
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: "output a"
-  uo[1]: "output b"
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "tap0"
+  uo[1]: "tap1"
+  uo[2]: "tap2"
+  uo[3]: "tap3"
+  uo[4]: "tap4"
+  uo[5]: "tap5"
+  uo[6]: "tap6"
+  uo[7]: "tap7"
 
   # Bidirectional pins
   uio[0]: ""
