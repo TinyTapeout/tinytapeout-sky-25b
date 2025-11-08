@@ -388,14 +388,6 @@
     [ "ttin:IN1", "flop6:CLK", "green", [ "h432", "v393.6" ] ],
     [ "ttin:IN1", "flop7:CLK", "green", [ "h432", "v451.2" ] ],
     [ "ttin:IN1", "flop8:CLK", "green", [ "h432", "v508.8" ] ],
-    [ "ttin:RST_N", "flop1:R", "green", [ "h412.8", "v144" ] ],
-    [ "ttin:RST_N", "flop2:R", "green", [ "h412.8", "v201.6" ] ],
-    [ "ttin:RST_N", "flop3:R", "green", [ "h412.8", "v259.2" ] ],
-    [ "ttin:RST_N", "flop4:R", "green", [ "h412.8", "v316.8" ] ],
-    [ "ttin:RST_N", "flop5:R", "green", [ "h412.8", "v374.4" ] ],
-    [ "ttin:RST_N", "flop6:R", "green", [ "h412.8", "v432" ] ],
-    [ "ttin:RST_N", "flop7:R", "green", [ "h412.8", "v489.6" ] ],
-    [ "ttin:RST_N", "flop8:R", "green", [ "h412.8", "v547.2" ] ],
     [ "flop1:Q", "mux1:A", "green", [ "v0" ] ],
     [ "flop2:Q", "mux1:B", "green", [ "v0", "h38.4" ] ],
     [ "flop3:Q", "mux2:A", "green", [ "v0" ] ],
@@ -851,7 +843,15 @@
     [ "flop63:R", "flop62:R", "green", [ "v0", "h-86.4", "v-28.8" ] ],
     [ "flop64:R", "flop63:R", "green", [ "v0", "h-86.4", "v-28.8" ] ],
     [ "mux43:SEL", "mux40:SEL", "green", [ "v0", "h19.2", "v-134.4" ] ],
-    [ "mux45:SEL", "mux41:SEL", "green", [ "v0", "h19.2", "v-211.2" ] ]
+    [ "mux45:SEL", "mux41:SEL", "green", [ "v0", "h19.2", "v-211.2" ] ],
+    [ "flop8:R", "flop7:R", "green", [ "v0", "h-86.4", "v-28.8" ] ],
+    [ "flop7:R", "flop6:R", "green", [ "v0", "h-86.4", "v-19.2" ] ],
+    [ "flop6:R", "flop5:R", "green", [ "v0", "h-86.4", "v-57.6" ] ],
+    [ "flop5:R", "flop4:R", "green", [ "v0", "h-86.4", "v-57.6" ] ],
+    [ "flop4:R", "flop3:R", "green", [ "v0", "h-86.4", "v-57.6" ] ],
+    [ "flop3:R", "flop2:R", "green", [ "v0", "h-86.4", "v-28.8" ] ],
+    [ "flop2:R", "flop1:R", "green", [ "v0", "h-86.4", "v-19.2" ] ],
+    [ "flop1:R", "ttin:IN5", "green", [ "v0", "h-86.4", "v-67.2" ] ]
   ],
   "dependencies": {}
 }
