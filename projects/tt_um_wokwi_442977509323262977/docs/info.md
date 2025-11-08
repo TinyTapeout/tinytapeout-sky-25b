@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-A simple test comparable to what you can do with circuts and sps
+2 4 bit registers fed into a full adder and a full subtractor, the output is chosen via mux
 
 ## How to test
 
-Simply switch the inputs and then you get condition based outputs
+in input 0-3 give the data in binary, swich registers with input 4, choose the output with input 7
 
 ## External hardware
 
-none
+none required, however to see the output leds are quite nice, to choose the input switches are also a qol feature

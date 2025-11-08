@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     442977509323262977       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "der Chip der Chips"      # Project title
+  title:        "simple adder and subtractor"      # Project title
   author:       "Alexander Brandstetter"      # Your name
   discord:      "monarchofaether"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "notalot"      # One line description of what your project does
+  description:  "full adder and full subtactor with 2 4bit registers"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -16,24 +16,24 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "with ui1 activates uo0 or uo6"
-  ui[1]: "with ui0 activates uo0 or uo6"
-  ui[2]: "with ui2,3,4 buttons you can push that activate uo1 if all then uo7"
-  ui[3]: "with ui2,3,4 buttons you can push that activate uo1 if all then uo7"
-  ui[4]: "with ui2,3,4 buttons you can push that activate uo1 if all then uo7"
+  ui[0]: "data in 1"
+  ui[1]: "data in 2"
+  ui[2]: "data in 3"
+  ui[3]: "data in 4"
+  ui[4]: "select register to write 1 or 2, logic 1 means write register 1, logic 0 means write register 2"
   ui[5]: ""
   ui[6]: ""
-  ui[7]: ""
+  ui[7]: "choose between add and subtract, add is logic 1, subtract is logic 0"
 
   # Outputs
-  uo[0]: "ui0 and ui1 pressed"
-  uo[1]: "ui1,ui2,ui3 pressed 1 or 2 pressed not all 3 pins"
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
+  uo[0]: "data out 1"
+  uo[1]: "data out 2"
+  uo[2]: "data out 3"
+  uo[3]: "data out 4"
+  uo[4]: "data out 5, for addition"
   uo[5]: ""
-  uo[6]: "warning for ui0/1"
-  uo[7]: "warning for ui2/3/4"
+  uo[6]: ""
+  uo[7]: "overflow for subract, meaning below 0"
 
   # Bidirectional pins
   uio[0]: ""
