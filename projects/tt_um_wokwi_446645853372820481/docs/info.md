@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-The goal is to create an 8-line counter, similar to a 4017 decade counter but with only 8 outputs instead of 10.
+The goal is to create an 8-line counter, similar to a TI CD4022B decade counter with 8 outputs.
 
 ## How to test
 
-Set enable to high and pulse the clock input with a square wave.
+Set enable to high and pulse the clock input with a square wave. NOTE the enable is not working. It will always be enabled.
 
 ## External hardware
 

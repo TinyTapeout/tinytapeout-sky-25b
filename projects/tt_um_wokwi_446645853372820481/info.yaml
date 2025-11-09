@@ -1,6 +1,6 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     446363773137400833 # Set this to the ID of your Wokwi project (the number from the project's URL)
+  wokwi_id:     446645853372820481 # Set this to the ID of your Wokwi project (the number from the project's URL)
   title:        "JBs first chip"      # Project title
   author:       "JB Morch"      # Your name
   discord:      "jbm3"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
@@ -16,14 +16,14 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "V+"
-  ui[1]: "Enable"
+  ui[0]: "Enable (n/a)"
+  ui[1]: ""
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
-  ui[7]: "GND"
+  ui[7]: ""
 
   # Outputs
   uo[0]: "Output 0"
