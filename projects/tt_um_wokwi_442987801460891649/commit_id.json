@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/Echocrft/7_Segment-Anzeige",
+  "commit": "7cc3e76fb3a96c9ff2d37e113a4a6f429a1e0c6e",
+  "workflow_url": "https://github.com/Echocrft/7_Segment-Anzeige/actions/runs/17980903321",
+  "project_id": 3109,
+  "sort_id": 1762720176630,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
