@@ -1,0 +1,9 @@
+{
+  "app": "custom_gds action",
+  "repo": "https://github.com/algofoogle/ttsky25b-analog-vga-dacs",
+  "commit": "1b38bca28e1cc055737a19b553b5b1d3e2ba538e",
+  "workflow_url": "https://github.com/algofoogle/ttsky25b-analog-vga-dacs/actions/runs/19209754774",
+  "project_id": 3373,
+  "sort_id": 1762698606606,
+  "analog": true
+}
