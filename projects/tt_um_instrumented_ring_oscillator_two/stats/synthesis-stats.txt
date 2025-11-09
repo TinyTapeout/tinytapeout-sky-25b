@@ -1,0 +1,80 @@
+109. Printing statistics.
+
+=== ro_stage ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of ports:                  6
+   Number of port bits:              6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nor2_2         1
+
+   Chip area for module '\ro_stage': 26.275200
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== tt_um_instrumented_ring_oscillator_two ===
+
+   Number of wires:                 84
+   Number of wire bits:            119
+   Number of public wires:          59
+   Number of public wire bits:      94
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                100
+     ro_stage                       25
+     sky130_fd_sc_hd__a21o_2         4
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__and2_2         2
+     sky130_fd_sc_hd__buf_2         16
+     sky130_fd_sc_hd__conb_1        22
+     sky130_fd_sc_hd__dfrtp_2       25
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__or2_2          3
+     sky130_fd_sc_hd__or3_2          1
+
+   Area for cell type \ro_stage is unknown!
+
+   Chip area for module '\tt_um_instrumented_ring_oscillator_two': 913.376000
+     of which used for sequential elements: 656.880000 (71.92%)
+
+=== design hierarchy ===
+
+   tt_um_instrumented_ring_oscillator_two      1
+     ro_stage                       25
+
+   Number of wires:                284
+   Number of wire bits:            319
+   Number of public wires:         209
+   Number of public wire bits:     244
+   Number of ports:                158
+   Number of port bits:            193
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                150
+     sky130_fd_sc_hd__a21o_2         4
+     sky130_fd_sc_hd__a21oi_2       25
+     sky130_fd_sc_hd__a31o_2         1
+     sky130_fd_sc_hd__and2_2         2
+     sky130_fd_sc_hd__buf_2         16
+     sky130_fd_sc_hd__conb_1        22
+     sky130_fd_sc_hd__dfrtp_2       25
+     sky130_fd_sc_hd__mux2_1        25
+     sky130_fd_sc_hd__nor2_2        25
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__or2_2          3
+     sky130_fd_sc_hd__or3_2          1
+
+   Chip area for top module '\tt_um_instrumented_ring_oscillator_two': 1570.256000
+     of which used for sequential elements: 0.000000 (0.00%)
+

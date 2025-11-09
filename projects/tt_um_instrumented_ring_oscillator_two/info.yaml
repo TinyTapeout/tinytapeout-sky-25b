@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "instrumented_ring_oscillator_two"      # Project title
+  author:       "Jeremy Mickelsen"                  # Your name
+  discord:      "Jeremy"                            # Your discord username (optional)
+  description:  "A ring oscillator with a selectable number of stages and initial state." # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_instrumented_ring_oscillator_two"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_instrumented_ring_oscillator_two.v"
+    - "iro.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "enable"
+  ui[1]: "hold"
+  ui[2]: "bdat"
+  ui[3]: "bclk"
+  ui[4]: "n_stages[0]"
+  ui[5]: "n_stages[1]"
+  ui[6]: "n_stages[2]"
+  ui[7]: "n_stages[3]"
+
+  # Outputs
+  uo[0]: "phase[0]"
+  uo[1]: "phase[1]"
+  uo[2]: "phase[2]"
+  uo[3]: "phase[3]"
+  uo[4]: "phase[4]"
+  uo[5]: "phase[5]"
+  uo[6]: "phase[6]"
+  uo[7]: "phase[7]"
+
+  # Bidirectional pins
+  uio[0]: "phase[8]"
+  uio[1]: "phase[9]"
+  uio[2]: "phase[10]"
+  uio[3]: "phase[11]"
+  uio[4]: "phase[12]"
+  uio[5]: "phase[13]"
+  uio[6]: "phase[14]"
+  uio[7]: "phase[15]"
+
+# Do not change!
+yaml_version: 6
