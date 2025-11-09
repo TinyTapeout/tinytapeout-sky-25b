@@ -1,0 +1,11 @@
+{
+  "app": "Tiny Tapeout main c4892189",
+  "repo": "https://github.com/LehnerJonas/Tapeout-Workshop",
+  "commit": "f400b3ac19f153392b18a2ead16a02b8b6facc6c",
+  "workflow_url": "https://github.com/LehnerJonas/Tapeout-Workshop/actions/runs/17979032233",
+  "project_id": 3038,
+  "sort_id": 1762720291448,
+  "flow_version": "LibreLane 2.4.2",
+  "pdk_name": "open_pdks",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
