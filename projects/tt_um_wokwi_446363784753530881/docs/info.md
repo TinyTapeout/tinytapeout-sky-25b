@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Turn on input 0
+Converts a 3 bit binary coded decimal to the seven segment LCD.
+
+It will print '0' to '7' and then loop, incrementing the digit every second.
+
+_Logic create using truth tables, sum of products, boolean expression simplification, Karnaugh mapping._
 
 ## How to test
 
-Notice LED blink 
+Hit reset button to start from 0.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None
