@@ -3,9 +3,9 @@ project:
   title:        "myTTproject"      # Project title
   author:       "alexlowl"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "was i ned"      # One line description of what your project does
+  description:  "A Knight Rider-style LED chaser with PWM brightness control. Speed and pause are adjustable using three debounced buttons. A bargraph is used as LED bar."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -23,9 +23,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "IN1"
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "pause"
+  ui[1]: "faster"
+  ui[2]: "slower"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -33,14 +33,14 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "OUT1"
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "LED0"
+  uo[1]: "LED1"
+  uo[2]: "LED2"
+  uo[3]: "LED3"
+  uo[4]: "LED4"
+  uo[5]: "LED5"
+  uo[6]: "LED6"
+  uo[7]: "LED7"
 
   # Bidirectional pins
   uio[0]: ""
