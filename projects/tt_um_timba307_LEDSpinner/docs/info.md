@@ -29,4 +29,4 @@ Every module has a dedicated testbench file for gtkwave plot generation. Run the
 
 ## External hardware
 
-If the TinyTapeout Demo Board is used, no additional external hardware is needed. If not, then two sets of dip-switches and a 7-segment display is needed.
+If the TinyTapeout Demo Board is used, just one additional set of dip-switches is needed for the bidirectional inputs. If the demo board is not used, then two sets of dip-switches and a 7-segment display is needed.
