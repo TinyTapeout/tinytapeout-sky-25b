@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:    446363696538901505      # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Tiny Tapout Test gates"      # Project title
+  title:        "Fastest Finger First"      # Project title
   author:       "Hannes Páll Þórðarson"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "my test logic"      # One line description of what your project does
+  description:  "8 player Fastest Finger Game"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     1000      # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50000000      # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -17,23 +17,23 @@ project:
 pinout:
   # Inputs
   ui[0]: "input a"
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[1]: "Input b"
+  ui[2]: "input c"
+  ui[3]: "input d"
+  ui[4]: "input e"
+  ui[5]: "input f"
+  ui[6]: "input g"
+  ui[7]: "input h"
 
   # Outputs
-  uo[0]: "output and"
-  uo[1]: "output nand"
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "output a"
+  uo[1]: "output b"
+  uo[2]: "output c"
+  uo[3]: "output d"
+  uo[4]: "output e"
+  uo[5]: "output f"
+  uo[6]: "output g"
+  uo[7]: "output h"
 
   # Bidirectional pins
   uio[0]: ""
