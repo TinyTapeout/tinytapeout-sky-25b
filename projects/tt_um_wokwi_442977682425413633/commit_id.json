@@ -1,11 +1,8 @@
 {
-  "app": "Tiny Tapeout main c4892189",
+  "app": "Tiny Tapeout main 93e7e297",
   "repo": "https://github.com/DjLemonfresh/WorkshopJKU",
   "commit": "62df8e69a52e29332c7997e8ff6ae14eef6f03db",
-  "workflow_url": "https://github.com/DjLemonfresh/WorkshopJKU/actions/runs/17978927216",
+  "workflow_url": "https://github.com/DjLemonfresh/WorkshopJKU/actions/runs/19237505953",
   "project_id": 3054,
-  "sort_id": 1762720163011,
-  "flow_version": "LibreLane 2.4.2",
-  "pdk_name": "open_pdks",
-  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+  "sort_id": 1762720163011
 }

@@ -72,8 +72,8 @@
       "attrs": { "value": "1000" }
     },
     { "type": "wokwi-vcc", "id": "pwr5", "top": -325.64, "left": -230.4, "attrs": {} },
-    { "type": "wokwi-gate-nor-2", "id": "nor1", "top": -278.4, "left": 201.6, "attrs": {} },
-    { "type": "wokwi-gate-nor-2", "id": "nor2", "top": -220.8, "left": 201.6, "attrs": {} },
+    { "type": "wokwi-gate-nor-2", "id": "nor1", "top": -336, "left": 211.2, "attrs": {} },
+    { "type": "wokwi-gate-nor-2", "id": "nor2", "top": -259.2, "left": 192, "attrs": {} },
     { "type": "wokwi-flip-flop-d", "id": "flop1", "top": 57.6, "left": 326.4, "attrs": {} },
     { "type": "wokwi-flip-flop-d", "id": "flop2", "top": -9.6, "left": 326.4, "attrs": {} },
     { "type": "wokwi-flip-flop-d", "id": "flop3", "top": 124.8, "left": 316.8, "attrs": {} },
@@ -126,8 +126,7 @@
     [ "nor1:B", "nor2:OUT", "green", [ "h-48", "v9.6", "h144" ] ],
     [ "nor2:OUT", "ttout:OUT1", "green", [ "v28.8", "h19.2" ] ],
     [ "ttout:OUT0", "nor1:OUT", "green", [ "h-38.4", "v-48", "h0", "v0" ] ],
-    [ "nor2:B", "ttin:IN2", "green", [ "h-48", "v28.8", "h-9.6" ] ],
-    [ "nor1:A", "ttin:IN0", "green", [ "h-67.2", "v86.4", "h-9.6" ] ],
+    [ "nor1:A", "ttin:IN0", "green", [ "h-76.8", "v144" ] ],
     [ "flop3:CLK", "flop1:CLK", "green", [ "h-19.2", "v-67.2", "h19.2" ] ],
     [ "flop2:CLK", "flop1:CLK", "green", [ "h-28.8", "v28.8" ] ],
     [ "flop2:CLK", "ttin:CLK", "green", [ "h-9.6", "v-163.2", "h-28.8", "v-57.6" ] ],
@@ -144,7 +143,8 @@
     [ "or2:OUT", "flop1:D", "green", [ "v0" ] ],
     [ "flop1:Q", "or1:B", "green", [ "v-19.2", "h-153.6", "v-28.8", "h-86.4" ] ],
     [ "and3:OUT", "or1:A", "green", [ "v0" ] ],
-    [ "or1:OUT", "flop2:D", "green", [ "v0" ] ]
+    [ "or1:OUT", "flop2:D", "green", [ "v0" ] ],
+    [ "ttin:IN2", "nor2:B", "green", [ "h57.6", "v-67.2" ] ]
   ],
   "dependencies": {}
 }
