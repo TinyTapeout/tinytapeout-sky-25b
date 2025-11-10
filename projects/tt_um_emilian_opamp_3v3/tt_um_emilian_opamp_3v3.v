@@ -20,23 +20,23 @@ module tt_um_emilian_opamp_3v3(
     wire vbias_sink;
 
     opamp3hvs op1(
-       	.IN_N(ua[1]),
-       	.IN_P(ua[2]),
-       	.VOUT(ua[0]),
-       	.VDD(VAPWR),
-       	.VSS(VGND),
+       	.IN_N(ua[1])
+       	.IN_P(ua[2])
+       	.VOUT(ua[0])
+	.VDD(VAPWR)
+       	.VSS(VGND)
         .VBIAS_SINK(vbias_sink)
     );
 
     root_currents1_3outs rc1(
-        .EN_RESH(ui_in[1]),
-        .EN_RESL(ui_in[0]),
-        .VOUT1(vbias_sink),
-        .VOUT2(),
-        .VOUT3(),
-        .VDDH(VAPWR),
-        .VDDL(VDPWR),
-        .VSS(VGND)
+	.EN_RESH(ui_in[1])
+	.EN_RESL(ui_in[0])
+	.VOUT1(vbias_sink)
+	.VOUT2()
+	.VOUT3()
+	.VDDH(VAPWR)
+	.VDDL(VDPWR)
+	.VSS(VGND)
     );
 
     // ties for the output enables

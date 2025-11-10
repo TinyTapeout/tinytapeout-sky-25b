@@ -1,8 +1,8 @@
 {
   "app": "custom_gds action",
   "repo": "https://github.com/diferential/ttsky25b-analog-mix",
-  "commit": "342bc89940605f5f4e6068d923a35a2395628b6d",
-  "workflow_url": "https://github.com/diferential/ttsky25b-analog-mix/actions/runs/19218879020",
+  "commit": "690bb3e2293902ede8f09e754d0bf7d3b7a75ef3",
+  "workflow_url": "https://github.com/diferential/ttsky25b-analog-mix/actions/runs/19236874060",
   "project_id": 3385,
   "sort_id": 1762742980906,
   "analog": true
