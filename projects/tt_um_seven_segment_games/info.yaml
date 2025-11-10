@@ -3,7 +3,7 @@ project:
   title:        "7-segment-games"      # Project title
   author:       "Michael Schurz"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Minigames with 7-segment output"      # One line description of what your project does
+  description:  "three selectable minigames with button input and 7-segment output"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -26,6 +26,8 @@ project:
     - "game_counter.v"
     - "game_dice.v"
     - "game_higher_lower.v"
+    #- "game_binary_quiz.v"
+    #- "game_reaction.v"
     - "tt_um_seven_segment_games.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
@@ -36,10 +38,10 @@ pinout:
   ui[1]: "btn2"
   ui[2]: "btn3"
   ui[3]: "btn4"
-  ui[4]: "btn_game_switch"
+  ui[4]: ""
   ui[5]: ""
   ui[6]: ""
-  ui[7]: ""
+  ui[7]: "btn_game_switch"
 
   # Outputs
   uo[0]: "segment a1"
