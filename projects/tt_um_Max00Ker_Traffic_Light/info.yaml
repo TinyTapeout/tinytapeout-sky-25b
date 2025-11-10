@@ -2,7 +2,7 @@
 project:
   title:        "Traffic Light Controller"      # Project title
   author:       "Maximilian Kernmaier"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "Max00Ker"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A digital traffic light controller with pedestrian request handling and MAX7219 display interface."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     1000000       # Clock frequency in Hz (or 0 if not applicable)
