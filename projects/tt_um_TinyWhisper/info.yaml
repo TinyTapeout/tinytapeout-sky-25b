@@ -25,11 +25,11 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "afe_en_i" # analog front-end
-  ui[1]: "LO_I_i" # analog front-end
+  ui[0]: "LO_QX_i" # analog front-end
+  ui[1]: "LO_Q_i" # analog front-end
   ui[2]: "LO_IX_i" # analog front-end
-  ui[3]: "LO_Q_i" # analog front-end
-  ui[4]: "LO_QX_i" # analog front-end
+  ui[3]: "LO_I_i" # analog front-end
+  ui[4]: "afe_en_i" # analog front-end
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
@@ -55,11 +55,11 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "vinp_I"
-  ua[1]: "vinn_I"
+  ua[0]: "vout_RF"
+  ua[1]: "vinn_Q"
   ua[2]: "vinp_Q"
-  ua[3]: "vinn_Q"
-  ua[4]: "vout_RF"
+  ua[3]: "vinn_I"
+  ua[4]: "vinp_I"
   ua[5]: ""
 
 # Do not change!
