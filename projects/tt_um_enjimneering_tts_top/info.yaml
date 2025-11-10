@@ -1,0 +1,71 @@
+# Tiny Tapeout project information
+project:
+  title:        "TinyTapeStation"      # Project title
+  author:       "James Ashie Kotey"      # Your name
+  discord:      "CaptainMcNugget"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "The Tiny Tapestation is SHARC most ambition project to date .. TODO"                   # One line description of what your project does
+  language:     "Verilog"             # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25000000                     # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_enjimneering_tts_top"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_Enjimneering_TTS.v"
+    - "APU.v"
+    - "APUTrigger.v"
+    - "Oscillator.v"
+    - "CollisionDetector.v"
+    - "DragonBody.v"
+    - "DragonHead.v"
+    - "DragonTarget.v"
+    - "Heart.v"
+    - "PPU.v"
+    - "RNG.v"
+    - "SpriteROM.v"
+    - "Sync.v"
+    - "NESTest_Top.v"
+    - "InputCollector.v"
+    - "Player.v"
+    
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "NES_DATA"
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: "SNES_PMOD_Latch"
+  ui[5]: "SNES_PMOD_Clk"
+  ui[6]: "SNES_PMOD_Data"
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "R_HI"
+  uo[1]: "G_HI"
+  uo[2]: "B_HI"
+  uo[3]: "V_SYNC"
+  uo[4]: "R_LO"
+  uo[5]: "G_LO"
+  uo[6]: "B_LO"
+  uo[7]: "H_SYNC"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: "NES_CLK"
+  uio[2]: "NES_LATCH"
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: "PWM"
+
+# Do not change!
+yaml_version: 6
