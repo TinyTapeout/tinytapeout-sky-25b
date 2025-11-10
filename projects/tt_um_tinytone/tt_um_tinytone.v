@@ -338,12 +338,12 @@ module tt_um_tinytone (clk,
  wire _316_;
  wire _317_;
  wire clknet_0_clk;
- wire \note_index[0] ;
- wire \note_index[1] ;
- wire \note_index[2] ;
- wire \note_index[3] ;
- wire \note_index[4] ;
- wire \note_index[5] ;
+ wire \noteIndex[0] ;
+ wire \noteIndex[1] ;
+ wire \noteIndex[2] ;
+ wire \noteIndex[3] ;
+ wire \noteIndex[4] ;
+ wire \noteIndex[5] ;
  wire sound_o;
  wire \u_pwmModulator.counterVal[0] ;
  wire \u_pwmModulator.counterVal[10] ;
@@ -1272,7 +1272,7 @@ module tt_um_tinytone (clk,
     .VPWR(VPWR),
     .X(_099_));
  sky130_fd_sc_hd__and3b_1 _417_ (.A_N(net22),
-    .B(\note_index[2] ),
+    .B(\noteIndex[2] ),
     .C(net34),
     .VGND(VGND),
     .VNB(VGND),
@@ -1817,7 +1817,7 @@ module tt_um_tinytone (clk,
     .A2(_157_),
     .B1(_162_),
     .B2(net19),
-    .C1(\note_index[5] ),
+    .C1(\noteIndex[5] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -3698,7 +3698,7 @@ module tt_um_tinytone (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\note_index[0] ));
+    .Q(\noteIndex[0] ));
  sky130_fd_sc_hd__dfrtp_1 _716_ (.CLK(clknet_2_3__leaf_clk),
     .D(_001_),
     .RESET_B(net40),
@@ -3706,7 +3706,7 @@ module tt_um_tinytone (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\note_index[1] ));
+    .Q(\noteIndex[1] ));
  sky130_fd_sc_hd__dfrtp_1 _717_ (.CLK(clknet_2_3__leaf_clk),
     .D(_002_),
     .RESET_B(net40),
@@ -3714,7 +3714,7 @@ module tt_um_tinytone (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\note_index[2] ));
+    .Q(\noteIndex[2] ));
  sky130_fd_sc_hd__dfrtp_1 _718_ (.CLK(clknet_2_3__leaf_clk),
     .D(_003_),
     .RESET_B(net38),
@@ -3722,7 +3722,7 @@ module tt_um_tinytone (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\note_index[3] ));
+    .Q(\noteIndex[3] ));
  sky130_fd_sc_hd__dfrtp_1 _719_ (.CLK(clknet_2_3__leaf_clk),
     .D(_004_),
     .RESET_B(net38),
@@ -3730,7 +3730,7 @@ module tt_um_tinytone (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\note_index[4] ));
+    .Q(\noteIndex[4] ));
  sky130_fd_sc_hd__dfrtp_1 _720_ (.CLK(clknet_2_3__leaf_clk),
     .D(_005_),
     .RESET_B(net39),
@@ -3738,7 +3738,7 @@ module tt_um_tinytone (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\note_index[5] ));
+    .Q(\noteIndex[5] ));
  sky130_fd_sc_hd__dfrtp_1 _721_ (.CLK(clknet_2_3__leaf_clk),
     .D(net67),
     .RESET_B(net40),
@@ -4741,7 +4741,7 @@ module tt_um_tinytone (clk,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net15));
- sky130_fd_sc_hd__buf_2 fanout16 (.A(\note_index[5] ),
+ sky130_fd_sc_hd__buf_2 fanout16 (.A(\noteIndex[5] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -4765,7 +4765,7 @@ module tt_um_tinytone (clk,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net19));
- sky130_fd_sc_hd__clkbuf_2 fanout20 (.A(\note_index[4] ),
+ sky130_fd_sc_hd__clkbuf_2 fanout20 (.A(\noteIndex[4] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -4777,7 +4777,7 @@ module tt_um_tinytone (clk,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net21));
- sky130_fd_sc_hd__clkbuf_2 fanout22 (.A(\note_index[3] ),
+ sky130_fd_sc_hd__clkbuf_2 fanout22 (.A(\noteIndex[3] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -4795,13 +4795,13 @@ module tt_um_tinytone (clk,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net24));
- sky130_fd_sc_hd__clkbuf_2 fanout25 (.A(\note_index[3] ),
+ sky130_fd_sc_hd__clkbuf_2 fanout25 (.A(\noteIndex[3] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net25));
- sky130_fd_sc_hd__clkbuf_4 fanout26 (.A(\note_index[2] ),
+ sky130_fd_sc_hd__clkbuf_4 fanout26 (.A(\noteIndex[2] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -4813,25 +4813,25 @@ module tt_um_tinytone (clk,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net27));
- sky130_fd_sc_hd__buf_2 fanout28 (.A(\note_index[2] ),
+ sky130_fd_sc_hd__buf_2 fanout28 (.A(\noteIndex[2] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net28));
- sky130_fd_sc_hd__clkbuf_4 fanout29 (.A(\note_index[1] ),
+ sky130_fd_sc_hd__clkbuf_4 fanout29 (.A(\noteIndex[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net29));
- sky130_fd_sc_hd__buf_2 fanout30 (.A(\note_index[1] ),
+ sky130_fd_sc_hd__buf_2 fanout30 (.A(\noteIndex[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net30));
- sky130_fd_sc_hd__clkbuf_4 fanout31 (.A(\note_index[1] ),
+ sky130_fd_sc_hd__clkbuf_4 fanout31 (.A(\noteIndex[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -4849,7 +4849,7 @@ module tt_um_tinytone (clk,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net33));
- sky130_fd_sc_hd__clkbuf_4 fanout34 (.A(\note_index[0] ),
+ sky130_fd_sc_hd__clkbuf_4 fanout34 (.A(\noteIndex[0] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
