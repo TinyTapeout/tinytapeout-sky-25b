@@ -17,7 +17,7 @@ project:
 pinout:
   # Inputs
   ui[0]: "Data In"
-  ui[1]: "Clock"
+  ui[1]: ""
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -36,14 +36,14 @@ pinout:
   uo[7]: "o7"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "o8"
+  uio[1]: "o9"
+  uio[2]: "o10"
+  uio[3]: "o11"
+  uio[4]: "o12"
+  uio[5]: "o13"
+  uio[6]: "o14"
+  uio[7]: "o15"
 
 # Do not change!
 yaml_version: 6
