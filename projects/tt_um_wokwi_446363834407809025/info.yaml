@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     446363834407809025       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Sequence looper and ranomizer 9000"      # Project title
+  title:        "RHYTHM LOOPER and RANDOMIZER 9000"      # Project title
   author:       "william kennedy"      # Your name
   discord:      "zumdar"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "a simple Johnson ring counter with a twist...you can create your own lengths of sequence OR you can make it rAndOm"      # One line description of what your project does
+  description:  "a simple rhythm sequencer looper and a rAnDomiZeR. Uses a ring counter and LFSR"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     2       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -16,9 +16,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "switch between ring counter (ON) and LFSR (OFF)"
-  ui[1]: "toggle ON and OFF to make a new pattern on the Johnson Counter"
-  ui[2]: "hold to clear pattern (ON), or (OFF) to input your own sequence on SW1 "
+  ui[0]: "switch between OFF = looper (ring counter) and ON = randomizer (LFSR)"
+  ui[1]: "toggle ON and OFF to make a new loop on the ring counter"
+  ui[2]: "hold to clear pattern (ON), or leave (OFF) to input your own rhythm loop using SW1 "
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""

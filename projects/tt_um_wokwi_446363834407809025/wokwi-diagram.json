@@ -80,8 +80,8 @@
     { "type": "wokwi-flip-flop-d", "id": "flop6", "top": -48, "left": 787.2, "attrs": {} },
     { "type": "wokwi-flip-flop-d", "id": "flop7", "top": 0, "left": 902.4, "attrs": {} },
     { "type": "wokwi-flip-flop-d", "id": "flop8", "top": 38.4, "left": 1027.2, "attrs": {} },
-    { "type": "wokwi-gate-and-2", "id": "and1", "top": -336, "left": 172.8, "attrs": {} },
-    { "type": "wokwi-gate-or-2", "id": "or1", "top": -307.2, "left": 288, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and1", "top": -336, "left": 297.6, "attrs": {} },
+    { "type": "wokwi-gate-or-2", "id": "or1", "top": -307.2, "left": 412.8, "attrs": {} },
     {
       "type": "wokwi-gate-xor-2",
       "id": "xor1",
@@ -93,10 +93,10 @@
     {
       "type": "wokwi-text",
       "id": "text2",
-      "top": -96,
-      "left": -259.2,
+      "top": 172.8,
+      "left": 364.8,
       "attrs": {
-        "text": "Hold RESET to clear the pattern\nSW1 = put in a new sequence\nSW2 OFF = Linear Feedback Shift Register = \nRANDOM! pattern can't be totally clear though\nSW2 ON = Johnson Counter"
+        "text": "SW1 selects between the LOOPER and the RANDOMIZER:\nSW1 OFF       LOOPER (Ring Counter)     \nSW1 ON        RANDOMZZER (Linear Feedback Shift Register (LFSR))\n              (need some bits in the sequence though!)      \n\nSW2 = LOOPER INPUT\nSW2         tap on and off to create new ring counter pattern\n\nSW3 = CLEAR \nSW3 ON      hold to clear the ring counter pattern\n"
       }
     },
     { "type": "wokwi-led", "id": "led1", "top": 73.2, "left": 291.8, "attrs": { "color": "red" } },
@@ -111,7 +111,16 @@
       "attrs": {}
     },
     { "type": "wokwi-led", "id": "led2", "top": -90, "left": 99.8, "attrs": { "color": "red" } },
-    { "type": "wokwi-gnd", "id": "gnd3", "top": -48, "left": 85.8, "attrs": {} }
+    { "type": "wokwi-gnd", "id": "gnd3", "top": -48, "left": 85.8, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not1", "top": -326.4, "left": 192, "attrs": {} },
+    {
+      "type": "wokwi-gate-not",
+      "id": "not2",
+      "top": -95.8,
+      "left": 173,
+      "rotate": 90,
+      "attrs": {}
+    }
   ],
   "connections": [
     [ "pwr1:VCC", "sw1:8a", "red", [ "v0" ] ],
@@ -174,21 +183,23 @@
     [ "flop2:CLK", "flop3:CLK", "green", [ "h0", "v28.8" ] ],
     [ "flop3:CLK", "flop4:CLK", "green", [ "h0", "v48" ] ],
     [ "flop4:CLK", "flop5:CLK", "green", [ "h0", "v38.4" ] ],
-    [ "ttin:RST_N", "and1:B", "green", [ "h38.4", "v-86.4" ] ],
-    [ "flop8:Q", "and1:A", "green", [ "v-441.6", "h-950.4" ] ],
     [ "btn2:1.r", "ttin:EXTRST_N", "green", [ "v0", "h19.4", "v86.4" ] ],
     [ "and1:OUT", "or1:A", "green", [ "v0" ] ],
-    [ "ttin:IN0", "or1:B", "green", [ "h57.6", "v-96" ] ],
     [ "flop8:Q", "xor1:A", "green", [ "v0", "h38.4", "v96" ] ],
     [ "flop7:Q", "xor1:B", "green", [ "v134.4", "h-115.2" ] ],
     [ "led1:C", "gnd2:GND", "green", [ "v0" ] ],
     [ "xor1:OUT", "mux1:A", "green", [ "v9.6", "h-595.2" ] ],
     [ "mux1:A", "led1:A", "green", [ "v115.2", "h144" ] ],
-    [ "mux1:B", "or1:OUT", "green", [ "v19.2", "h201.6", "v-9.6" ] ],
-    [ "mux1:SEL", "ttin:IN1", "green", [ "v-76.8", "h-67.2", "v-86.4" ] ],
+    [ "mux1:B", "or1:OUT", "green", [ "v19.2", "h336", "v-345.6" ] ],
     [ "mux1:OUT", "flop1:D", "green", [ "v0" ] ],
     [ "led2:C", "gnd3:GND", "green", [ "v0" ] ],
-    [ "mux1:OUT", "led2:A", "green", [ "v0" ] ]
+    [ "mux1:OUT", "led2:A", "green", [ "v0" ] ],
+    [ "ttin:IN1", "or1:B", "green", [ "h48", "v-105.6", "h9.6" ] ],
+    [ "ttin:IN2", "not1:IN", "green", [ "h28.8", "v-144", "h9.6" ] ],
+    [ "not1:OUT", "and1:B", "green", [ "v0" ] ],
+    [ "flop8:Q", "and1:A", "green", [ "v-412.8", "h-825.6" ] ],
+    [ "ttin:IN0", "not2:IN", "green", [ "h48", "v57.6" ] ],
+    [ "not2:OUT", "mux1:SEL", "green", [ "h0" ] ]
   ],
   "dependencies": {}
 }
