@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Pattern Generator"      # Project title
+  author:       "Lukas Dragoste"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Generating patterns and displaying them on a monitor by using the VGA protocol"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_lukasdragoste_vga_patterns"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_lukasdragoste_vga_patterns.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "Pattern select bit 0"
+  ui[1]: "Pattern select bit 1"
+  ui[2]: "Pattern select bit 2"
+  ui[3]: "Palette / variation 0"
+  ui[4]: "Palette / variation 1"
+  ui[5]: "Palette / variation 2"
+  ui[6]: "Palette / variation 3"
+  ui[7]: "Palette / variation 4"
+
+  # Outputs - VGA
+  uo[0]: "Red MSB"
+  uo[1]: "Green MSB"
+  uo[2]: "Blue MSB"
+  uo[3]: "VSync (active low)"
+  uo[4]: "Red LSB"
+  uo[5]: "Green LSB"
+  uo[6]: "Blue LSB"
+  uo[7]: "HSync (active low)"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
