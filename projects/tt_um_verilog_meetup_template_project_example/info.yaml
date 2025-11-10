@@ -1,0 +1,69 @@
+# Tiny Tapeout project information
+project:
+  title:        "Verilog Meetup Template Project Example"  # Project title
+  author:       "Yuri Panchul, with credits to others"    # Your name
+  discord:      "yuri_panchul"    # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "An ASIC project compatible with an FPGA project from BGM (basic-graphics-music) infrastructure. A test for the Verilog Meetup variant of the Tiny Tapeout Verilog Project Template. Prepared for the meetup at California Polytechnic State University, San Luis Obispo in October 2025." # One line description of what your project does
+  language:     "SystemVerilog"  # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25000000         # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"  # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_verilog_meetup_template_project_example"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "config.svh"
+    - "inmp441_mic_i2s_receiver.sv"
+    - "lab_specific_board_config.svh"
+    - "lab_top.sv"
+    - "layer_between_project_and_lab_top.sv"
+    - "note_recognizer.sv"
+    - "project.v"
+    - "project.vlt"
+    - "seven_segment_display.sv"
+    - "strobe_gen.sv"
+    - "swap_bits.svh"
+    - "tm1638_board.sv"
+    - "tm1638_registers.sv"
+    - "vga.sv"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "switch [0]"
+  ui[1]: "switch [1]"
+  ui[2]: "switch [2]"
+  ui[3]: "switch [3]"
+  ui[4]: "switch [4]"
+  ui[5]: "switch [5]"
+  ui[6]: "switch [6]"
+  ui[7]: "UART rx"
+
+  # Outputs
+  uo[0]: "VGA red [1]"
+  uo[1]: "VGA green [1]"
+  uo[2]: "VGA blue [1]"
+  uo[3]: "VGA vsync"
+  uo[4]: "VGA red [0]"
+  uo[5]: "VGA green [0]"
+  uo[6]: "VGA blue [0]"
+  uo[7]: "VGA hsync"
+
+  # Bidirectional pins
+  uio[0]: "INMP441 mic I2S l/r"
+  uio[1]: "INMP441 mic I2S ws"
+  uio[2]: "INMP441 mic I2S sck"
+  uio[3]: "INMP441 mic I2S sd"
+  uio[4]: "output sticky_failure"
+  uio[5]: "TM1638 inout dio"
+  uio[6]: "TM1638 output clk"
+  uio[7]: "TM1638 output stb"
+
+# Do not change!
+yaml_version: 6
