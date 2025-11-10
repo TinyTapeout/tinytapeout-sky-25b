@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This works by inputing a binary number and turning it into a signal readabl by a 7 segment display
+This works by inputing a binary number 0-9 and turning it into a signal for a 7 segment display
 ## How to test
 
-I dont really know how to test this, i bet you could figure that out.
+To test put any binary number 0-9
