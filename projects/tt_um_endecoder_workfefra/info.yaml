@@ -24,14 +24,14 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "clk_i"
-  ui[1]: "reset_i"
-  ui[2]: "code_i[0]"
-  ui[3]: "code_i[1]"
-  ui[4]: "code_i[2]"
-  ui[5]: "code_i[3]"
-  ui[6]: "mode_i"
-  ui[7]: "start_i"
+  ui[0]: "code_i[0]"
+  ui[1]: "code_i[1]"
+  ui[2]: "code_i[2]"
+  ui[3]: "code_i[3]"
+  ui[4]: "key_i[3]"
+  ui[5]: "key_i[2]"
+  ui[6]: "key_i[1]"
+  ui[7]: "key_i[0]"
 
   # Outputs
   uo[0]: "output[0]"
@@ -44,10 +44,10 @@ pinout:
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: "key_i[0]"
-  uio[1]: "key_i[1]"
-  uio[2]: "key_i[2]"
-  uio[3]: "key_i[3]"
+  uio[0]: "mode_i"
+  uio[1]: "done_i"
+  uio[2]: ""
+  uio[3]: ""
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
