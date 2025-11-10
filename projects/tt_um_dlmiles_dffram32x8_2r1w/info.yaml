@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "Tiny RAM DFF 2r1w"      # Project title
+  author:       "Darryl Miles"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "RAM made from DFF 2r1w (32x8)" # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     10000000  # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_dlmiles_dffram32x8_2r1w"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "DI_A[0]"
+  ui[1]: "DI_A[1]"
+  ui[2]: "DI_A[2]"
+  ui[3]: "DI_A[3]"
+  ui[4]: "AD_A[0]"
+  ui[5]: "AD_A[1]"
+  ui[6]: "AD_A[2]"
+  ui[7]: "AD_A[3]"
+
+  # Outputs
+  uo[0]: "DO_A[0]"
+  uo[1]: "DO_A[1]"
+  uo[2]: "DO_A[2]"
+  uo[3]: "DO_A[3]"
+  uo[4]: "DO_B[0]"
+  uo[5]: "DO_B[1]"
+  uo[6]: "DO_B[2]"
+  uo[7]: "DO_B[3]"
+
+  # Bidirectional pins
+  uio[0]: "AD_B[0] (in)"
+  uio[1]: "AD_B[1] (in)"
+  uio[2]: "AD_B[2] (in)"
+  uio[3]: "AD_B[3] (in)"
+  uio[4]: "LOHI_A (in)"
+  uio[5]: "LOHI_B (in)"
+  uio[6]: ""
+  uio[7]: "W_EN (in)"
+
+# Do not change!
+yaml_version: 6
