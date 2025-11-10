@@ -1,0 +1,60 @@
+# Tiny Tapeout project information
+project:
+  title:        "LFSR Driven Cryptography"      # Project title
+  author:       "Sai Surya"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A two-channel XOR stream cipher with fully programmable 32/16/8/4-bit Galois LFSRs"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     12500       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_Sai222777"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "dual_xor_stream_cipher.v"
+    - "signature.v"
+    - "counter.v"
+    - "lfsr.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "sel0 (Used for LSFR configuration)"
+  ui[1]: "sel1 (Used for LSFR configuration)"
+  ui[2]: "tx_p (Plaintext bitstream for transmission)"
+  ui[3]: "rx_e (Encrypted bitstream for reception)"
+  ui[4]: "cfg_en (Active high configuration enable for the 130-bit serial shift register)"
+  ui[5]: "cfg_i (Configuration input to the 130-bit serial shift register)"
+  ui[6]: "tx_en (Transmit channel enable)"
+  ui[7]: "rx_en (Receive channel enable)"
+
+  # Outputs
+  uo[0]: "tx_e (Encrypted bitstream for transmission)"
+  uo[1]: "rx_p (Decrypted bitstream for reception)"
+  uo[2]: "dgb_tx_p (Decrypted transmit bitstream, debug pin disabled by default)"
+  uo[3]: "dgb_rx_e (Encrypted receive bitstream, debug pin disabled by default)"
+  uo[4]: "cfg_o (Configuration output from the 130-bit shift register)"
+  uo[5]: "heartbeat0 (Bit [7] from the heartbeat counter)"
+  uo[6]: "heartbeat1 (Bit [8] from the heartbeat counter)"
+  uo[7]: "heartbeat2 (Bit [9] from the heartbeat counter)"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
