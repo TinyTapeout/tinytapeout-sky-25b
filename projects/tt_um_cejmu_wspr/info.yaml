@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "Tiny Tapeout Factory Test"      # Project title
-  author:       "Tiny Tapeout"             # Your name
-  discord:      ""                         # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Factory test module"      # One line description of what your project does
+  title:        "CEJMU WSPR Encoder"      # Project title
+  author:       "Matthias Jung DL9MJ, Jonathan Hager DK7JH"             # Your name
+  discord:      "myzinsky"                         # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "WSPR encoder that takes call, locator and power and outputs a PWM that can be used for transmitting the WSPR symbols."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     56000000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -24,34 +24,34 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "sel / in_a[0]"
-  ui[1]: "in_a[1]"
-  ui[2]: "in_a[2]"
-  ui[3]: "in_a[3]"
-  ui[4]: "in_a[4]"
-  ui[5]: "in_a[5]"
-  ui[6]: "in_a[6]"
-  ui[7]: "in_a[7]"
+  ui[0]: "UART rx (115200 baud)"
+  ui[1]: "start_transmission"
+  ui[2]: "unused"
+  ui[3]: "unused"
+  ui[4]: "unused"
+  ui[5]: "unused"
+  ui[6]: "unused"
+  ui[7]: "unused"
 
   # Outputs
-  uo[0]: "output[0] / counter[0]"
-  uo[1]: "output[1] / counter[1]"
-  uo[2]: "output[2] / counter[2]"
-  uo[3]: "output[3] / counter[3]"
-  uo[4]: "output[4] / counter[4]"
-  uo[5]: "output[5] / counter[5]"
-  uo[6]: "output[6] / counter[6]"
-  uo[7]: "output[7] / counter[7]"
+  uo[0]: "encoding_valid (indicates that start_transmission may be pressed)"
+  uo[1]: "cos_pwm"
+  uo[2]: "cos_pwm_neg"
+  uo[3]: "sin_pwm"
+  uo[4]: "sin_pwm_neg"
+  uo[5]: "i"
+  uo[6]: "q"
+  uo[7]: "ix"
 
   # Bidirectional pins
-  uio[0]: "in_b[0] / counter[0]"
-  uio[1]: "in_b[1] / counter[1]"
-  uio[2]: "in_b[2] / counter[2]"
-  uio[3]: "in_b[3] / counter[3]"
-  uio[4]: "in_b[4] / counter[4]"
-  uio[5]: "in_b[5] / counter[5]"
-  uio[6]: "in_b[6] / counter[6]"
-  uio[7]: "in_b[7] / counter[7]"
+  uio[0]: "ix (output)"
+  uio[1]: "current symbol[0]"
+  uio[2]: "current symbol[1]"
+  uio[3]: "unused"
+  uio[4]: "unused"
+  uio[5]: "unused"
+  uio[6]: "unused"
+  uio[7]: "unused"
 
 # Do not change!
 yaml_version: 6
