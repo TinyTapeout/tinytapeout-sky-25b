@@ -1,0 +1,69 @@
+# Tiny Tapeout project information
+project:
+  title:        "I2C Slave"      # Project title
+  author:       "Markus Pommermayr"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "only write I2C Slave (Adr: 0x8E) wit 3 control registers (0x00 - 0x02) and 8 Data Registers (0x08 - 0x0F). Control registers control direct passthrough / stepper mode and operating speed."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     100000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_pommarkus_i2c_slave"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_pommarkus_i2c_slave.v"
+    - "i2c_top.v"
+    - "output_part.v"
+    - "I2C_active.v"
+    - "rs_latch.v"
+    - "stepper_onehot.v"
+    - "stepper_onehot_28.v"
+    - "DFFx8.v" 
+    - "decoder.v"
+    - "counter_compare.v"
+    - "latch8.v"
+    - "enabler.v"
+
+    
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "data in 0"
+  ui[1]: "data in 1"
+  ui[2]: "data in 2"
+  ui[3]: "data in 3"
+  ui[4]: "data in 4"
+  ui[5]: "data in 5"
+  ui[6]: "data in 6"
+  ui[7]: "data in 7"
+
+  # Outputs
+  uo[0]: "data out 0"
+  uo[1]: "data out 1"
+  uo[2]: "data out 2"
+  uo[3]: "data out 3"
+  uo[4]: "data out 4"
+  uo[5]: "data out 5"
+  uo[6]: "data out 6"
+  uo[7]: "data out 7"
+
+  # Bidirectional pins
+  uio[0]: "SDA"
+  uio[1]: "SCL"
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
