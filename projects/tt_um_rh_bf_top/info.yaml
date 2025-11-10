@@ -46,7 +46,7 @@ pinout:
   uo[2]: "PC[0]"
   uo[3]: "PC[1]"
   uo[4]: "PC[2]"
-  uo[5]: "(unused - was PC[3])"
+  uo[5]: ""
   uo[6]: "CELL[5]"
   uo[7]: "CELL[6]"
 
