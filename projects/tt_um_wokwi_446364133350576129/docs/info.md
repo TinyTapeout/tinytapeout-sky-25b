@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 This design prints my name on the 7-segment display. (The last letter is '.', just so there is an obvious break to the name, but there is always something lit up, so it is easier for debugging)
 
-Prints boris and dario.
+Prints boris, dario, ivan and natasa.
 
 ## How to test
 

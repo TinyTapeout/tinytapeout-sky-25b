@@ -71,17 +71,17 @@
 
 === tt_um_wokwi_446364133350576129 ===
 
-   Number of wires:                116
-   Number of wire bits:            151
-   Number of public wires:         116
-   Number of public wire bits:     151
+   Number of wires:                125
+   Number of wire bits:            160
+   Number of public wires:         125
+   Number of public wire bits:     160
    Number of ports:                  8
    Number of port bits:             43
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                132
-     and_cell                       39
+   Number of cells:                141
+     and_cell                       48
      dffr_cell                       3
      not_cell                        9
      or_cell                        54
@@ -118,23 +118,23 @@
 === design hierarchy ===
 
    tt_um_wokwi_446364133350576129      1
-     and_cell                       39
+     and_cell                       48
      dffr_cell                       3
      not_cell                        9
      or_cell                        54
      xor_cell                        3
 
-   Number of wires:                440
-   Number of wire bits:            475
-   Number of public wires:         437
-   Number of public wire bits:     472
-   Number of ports:                329
-   Number of port bits:            364
+   Number of wires:                476
+   Number of wire bits:            511
+   Number of public wires:         473
+   Number of public wire bits:     508
+   Number of ports:                356
+   Number of port bits:            391
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                138
-     sky130_fd_sc_hd__and2_2        39
+   Number of cells:                147
+     sky130_fd_sc_hd__and2_2        48
      sky130_fd_sc_hd__buf_2          8
      sky130_fd_sc_hd__conb_1        16
      sky130_fd_sc_hd__dfrtp_2        3
@@ -142,6 +142,6 @@
      sky130_fd_sc_hd__or2_2         54
      sky130_fd_sc_hd__xor2_2         3
 
-   Chip area for top module '\tt_um_wokwi_446364133350576129': 914.627200
+   Chip area for top module '\tt_um_wokwi_446364133350576129': 982.192000
      of which used for sequential elements: 0.000000 (0.00%)
 
