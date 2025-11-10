@@ -9,9 +9,10 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Provide input words a and b LSB first into the design one by one synchronized with the clock to receive the output bit at the same position.
+Transformer attention engine
 ## How to test
 
-This is how to test
+Test by testing
 ## External hardware
-this is the ext hardware
+
+i will
