@@ -29,9 +29,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "pause_execute"
+  ui[1]: "double_instr"
+  ui[2]: "half_resolution"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -49,12 +49,12 @@ pinout:
   uo[7]: "hsync"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
+  uio[0]: "spi_cs"
+  uio[1]: "spi_mosi"
+  uio[2]: "spi_miso"
+  uio[3]: "spi_sclk"
+  uio[4]: "next_vertical"
+  uio[5]: "next_frame"
   uio[6]: ""
   uio[7]: ""
 
