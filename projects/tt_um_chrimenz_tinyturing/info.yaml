@@ -23,14 +23,14 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "IN0"
-  ui[1]: "IN1"
-  ui[2]: "IN2"
-  ui[3]: "IN3"
-  ui[4]: "IN4"
-  ui[5]: "IN5"
-  ui[6]: "IN6"
-  ui[7]: "IN7"
+  ui[0]: "IN0_HEAD_DECODE"
+  ui[1]: "IN1_TAPE_INIT"
+  ui[2]: "IN2_OUTPUT_SWAP"
+  ui[3]: "IN3_WRAP_EN"
+  ui[4]: "IN4_LOOP_EN"
+  ui[5]: "IN5_BANK_SEL0"
+  ui[6]: "IN6_BANK_SEL1"
+  ui[7]: "IN7_CUSTOM_AUTO"
 
   # Outputs
   uo[0]: "TP_ST_0"
