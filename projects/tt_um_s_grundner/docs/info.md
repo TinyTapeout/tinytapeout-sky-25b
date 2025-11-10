@@ -2,19 +2,31 @@
 
 ## How it works
 
-**Square Waves** based on note ON and note OFF commands. The Oscillator stack is capable of synthesizing up to 3 voices simultaneously. Each voice is routed to a different output pin, allowing for external mixing of the signals. Each Oscillator responds to a **different MIDI-Channel** (1, 2, 3), which was necessary to simplify the voice allocation logic inside the ASIC. Additionally, a PWM signal is provided on a separate output pin, which encodes the number of currently active voices. This PWM signal can be used to control the gain of the mixed output through lowpass filtering. The ASIC receives MIDI messages via a simple UART reciever and synthesizes.
+![Abstract Blockdiagram](images/AbstractBlockdiagram.png)
 
-In the current state of the design for a single tile, the ASIC supports 3 voices (Channels 0-2) on pins 0-2 respectively. Pin 7 outputs a PWM signal representing the number of active voices.
+The Project generates **Square Waves** based on a MIDI note recieved on the input Pin. The oscillator stack is capable of synthesizing up to 4 voices simultaneously. Each voice is routed to a different output pin, allowing for external mixing of the signals. Each Oscillator responds to a **different MIDI-Channel**, which is necessary to simplify the voice allocation logic inside the ASIC. Additionally, a PWM signal is provided on a separate output pin, which encodes the number of currently active voices in its duty cycle. This PWM signal can be used to control the gain of the mixed output through lowpass filtering.
 
-In essence the project implements a monophonic synthesizer per midi channel.
+The number of voices is constrained by the available area. If further optimizations can be applied or another tile is added, you can change the number of voices by updating the `OSC_VOICES` parameter in [`src/global.v`](/src/global.v) and see if the area is sufficient after regenerating the GDS.
+
+### How the MIDI protocol works
+
+MIDI (Musical Instrument Digital Interface) is a technical standard that describes a protocol, digital interface, and connectors for connecting various electronic musical instruments and computers together.
+
+MIDI messages are transmitted as a series of bytes. Each message typically consists of a status byte followed by one or more data bytes. The status byte indicates the type of message and the MIDI channel it is associated with, while the data bytes contain additional information such as note number and velocity.
+
+More on MIDI messages can be found [here](https://www.midi.org/specifications-old/item/table-1-summary-of-midi-message).
 
 ### How the ASIC responds to Edge Cases
 
-If a second note ON command is received for a voice that is already active, the ASIC will output the new frequency on the same output pin, effectively overriding the previous note. Releasing the previous note will not stop the sound, as the voice is still active with the new frequency. Only when the note OFF command of the currently active note is received, the oscillator will stop. This behaviour is called voice stealing.
+If a second note ON command is received for a voice that is already active, the ASIC will output the new frequency on the same output pin, effectively overriding the previous note. Releasing the previous note will not stop the sound. Only when the note OFF command of the currently active note is received, the oscillator will stop. This behaviour is called voice stealing.
 
-If a channel is recieved outside of the voice range the behavior is as follows: Overflowing channels will eventually loop around when surpassing the size of the channel register. all inputs inbetween the max number of voices and the register size will be ignored.
+If a channel is recieved outside of the voice range the behavior is as follows: Overflowing channels will eventually loop around when surpassing the size of the channel register. All inputs inbetween the max number of voices and the register size will be ignored.
 
-### Where do I get the MIDI messages from?
+The ASIC only responds to Note ON and Note OFF commands. Other MIDI commands such as Control Change, Pitch Bend etc. may result in undefined behavior.
+
+The ASIC always expects 3 bytes per MIDI message. If the UART receiver gets out of sync, it may interpret random data as valid MIDI messages.
+
+### How to generate MIDI messages
 
 There are multiple ways to feed the ASIC with MIDI messages:
 
@@ -31,15 +43,18 @@ Here are some software recommendations for option 4:
   - [LMMS](https://lmms.io/) (FOSS under GPLv2)
   - [Ableton Live](https://www.ableton.com/en/live/) (Proprietary, Paid)
 
+### Internal Structure
+
+![Internal Structure](images/InternalStructure.png)
+
 ## How to test
 
-To test the ASIC, feed it with Note-On-MIDI messages with one of the methods above. Observe the output signals of pins 0-2 with an oscilloscope or logic analyzer. You should see square waves on the output pins corresponding to the notes played on the MIDI controller or sent from the DAW. Additionally, you can monitor the PWM output on pin 3 to see the number of active voices.
+To test the ASIC, feed it with Note-On-MIDI messages with one of the methods above. Observe the signals present on the output with an oscilloscope or logic analyzer. You should see square waves on the output pins corresponding to the notes played on the MIDI controller or sent from the DAW. Additionally, you can monitor the PWM output on pin 7 to see the number of active voices.
 
 ## External hardware
 
-In the simplest setup, no actual external hardware is required.
+In the simplest setup, a speaker with a driver circuit can be connected to an output pin to hear the synthesized audio.
 
-- MIDI Controller (Piano, Pads)
-- MIDI DIN connector PMOD as a physical layer for the differential midi signal
-- (Optional) External Mixing circuitry. Example circuit provided in the repository
-- Speaker (High impedance when used without a driver)
+- MIDI Source (MIDI Controller, DAW, Microcontroller)
+- (Optional) External Mixing circuitry to combine the output signals from the oscillator outputs.
+- Speaker with a driver

@@ -3,7 +3,7 @@ project:
   title:        "Polyphonic MIDI-Synth"     # Project title
   author:       "Simon Grundner"      # Your name
   discord:      "sm.ino"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Decodes MIDI and outputs several square waves to a max of 7 output pins, which can be mixed together externally" 
+  description:  "Decodes MIDI and outputs several square waves to a max of 4 output pins, which can be mixed together externally" 
   language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     3500000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -46,9 +46,9 @@ pinout:
   uo[1]: "osc_1"
   uo[2]: "osc_2"
   uo[3]: "osc_3"
-  uo[4]: "osc_4"
-  uo[5]: "osc_5"
-  uo[6]: "osc_6"
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
   uo[7]: "pwm"
 
   # Bidirectional pins
