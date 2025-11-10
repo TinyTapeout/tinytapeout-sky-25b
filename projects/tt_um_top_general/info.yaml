@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "Dual-Channel PWM with SPI Control + Extra Test Logic"
+  author:       "Nicolás Romero, Eduardo Holguín"
+  discord:      "" 
+  description:  "Two complementary PWM outputs per channel with SPI-configurable duty and alignment. Unused pins repurposed as gate-level test signals for debugging."
+  language:     "Verilog"
+  clock_hz:     1000
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_top_general"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_top_general.v"
+    - "top_general.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "CLK_g"
+  ui[1]: "SCLK_g"
+  ui[2]: "MOSI_g"
+  ui[3]: "SS_g (active-low)"
+  ui[4]: "RESET_g (active-high)"
+  ui[5]: "A (test input)"
+  ui[6]: "B (test input)"
+  ui[7]: "C (test input/spare)"
+
+  # Outputs
+  uo[0]: "PWM1"
+  uo[1]: "PWM1_N"
+  uo[2]: "PWM2"
+  uo[3]: "PWM2_N"
+  uo[4]: "A AND B"
+  uo[5]: "A OR B"
+  uo[6]: "A XOR B"
+  uo[7]: "CLK out (raw)"
+
+  # Bidirectional pins
+  uio[0]: "A NAND B"
+  uio[1]: "A NOR B"
+  uio[2]: "A XNOR B"
+  uio[3]: "NOT A"
+  uio[4]: "NOT B"
+  uio[5]: "A AND (~B)"
+  uio[6]: "(~A) AND B"
+  uio[7]: "CLK out (divided slow)"
+
+# Do not change!
+yaml_version: 6
