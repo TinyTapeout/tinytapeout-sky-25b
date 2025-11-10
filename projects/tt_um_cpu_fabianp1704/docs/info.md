@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Will be added later
+This project implements a minimal 8-bit CPU consisting of a simple datapath and two finite-state machines.
 
 ## How to test
 
-Will be added later
+Provide serial input data through the ui_in pins, then observe the 8-bit output.
 
 ## External hardware
 
-Will be added later
+No external hardware is required.

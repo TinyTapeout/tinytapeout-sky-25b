@@ -1,0 +1,68 @@
+# Tiny Tapeout project information
+project:
+  title:        "8-Bit-CPU"      # Project title
+  author:       "Fabian Poell"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A simple 8-bit-CPU."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_cpu_fabianp1704"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_cpu_fabianp1704.v"
+    - "cpu_alu.v"
+    - "cpu_ctrl_fsm.v"
+    - "cpu_io_fsm.v"
+    - "cpu_mux.v"
+    - "cpu_pc.v"
+    - "cpu_regfile.v"
+    - "cpu_register.v"
+    - "cpu_top.v"
+    - "operations.vh"
+    - "mux_select.vh"
+    - "states.vh"
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "Start (trigger serial input)"
+  ui[1]: "Serial data input"
+  ui[2]: "MUX_SEL0"
+  ui[3]: "MUX_SEL1"
+  ui[4]: "MUX_SEL2"
+  ui[5]: "MUX_ENABLE"
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "CPU_OUT[0]"
+  uo[1]: "CPU_OUT[1]"
+  uo[2]: "CPU_OUT[2]"
+  uo[3]: "CPU_OUT[3]"
+  uo[4]: "CPU_OUT[4]"
+  uo[5]: "CPU_OUT[5]"
+  uo[6]: "CPU_OUT[6]"
+  uo[7]: "CPU_OUT[7]"
+
+  # Bidirectional pins
+  uio[0]: "Carry flag"
+  uio[1]: "Zero flag"
+  uio[2]: "Overflow flag"
+  uio[3]: "Negative flag"
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
