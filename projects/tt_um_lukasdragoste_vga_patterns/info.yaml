@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "Pattern Generator"      # Project title
+  title:        "VGA Pattern Generator"      # Project title
   author:       "Lukas Dragoste"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Generating patterns and displaying them on a monitor by using the VGA protocol"      # One line description of what your project does
