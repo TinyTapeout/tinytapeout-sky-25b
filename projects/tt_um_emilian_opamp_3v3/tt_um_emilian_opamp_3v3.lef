@@ -40,6 +40,7 @@ MACRO tt_um_emilian_opamp_3v3
     DIRECTION INOUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 8.000000 ;
+    ANTENNADIFFAREA 0.180000 ;
     PORT
       LAYER met4 ;
         RECT 116.850 0.000 117.750 1.000 ;
@@ -49,6 +50,7 @@ MACRO tt_um_emilian_opamp_3v3
     DIRECTION INOUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 8.000000 ;
+    ANTENNADIFFAREA 0.180000 ;
     PORT
       LAYER met4 ;
         RECT 97.530 0.000 98.430 1.000 ;
@@ -115,6 +117,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN ui_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.067500 ;
     PORT
       LAYER met4 ;
         RECT 117.150 224.760 117.450 225.760 ;
@@ -123,6 +126,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN ui_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.067500 ;
     PORT
       LAYER met4 ;
         RECT 114.390 224.760 114.690 225.760 ;
@@ -131,6 +135,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN ui_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.067500 ;
     PORT
       LAYER met4 ;
         RECT 111.630 224.760 111.930 225.760 ;
@@ -139,6 +144,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN ui_in[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.067500 ;
     PORT
       LAYER met4 ;
         RECT 108.870 224.760 109.170 225.760 ;
@@ -227,7 +233,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 34.350 224.760 34.650 225.760 ;
@@ -236,7 +242,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 31.590 224.760 31.890 225.760 ;
@@ -245,7 +251,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 28.830 224.760 29.130 225.760 ;
@@ -254,7 +260,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 26.070 224.760 26.370 225.760 ;
@@ -263,7 +269,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 23.310 224.760 23.610 225.760 ;
@@ -272,7 +278,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 20.550 224.760 20.850 225.760 ;
@@ -281,7 +287,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 17.790 224.760 18.090 225.760 ;
@@ -290,7 +296,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_oe[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 15.030 224.760 15.330 225.760 ;
@@ -299,7 +305,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 56.430 224.760 56.730 225.760 ;
@@ -308,7 +314,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 53.670 224.760 53.970 225.760 ;
@@ -317,7 +323,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 50.910 224.760 51.210 225.760 ;
@@ -326,7 +332,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 48.150 224.760 48.450 225.760 ;
@@ -335,7 +341,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 45.390 224.760 45.690 225.760 ;
@@ -344,7 +350,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 42.630 224.760 42.930 225.760 ;
@@ -353,7 +359,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 39.870 224.760 40.170 225.760 ;
@@ -362,7 +368,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 37.110 224.760 37.410 225.760 ;
@@ -371,7 +377,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 78.510 224.760 78.810 225.760 ;
@@ -380,7 +386,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 75.750 224.760 76.050 225.760 ;
@@ -389,7 +395,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 72.990 224.760 73.290 225.760 ;
@@ -398,7 +404,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 70.230 224.760 70.530 225.760 ;
@@ -407,7 +413,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 67.470 224.760 67.770 225.760 ;
@@ -416,7 +422,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 64.710 224.760 65.010 225.760 ;
@@ -425,7 +431,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 61.950 224.760 62.250 225.760 ;
@@ -434,7 +440,7 @@ MACRO tt_um_emilian_opamp_3v3
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 59.976597 ;
+    ANTENNADIFFAREA 69.836601 ;
     PORT
       LAYER met4 ;
         RECT 59.190 224.760 59.490 225.760 ;
@@ -466,15 +472,15 @@ MACRO tt_um_emilian_opamp_3v3
   END VAPWR
   OBS
       LAYER nwell ;
-        RECT 103.200 22.400 129.380 58.320 ;
+        RECT 84.000 9.600 129.380 58.320 ;
       LAYER li1 ;
-        RECT 103.380 21.200 129.140 57.930 ;
+        RECT 85.600 10.450 129.140 57.930 ;
       LAYER met1 ;
-        RECT 102.200 21.200 131.800 58.500 ;
+        RECT 85.600 10.500 131.800 58.500 ;
       LAYER met2 ;
-        RECT 97.180 7.460 138.200 58.550 ;
+        RECT 85.800 7.460 138.200 58.550 ;
       LAYER met3 ;
-        RECT 0.960 7.215 137.370 109.930 ;
+        RECT 0.960 7.215 137.370 210.000 ;
       LAYER met4 ;
         RECT 0.985 224.360 14.630 224.760 ;
         RECT 15.730 224.360 17.390 224.760 ;

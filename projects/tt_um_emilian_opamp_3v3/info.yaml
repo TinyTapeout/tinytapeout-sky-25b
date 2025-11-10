@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "3V3 Opamp"      # Project title
+  title:        "3V3 Opamp and DRAM cell"      # Project title
   author:       "Emilian Miron"      # Your name
   discord:      "diferential"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A simple opamp with 3.3v power"      # One line description of what your project does
+  description:  "Simple opamp with 3.3v power and DRAM cell"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -26,10 +26,10 @@ pinout:
   # Inputs
   ui[0]: "Set to 0 - bias control"
   ui[1]: "Set to 1 - bias control"
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
+  ui[2]: "WR"
+  ui[3]: "RD"
+  ui[4]: "WRB"
+  ui[5]: "RDB"
   ui[6]: ""
   ui[7]: ""
 
@@ -55,8 +55,8 @@ pinout:
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
   ua[0]: "VOUT"
-  ua[1]: "IN_N"
-  ua[2]: "IN_P"
+  ua[1]: "IN_N in parallel with BL"
+  ua[2]: "IN_P in parallel with BLB"
   ua[3]: ""
   ua[4]: ""
   ua[5]: ""
