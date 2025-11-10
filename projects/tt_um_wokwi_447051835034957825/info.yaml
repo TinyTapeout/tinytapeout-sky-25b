@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     447051835034957825       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "TicTacToe"      # Project title
+  author:       "Jonathan"      # Your name
+  discord:      "oogabooga5810"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "You can play TicTacToe with two players using RGB Leds and buttons"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     100       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "Button_1"
+  ui[1]: "Button_2"
+  ui[2]: "Button_3"
+  ui[3]: "Button_4"
+  ui[4]: "Button_5"
+  ui[5]: "Button_6"
+  ui[6]: "Button_7"
+  ui[7]: "Button_8"
+
+  # Outputs
+  uo[0]: "LED_1_RED"
+  uo[1]: "LED_4_RED"
+  uo[2]: "LED_7_RED"
+  uo[3]: "LED_1_BLUE"
+  uo[4]: "LED_4_BLUE"
+  uo[5]: "LED_7_BLUE"
+  uo[6]: "LED_WinnerCheck_RED"
+  uo[7]: "LED_WinnerCheck_BLUE"
+
+  # Bidirectional pins
+  uio[0]: "ROW_1_GND"
+  uio[1]: "ROW_2_GND"
+  uio[2]: "ROW_3_GND"
+  uio[3]: "Button_9"
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
