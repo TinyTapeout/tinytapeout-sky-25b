@@ -3,9 +3,9 @@ project:
   title:        "DreiMann"      # Project title
   author:       "Benjamin Lehner"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "DreiMann"      # One line description of what your project does
+  description:  "DreiMann is a game that requires two dice and can be played in a group of at least three people. It is often used as a party game. This implementation replaces the dice and displays the current move on a seven-segment display."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -23,9 +23,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "in1"
-  ui[1]: "in2"
-  ui[2]: ""
+  ui[0]: "roll_dice_1"
+  ui[1]: "roll_dice_2"
+  ui[2]: "switch_common_cathode_anode_7segmentdisplay"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
