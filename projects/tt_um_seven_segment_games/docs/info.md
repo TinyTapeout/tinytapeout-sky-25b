@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-work work work
+few minigames with 7 segment output
 
 ## How to test
 
-testing
+press different buttons
 
 ## External hardware
 
-finger
+8 Buttons and a 7 segment display
