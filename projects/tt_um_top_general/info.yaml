@@ -51,7 +51,7 @@ pinout:
   uio[4]: "NOT B"
   uio[5]: "A AND (~B)"
   uio[6]: "(~A) AND B"
-  uio[7]: "CLK out (divided slow)"
+  uio[7]: "VDD"
 
 # Do not change!
 yaml_version: 6
