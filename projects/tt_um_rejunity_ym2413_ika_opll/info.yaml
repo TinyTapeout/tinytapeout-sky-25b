@@ -1,0 +1,66 @@
+# Tiny Tapeout project information
+project:
+  title:        "YM2413 FM synthesis audio chip"
+  author:       "Sehyeon Kim, IKA Microelectronics Inc. & Renaldas Zioma (TT/ASIC)"
+  discord:      "raki1892, rzioma"
+  description:  "The YM2413 is the OPL (FM Operator Type-L) series FM synthesis audio chip built using IKA OPLL core implementation."
+  language:     "Verilog"
+  clock_hz:     3579545   # NTSC clock frequency as master clock
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "4x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rejunity_ym2413_ika_opll"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "pwm.v"
+    - "IKAOPLL.v"
+    - "IKAOPLL_dac.v"
+    - "IKAOPLL_eg.v"
+    - "IKAOPLL_lfo.v"
+    - "IKAOPLL_op.v"
+    - "IKAOPLL_pg.v"
+    - "IKAOPLL_primitives.v"
+    - "IKAOPLL_reg.v"
+    - "IKAOPLL_timinggen_asic.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "D0 data bus"
+  ui[1]: "D1 data bus"
+  ui[2]: "D2 data bus"
+  ui[3]: "D3 data bus"
+  ui[4]: "D4 data bus"
+  ui[5]: "D5 data bus"
+  ui[6]: "D6 data bus"
+  ui[7]: "D7 data bus"
+
+  # Outputs
+  uo[0]: "DAC output *(LSB)*"
+  uo[1]: "DAC output"
+  uo[2]: "DAC output"
+  uo[3]: "DAC output"
+  uo[4]: "DAC output"
+  uo[5]: "DAC output"
+  uo[6]: "DAC output"
+  uo[7]: "DAC output *(MSB)*"
+
+  # Bidirectional pins
+  uio[0]: "(in) **A0** register latch"
+  uio[1]: "(in) **/CS** chip select *(active low)*"
+  uio[2]: "(in) **/WR** write *(active low)*"
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: "(out) PWM output *(Audio PMOD compatible)*"
+
+# Do not change!
+yaml_version: 6
