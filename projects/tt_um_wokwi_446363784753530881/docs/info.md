@@ -17,6 +17,8 @@ _Logic create using truth tables, sum of products, boolean expression simplifica
 
 ## How to test
 
+Turn clock switch on.
+
 Hit reset button to start from 0.
 
 ## External hardware

@@ -170,6 +170,13 @@
       "top": 796.8,
       "left": 153.6,
       "attrs": { "text": "g=B'C+A'B+BC'" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text11",
+      "top": -403.2,
+      "left": -76.8,
+      "attrs": { "text": "CLOCK SWITCH" }
     }
   ],
   "connections": [
