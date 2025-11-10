@@ -1,0 +1,64 @@
+# Tiny Tapeout project information
+project:
+  title:        "PWM Generator"      # Project title
+  author:       "Shyam Sunder Mandapally"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "PWM Generator with demux logic"      # One line description of what your project does
+  language:     "VHDL"  # other examples include Verilog, SystemVerilog, Amaranth, etc
+  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_VHDL_PWM_DEMUX"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  #
+  # WARNING: VHDL support in Tiny Tapeout is experimental. The template may get changes during
+  #          the shuttle and VHDL support may be dropped for future shuttles if we see low usage.
+  source_files:
+    - "project.vhdl"
+    - "pwm_demux.vhdl"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs (ui_in[7:0] → data_i[7:0])
+  ui[0]: "data_i[0] (LSB)"
+  ui[1]: "data_i[1]"
+  ui[2]: "data_i[2]"
+  ui[3]: "data_i[3]"
+  ui[4]: "data_i[4]"
+  ui[5]: "data_i[5]"
+  ui[6]: "data_i[6]"
+  ui[7]: "data_i[7]"
+
+  # Outputs
+  uo[0]: "pwm_o (active-high PWM)"
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins (used as INPUTS here)
+  # uio_in[5:4] → data_i[9:8]
+  # uio_in[1:0] → sel (00=SET, 01=CLEAR, 10=RELOAD, 11=ignored)
+  # uio_in[2]   → wr (1-cycle strobe)
+  # uio_in[3]   → commit (1-cycle strobe)
+  uio[0]: "sel[0]"
+  uio[1]: "sel[1]"
+  uio[2]: "wr (strobe)"
+  uio[3]: "commit (strobe)"
+  uio[4]: "data_i[8]"
+  uio[5]: "data_i[9] (MSB)"
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
