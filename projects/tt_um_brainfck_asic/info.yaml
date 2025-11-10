@@ -1,0 +1,53 @@
+# Tiny Tapeout project information
+project:
+  title:        "Brainf*ck ASIC"
+  author:       "Matt Prock"
+  discord:      ""    
+  description:  "A Brainf*ck interpreter on a chip! Uses external SPI RAM for the tape, 2-wire serial for user I/O and interrupt-driven bracket handling via MCU collaboration."
+  language:     "Verilog"
+  clock_hz:     40000000 
+
+  tiles: "1x2"
+
+  top_module:  "tt_um_brainfck_asic"
+
+  source_files:
+    - "tt_um_brainfck_asic.v"
+    - "bf_asic.v"
+    - "spi_master.v"
+    - "serial_tx.v"
+    - "serial_rx.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "instruction[0]"
+  ui[1]: "instruction[1]"
+  ui[2]: "instruction[2]"
+  ui[3]: "instr_valid"
+  ui[4]: "rx_clk"
+  ui[5]: "rx_bit"
+  ui[6]: "inspect_sel[0]"
+  ui[7]: "inspect_sel[1]"
+
+  # Outputs
+  uo[0]: "tx_bit"
+  uo[1]: "tx_clk"
+  uo[2]: "interrupt_io"
+  uo[3]: "interrupt_jump"
+  uo[4]: "inspect_data[0]"
+  uo[5]: "inspect_data[1]"
+  uo[6]: "inspect_data[2]"
+  uo[7]: "inspect_data[3]"
+
+  # Bidirectional pins
+  uio[0]: "spi_cs"
+  uio[1]: "spi_mosi"
+  uio[2]: "spi_miso"
+  uio[3]: "spi_sck"
+  uio[4]: "inspect_data[4]"
+  uio[5]: "inspect_data[5]"
+  uio[6]: "inspect_data[6]"
+  uio[7]: "inspect_data[7]"
+
+yaml_version: 6
