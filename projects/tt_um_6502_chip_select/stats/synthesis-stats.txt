@@ -1,0 +1,25 @@
+108. Printing statistics.
+
+=== tt_um_6502_chip_select ===
+
+   Number of wires:                 14
+   Number of wire bits:             49
+   Number of public wires:           8
+   Number of public wire bits:      43
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     sky130_fd_sc_hd__and3_2         2
+     sky130_fd_sc_hd__conb_1        17
+     sky130_fd_sc_hd__dfxtp_2        7
+     sky130_fd_sc_hd__inv_2          1
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__or2_2          1
+     sky130_fd_sc_hd__or4b_2         1
+
+   Chip area for module '\tt_um_6502_chip_select': 256.496000
+     of which used for sequential elements: 148.892800 (58.05%)
+
