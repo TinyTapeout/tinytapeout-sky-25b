@@ -9,23 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-3 logic gates (OR, NAND, XOR) are connecgted between input switches and output display to check function.
+A 3 bit Binary to decimal segment display converter.
 
 ## How to test
 
-Toggle the input swtiches to see how the output of the logic gate react.
+Toggle the input swtiches (B2, B1, B0) to convert binary input to decimal numbers displayed on the output segment (0 to 7 can be displayed).
 
-OR Gate
-  Switch 1 & 2 -> OR gate inputs
-  Output [0] -> OR gate output
-
-  NAND
-    Switch 3 & 4 -> NAND gate inputs
-    Ouput [2] -> NAND gate output
-
-  XOR
-    Switch 7 & 8 -> XOR gate inputs
-    Output {7} -> XOR gate output
+Used Truth table to design the binary to decimal converter using AND/OR gates.
 
 ## External hardware
 
