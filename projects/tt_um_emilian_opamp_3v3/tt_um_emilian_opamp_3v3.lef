@@ -466,11 +466,11 @@ MACRO tt_um_emilian_opamp_3v3
   END VAPWR
   OBS
       LAYER nwell ;
-        RECT 99.200 22.400 129.380 58.320 ;
+        RECT 103.200 22.400 129.380 58.320 ;
       LAYER li1 ;
-        RECT 99.590 21.200 129.140 57.930 ;
+        RECT 103.380 21.200 129.140 57.930 ;
       LAYER met1 ;
-        RECT 99.560 21.200 131.800 58.500 ;
+        RECT 102.200 21.200 131.800 58.500 ;
       LAYER met2 ;
         RECT 97.180 7.460 138.200 58.550 ;
       LAYER met3 ;
