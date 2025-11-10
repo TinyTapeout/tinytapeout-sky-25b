@@ -76,6 +76,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN ui_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 138.310 110.520 138.610 111.520 ;
@@ -84,6 +85,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN ui_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.126000 ;
     PORT
       LAYER met4 ;
         RECT 135.550 110.520 135.850 111.520 ;
@@ -92,6 +94,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN ui_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 132.790 110.520 133.090 111.520 ;
@@ -268,7 +271,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.462000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 72.070 110.520 72.370 111.520 ;
@@ -277,7 +280,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.431000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 69.310 110.520 69.610 111.520 ;
@@ -286,7 +289,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.431000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 66.550 110.520 66.850 111.520 ;
@@ -295,7 +298,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.643500 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 63.790 110.520 64.090 111.520 ;
@@ -304,7 +307,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 61.030 110.520 61.330 111.520 ;
@@ -313,7 +316,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 58.270 110.520 58.570 111.520 ;
@@ -322,7 +325,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 55.510 110.520 55.810 111.520 ;
@@ -331,6 +334,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 52.750 110.520 53.050 111.520 ;
@@ -366,6 +370,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 85.870 110.520 86.170 111.520 ;
@@ -374,6 +379,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 83.110 110.520 83.410 111.520 ;
@@ -382,6 +388,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 80.350 110.520 80.650 111.520 ;
@@ -390,6 +397,7 @@ MACRO tt_um_Max00Ker_Traffic_Light
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -411,9 +419,9 @@ MACRO tt_um_Max00Ker_Traffic_Light
       LAYER met1 ;
         RECT 2.760 2.480 158.240 109.040 ;
       LAYER met2 ;
-        RECT 18.310 2.535 142.970 110.685 ;
+        RECT 4.700 2.535 155.840 110.685 ;
       LAYER met3 ;
-        RECT 18.290 2.555 144.170 110.665 ;
+        RECT 12.945 2.555 149.895 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
@@ -457,13 +465,13 @@ MACRO tt_um_Max00Ker_Traffic_Light
         RECT 139.010 110.120 140.670 110.665 ;
         RECT 141.770 110.120 143.430 110.665 ;
         RECT 30.655 109.440 144.145 110.120 ;
-        RECT 30.655 100.135 56.750 109.440 ;
-        RECT 59.150 100.135 60.050 109.440 ;
-        RECT 62.450 100.135 95.620 109.440 ;
-        RECT 98.020 100.135 98.920 109.440 ;
-        RECT 101.320 100.135 134.490 109.440 ;
-        RECT 136.890 100.135 137.790 109.440 ;
-        RECT 140.190 100.135 144.145 109.440 ;
+        RECT 30.655 51.175 56.750 109.440 ;
+        RECT 59.150 51.175 60.050 109.440 ;
+        RECT 62.450 51.175 95.620 109.440 ;
+        RECT 98.020 51.175 98.920 109.440 ;
+        RECT 101.320 51.175 134.490 109.440 ;
+        RECT 136.890 51.175 137.790 109.440 ;
+        RECT 140.190 51.175 144.145 109.440 ;
   END
 END tt_um_Max00Ker_Traffic_Light
 END LIBRARY
