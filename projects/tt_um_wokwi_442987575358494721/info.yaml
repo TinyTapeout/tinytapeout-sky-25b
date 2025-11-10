@@ -4,7 +4,7 @@ project:
   title:        "Tiny Tapeout Template"      # Project title
   author:       "Valentin Loibingdorfer"      # Your name
   discord:      "jn"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "4-Bit Counter"      # One line description of what your project does
+  description:  "4-Bit Downcounter"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
