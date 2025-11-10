@@ -39,7 +39,7 @@ pinout:
   uo[3]: "COL0"
   uo[4]: "COL1"
   uo[5]: "COL2"
-  uo[6]: ""
+  uo[6]: "DONE"
   uo[7]: ""
 
   # Bidirectional pins
