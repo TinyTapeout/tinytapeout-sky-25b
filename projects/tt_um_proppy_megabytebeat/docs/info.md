@@ -35,6 +35,8 @@ Extended Play of some of the 2011's BYTEBEAT greatest hits on-a-chip:
 | Pin     | Track | Artist |
 | --------| ------------- | ------|
 | `out0`  | the 42 melody | people on irc |
+| `out1`  | fractal trees | danharaj |
+| `out2`  | untitled | droid |
 | `out3`  | a tune to share | Niklas_Roy |
 | `out7`  | sierpinski harmony | miiro |
 
@@ -45,6 +47,8 @@ The main module accept parameters from 4x 4-bit parameters buses and generate PW
 | Pin     | Formula |
 | --------| --------|
 | `out0`  | `t*({a,b}&t>>{c,d})` |
+| `out1`  | `t|t%{a,b}|t%(1+{c,d})` |
+| `out2`  | `t>>a&b?t>>c:-t>>d` |
 | `out3`  | `t*(t>>9|t>>13)&16` |
 | `out7`  | `t*a&(t>>b)|t*3&(t*c>>d)` |
 

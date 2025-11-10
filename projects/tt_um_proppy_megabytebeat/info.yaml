@@ -1,12 +1,12 @@
 # Tiny Tapeout project information
 project:
-  title:        "bytebeat"
+  title:        "megabytebeat"
   author:       "proppy"
   discord:      "proppy"
   description:  "Best-of compilation of bytebeat 2011's greatest hits on-a-chip."
   language:     "xls"
   clock_hz:     2048000  # 8000 * 256
-  tiles: "1x2"
+  tiles: "3x2"
   top_module:  "tt_um_proppy_megabytebeat"
   source_files:
     - "tt_um_proppy_megabytebeat.v"
