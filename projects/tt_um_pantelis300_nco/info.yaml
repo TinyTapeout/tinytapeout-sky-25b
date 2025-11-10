@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "NCO"           # Project title
+  author:       "Pantelis"      # Your name
+  discord:      "silentAp__"    # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Numerically Controlled Oscillator"      # One line description of what your project does
+  language:     "Verilog"       # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000        # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_pantelis300_nco"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_pantelis300_nco.v"
+    - "nco.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "freq_ctrl_0"
+  ui[1]: "freq_ctrl_1"
+  ui[2]: "freq_ctrl_2"
+  ui[3]: "freq_ctrl_3"
+  ui[4]: "freq_ctrl_4"
+  ui[5]: "freq_ctrl_5"
+  ui[6]: "freq_ctrl_6"
+  ui[7]: "freq_ctrl_7"
+
+  # Outputs
+  uo[0]: "dac_out_0"
+  uo[1]: "dac_out_1"
+  uo[2]: "dac_out_2"
+  uo[3]: "dac_out_3"
+  uo[4]: "dac_out_4"
+  uo[5]: "dac_out_5"
+  uo[6]: "dac_out_6"
+  uo[7]: "dac_out_7"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
