@@ -1,0 +1,67 @@
+# Tiny Tapeout project information
+project:
+  title:        "8-Bit ALU"      # Project title
+  author:       "Timon Strassern"      # Your name
+  description:  "8-Bit arithmetic logic unit perfomring arithmetic and bitwise operations on integer binary numbers."     # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     40000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_strasti"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "constants/constants.vh"
+    - "modules/one_bit_alu.v"
+    - "modules/full_adder.v"
+    - "modules/full_subtractor.v"
+    - "modules/multiplexer.v"
+    - "modules/gates/and_gate.v"
+    - "modules/gates/enable_gate.v"
+    - "modules/gates/inverter_gate.v"
+    - "modules/gates/or_gate.v"
+    - "modules/gates/xor_gate.v"
+    - "top_level_alu_control.v"
+    - "eight_bit_alu.v"
+    - "tt_um_strasti.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "in0"
+  ui[1]: "in1"
+  ui[2]: "in2"
+  ui[3]: "in3"
+  ui[4]: "in4"
+  ui[5]: "in5"
+  ui[6]: "in6"
+  ui[7]: "in7"
+
+  # Outputs
+  uo[0]: "ou0"
+  uo[1]: "ou1"
+  uo[2]: "ou2"
+  uo[3]: "ou3"
+  uo[4]: "ou4"
+  uo[5]: "ou5"
+  uo[6]: "ou6"
+  uo[7]: "ou7"
+
+  # Bidirectional pins
+  uio[0]: "s0"
+  uio[1]: "s1"
+  uio[2]: "carry_borrow"
+  uio[3]: "f0"
+  uio[4]: "f1"
+  uio[5]: "f2"
+  uio[6]: "f3"
+  uio[7]: "f4"
+
+# Do not change!
+yaml_version: 6
