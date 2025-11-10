@@ -1,0 +1,49 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     445172941748296705    
+  title:        "Anushka and Tina Wokwi"      
+  author:       "Anushka and Tina"     
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "The frist two stwitches activate the the circuit to display one and all other pins display each segemnt of the light."     
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "input a"
+  ui[1]: "input b"
+  ui[2]: "input c"
+  ui[3]: "inpput d"
+  ui[4]: "input e"
+  ui[5]: "input f"
+  ui[6]: "input g"
+  ui[7]: "input h"
+
+  # Outputs
+  uo[0]: "candle"
+  uo[1]: "apple"
+  uo[2]: "bank"
+  uo[3]: "dark"
+  uo[4]: "entire"
+  uo[5]: "finger"
+  uo[6]: "grass"
+  uo[7]: "horse"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
