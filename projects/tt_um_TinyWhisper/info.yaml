@@ -25,29 +25,27 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "push_tx_i"
-  ui[1]: "spi_mosi_i"
-  ui[2]: "spi_cs_i"
-  ui[3]: "uart_rx_i"
-  ui[4]: ""
+  ui[0]: "afe_en_i" # analog front-end
+  ui[1]: "LO_I_i" # analog front-end
+  ui[2]: "LO_IX_i" # analog front-end
+  ui[3]: "LO_Q_i" # analog front-end
+  ui[4]: "LO_QX_i" # analog front-end
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: "dsm1_p_o"
-  uo[1]: "dsm1_n_o"
-  uo[2]: "dsm2_p_o"
-  uo[3]: "dsm2_n_o"
-  uo[4]: "LO_I_o"
-  uo[5]: "LO_IX_o"
-  uo[6]: "LO_Q_o"
-  uo[7]: "LO_QX_o"
+  uo[0]: ""
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: "afe_en_o"
-  # uio[1]: "spi_miso_o" # unused
-  # uio[2]: "uart_tx_o" # unused
+  uio[0]: ""
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""
@@ -57,10 +55,10 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "vinp_Q"
-  ua[1]: "vinn_Q"
-  ua[2]: "vinp_I"
-  ua[3]: "vinn_I"
+  ua[0]: "vinp_I"
+  ua[1]: "vinn_I"
+  ua[2]: "vinp_Q"
+  ua[3]: "vinn_Q"
   ua[4]: "vout_RF"
   ua[5]: ""
 
