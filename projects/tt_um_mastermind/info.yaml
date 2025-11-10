@@ -1,0 +1,59 @@
+# Tiny Tapeout project information
+project:
+  title:        "Mastermind"      # Project title
+  author:       "Unt-C"      # Your name
+  discord:      "mxpepper"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Epiiiiic game recreating the classic Mastermind"      # One line description of what your project does
+  language:     "VHDL"  # other examples include Verilog, SystemVerilog, Amaranth, etc
+  clock_hz:     100000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_mastermind"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  #
+  # WARNING: VHDL support in Tiny Tapeout is experimental. The template may get changes during
+  #          the shuttle and VHDL support may be dropped for future shuttles if we see low usage.
+  source_files:
+    - "project.vhdl"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "zero_0"
+  ui[1]: "zero_1"
+  ui[2]: "zero_2"
+  ui[3]: "one_0"
+  ui[4]: "one_1"
+  ui[5]: "one_2"
+  ui[6]: "two_0"
+  ui[7]: "two_1"
+
+  # Outputs
+  uo[0]: "correct_0"
+  uo[1]: "correct_1"
+  uo[2]: "correct_2"
+  uo[3]: "half_correct_0"
+  uo[4]: "shalf_correct_1"
+  uo[5]: "half_correct_2"
+  uo[6]: "turns_3"
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: "two_2"
+  uio[1]: "three_0"
+  uio[2]: "three_1"
+  uio[3]: "three_2"
+  uio[4]: "submit"
+  uio[5]: "turns_0"
+  uio[6]: "turns_1"
+  uio[7]: "turns_2"
+
+# Do not change!
+yaml_version: 6
