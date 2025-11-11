@@ -99,7 +99,7 @@ jobs:
             fi
             
             if [ -f $project/$project.oas ]; then
-              python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.oas --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds -p 0.57 | tee -a ../tt-multiplexer/ol2/tt_top/gds/replace_decap.log
+              python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.oas --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds -p 0.6 | tee -a ../tt-multiplexer/ol2/tt_top/gds/replace_decap.log
             fi
           done
 
