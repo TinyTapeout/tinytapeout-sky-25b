@@ -10,6 +10,16 @@ datasheet_config:
   theme_override_colour: tt.colours.THEME_SKY_BLUE
   link_override_colour: tt.colours.THEME_SKY_BLUE
 
+  artwork:
+    - {id: TT_POCA_01_A, rotate: -90deg}
+    - {id: TT_POCA_01_B, rotate: -90deg}
+    - {id: TT_POCA_01_C, rotate: -90deg}
+    - {id: TT_POCA_01_D, rotate: -90deg}
+    - {id: TT_POCA_01_E, rotate: -90deg}
+    - {id: TT_POCA_01_F, rotate: 90deg}
+    - {id: TT_POCA_01_G, rotate: 90deg}
+    - {id: TT_POCA_01_I, rotate: 90deg}
+
   # include:
     # - docs/chip_map.typ
     # - docs/funding.typ
