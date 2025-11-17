@@ -15,11 +15,16 @@ Tiny Shader mimics such a shading unit and executes a shader with 16 instruction
 
 ### Examples
 
-These images and many more can be generated with Tiny Shader. Note, that shaders can even be animated by acessing the time0 or time1 register.
+These images and many more can be generated with Tiny Shader. Note, that shaders can even be animated by accessing the `TIME0` or `TIME1` register.
 
 |||||
 |-|-|-|-|
-|![test2.png](images/test2.png)|![test4.png](images/test4.png)|![test5.png](images/test5.png)|![test7.png](images/test7.png)|
+|![test2.png](images/test2.png)|![test4.png](images/test4.png)|![test5.png](images/test5.png)|![test6.png](images/test6.png)|
+
+|||||
+|-|-|-|-|
+|![test9.png](images/test9.png)|![test12.png](images/test12.png)|![test13.png](images/test13.png)|![test7.png](images/test7.png)|
+
 
 The shader for the last image is shown here:
 
@@ -31,7 +36,7 @@ CLEAR R3
 
 # Get the sine value for x and add the user value
 GETX R0
-GETUSER R1
+TIME1 R1
 ADD R0 R1
 
 # Set default color to R0
@@ -75,7 +80,7 @@ Tiny Shader contains a LUT with 16 6-bit sine values for a quarter of a sine wav
 
 ### Instructions
 
-The following instructions are supported by Tiny Shader. A program consists of 10 instructions and is executed for each pixel individually. The actual resolution is therefore one tenth of the VGA resolution (64x48 pixel).
+The following instructions are supported by Tiny Shader. A program consists of 16 instructions and is executed for each pixel individually. The shader execution engine runs at double the VGA frequency. Therefore, the actual resolution is one eighth of the VGA resolution (80x60 pixel).
 
 #### Output
 |Instruction|Operation|Description|
@@ -140,7 +145,23 @@ First set the clock to 50.25 MHz (2*25.175 MHz) and reset the design. For a simp
 
 For advanced features, connect an SPI controller to the bidir pmod. You can shift in new data into the shader memory one byte at a time. If you set `ui[0]` (`pause_execute`) to 1 the shader will stop execution and you can safely shift in new data. Set it back to 0 for the shader to resume operation. This way you can load a new shader program. Have fun!
 
+## Experimental Features
+
+Tiny Shader v2 has two additional signals: `double_instr` (`ui[1]`) and `half_resolution` (`ui[2]`).
+
+In reality, the 16-instruction long shift register is a 32-instruction long shift register with a middle tap.
+By default, only the first 16 instructions are used. If `double_instr`, however, is pulled high, the shift register is rewired to use the full 32 instructions. Since one pixel is still 16 instructions, this means you can upload two different 16-instruction long shaders and each shader is executed for every other pixel, creating a dithering effect.
+
+This effect is shown here:
+
+![default_double.png](images/default_double.png)
+
+If `half_resolution` is also pulled high, each pixel uses 32 instructions. This halves the output resolution but enables 32-instruction shaders to be executed for a single pixel.
+
+If `half_resolution` is high, but `double_instr` is low, then the the output resolution is simply halved with no other apparent effects.
+In reality, the 16-instruction shader is executed for each pixel twice. Perhaps this could be used to create a cool effect?
+
 ## External hardware
 
 - [Tiny VGA](https://github.com/mole99/tiny-vga) or similar VGA Pmod
-- Optional: SPI controller to write new shaders
+- Optional: SPI controller to upload new shaders
