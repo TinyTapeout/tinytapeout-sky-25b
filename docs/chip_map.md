@@ -1,6 +1,6 @@
 # Chip map
 
-![Full chip map](images/shuttle_map.svg){width=12cm}
+![Full chip map](images/chip_map.svg){width=12cm}
 
 ```{=latex}
 \pagebreak

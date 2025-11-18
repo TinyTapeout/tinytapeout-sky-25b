@@ -73,9 +73,7 @@ include $(shell cocotb-config --makefiles)/Makefile.sim
 # ==============================================================================
 
 .PHONY: test_mux
-test_mux: TESTCASE=test_mux,test_rom
 test_mux: $(COCOTB_RESULTS_FILE)
 
 .PHONY: test_mux_gl
-test_mux_gl: TESTCASE=test_mux,test_rom
 test_mux_gl: $(COCOTB_RESULTS_FILE)
