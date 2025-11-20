@@ -18,6 +18,7 @@ datasheet_config:
     - {id: TT_POCA_01_E, rotate: -90deg}
     - {id: TT_POCA_01_F, rotate: 90deg}
     - {id: TT_POCA_01_G, rotate: 90deg}
+    - {id: TT_POCA_01_H, rotate: -90deg}
     - {id: TT_POCA_01_I, rotate: 90deg}
 
   include:
