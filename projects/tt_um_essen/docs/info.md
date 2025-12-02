@@ -3,7 +3,7 @@
 This ASIC is a hashing accelerator for the Blake2 cryptographic hash function (RFC 7693).
 
 It is a fully featured Blake2s implementation supporting both block streaming and using a secret key, with a maximum hash rate of 41.42 MB/s and a 
-target frequency of 66 MHz.
+target operating frequency of 66 MHz.
 
 ## Blake2s Algorithm
 
@@ -37,7 +37,7 @@ The typical sequence to offload the hashing operation to the accelerator would g
 All data exchanges with the accelerator are in little endian, and when sending multiple-byte-long arrays, the lower indexes are sent first.
 
 Notes:
-- Empty data transfer cycles, as in one or more clock cycles where `data_v_i` would go low in the middle of the transfer of both the input data and the configuration, are supported.
+- Empty data transfer cycles, as in one or more clock cycles where `valid_i` would go low in the middle of the transfer of both the input data and the configuration, are supported.
 ### Reset
 
 In order to reset this accelerator to its default uninitialized state, deassert the `rst_n` signal for at least 5 clock cycles. During normal operations, `rst_n` should be set to `1`.
@@ -54,12 +54,8 @@ Typical reset sequence:
 ### Sending the Configuration
 
 The configuration packet is 10 bytes long and has the following format:
-```
- Byte:   0        1        2        3        4        5        6        7        8        9
-         +--------+--------+---------------------------------------------------------------+
-         |   kk   |   nn   |                          ll                                   |
-         +--------+--------+---------------------------------------------------------------+
-```
+
+![Configuration packet](packet.svg)
 
 $kk$ and $nn$ are both 8 bits wide, and $ll$ is 64 bits wide, and all use little endian.
 
