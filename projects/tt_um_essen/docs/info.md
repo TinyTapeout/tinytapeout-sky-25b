@@ -168,7 +168,7 @@ In Blake2, the $nn$ configuration parameter specifies how many bytes long the re
 
 Since this accelerator was designed to interface with an embedded MCU and not another accelerator or an FPGA, the accelerator asserts the `hash_v_o` signal ahead of starting to stream out the result. This is done so that we can allow the RP2040 PIO to detect the start of the result sequence and initiate capturing the data. Because of this, this accelerator is tightly co-designed with the RP2040 in mind and cannot be ported to other MCU families, as it is reliant on a 15ns/30ns (if slow mode is set) reaction time, followed by very timing-accurate capture of the GPIO values. See `firmware/data_rd.pio` for this PIO assembly program.
 
-If slow output mode is set (see [above](#slow-output-mode)), all data steps in the data output sequence take 2 clock cycles; otherwise, each step takes 1 cycle.
+If slow output mode is set (see the previous section about it), all data steps in the data output sequence take 2 clock cycles; otherwise, each step takes 1 cycle.
 
 The hash read sequence has 2 parts:
 1. `h_v_o` (`hash_v_o`) is set to `1` for 1 step (1/2 clock cycles) in order to let the PIO initiate data capture
