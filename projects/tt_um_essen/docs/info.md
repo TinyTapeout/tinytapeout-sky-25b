@@ -38,6 +38,7 @@ All data exchanges with the accelerator are in little endian, and when sending m
 
 Notes:
 - Empty data transfer cycles, as in one or more clock cycles where `valid_i` would go low in the middle of the transfer of both the input data and the configuration, are supported.
+
 ### Reset
 
 In order to reset this accelerator to its default uninitialized state, deassert the `rst_n` signal for at least 5 clock cycles. During normal operations, `rst_n` should be set to `1`.
@@ -175,13 +176,13 @@ The hash read sequence has 2 parts:
    - `h_v_o` (`hash_valid_o`) is set to `1`
    - `h_o` (`hash_o[7:0]`) contains the hash result
   
- #### Example Hash result in slow output mode
+#### Example Hash result in slow output mode
 
 In this example, slow output mode is set, and the accelerator is returning a hash result of $nn = 32$  bytes long. 
 
 ![Slow read waves output](slow_rd_data_waves.png) 
 
- #### Example Hash result in fast output mode 
+#### Example Hash result in fast output mode 
 
 In this example, the defatul fast output mode is used, and the accelerator is returning a hash result of $nn = 32$  bytes long. 
 
