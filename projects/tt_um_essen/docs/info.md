@@ -38,6 +38,7 @@ All data exchanges with the accelerator are in little endian, and when sending m
 
 Notes:
 - Empty data transfer cycles, as in one or more clock cycles where `data_v_i` would go low in the middle of the transfer of both the input data and the configuration, are supported.
+
 ### Reset
 
 In order to reset this accelerator to its default uninitialized state, deassert the `rst_n` signal for at least 5 clock cycles. During normal operations, `rst_n` should be set to `1`.
@@ -171,7 +172,7 @@ In Blake2, the $nn$ configuration parameter specifies how many bytes long the re
 
 Since this accelerator was designed to interface with an embedded MCU and not another accelerator or an FPGA, the accelerator asserts the `hash_v_o` signal ahead of starting to stream out the result. This is done so that we can allow the RP2040 PIO to detect the start of the result sequence and initiate capturing the data. Because of this, this accelerator is tightly co-designed with the RP2040 in mind and cannot be ported to other MCU families, as it is reliant on a 15ns/30ns (if slow mode is set) reaction time, followed by very timing-accurate capture of the GPIO values. See `firmware/data_rd.pio` for this PIO assembly program.
 
-If slow output mode is set (see [above](#slow-output-mode)), all data steps in the data output sequence take 2 clock cycles; otherwise, each step takes 1 cycle.
+If slow output mode is set (see the previous section about it), all data steps in the data output sequence take 2 clock cycles; otherwise, each step takes 1 cycle.
 
 The hash read sequence has 2 parts:
 1. `h_v_o` (`hash_v_o`) is set to `1` for 1 step (1/2 clock cycles) in order to let the PIO initiate data capture
@@ -179,13 +180,13 @@ The hash read sequence has 2 parts:
    - `h_v_o` (`hash_valid_o`) is set to `1`
    - `h_o` (`hash_o[7:0]`) contains the hash result
   
- #### Example Hash result in slow output mode
+#### Example Hash result in slow output mode
 
 In this example, slow output mode is set, and the accelerator is returning a hash result of $nn = 32$  bytes long. 
 
 ![Slow read waves output](slow_rd_data_waves.png) 
 
- #### Example Hash result in fast output mode 
+#### Example Hash result in fast output mode 
 
 In this example, the defatul fast output mode is used, and the accelerator is returning a hash result of $nn = 32$  bytes long. 
 
