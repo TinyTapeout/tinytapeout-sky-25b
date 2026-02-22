@@ -1,4 +1,4 @@
--v $(CHIPFOUNDRY_SUBMISSION)/verilog/gl/openframe_project_wrapper.v
+-v $(FOUNDRY_SUBMISSION)/verilog/gl/openframe_project_wrapper.v
 -v $(TT_GL_VERILOG)/tt_ctrl.v
 -v $(TT_GL_VERILOG)/tt_mux.v
 -v $(TT_GL_VERILOG)/tt_um_chip_rom.v

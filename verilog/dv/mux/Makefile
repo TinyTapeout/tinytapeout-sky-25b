@@ -9,7 +9,7 @@ else
 endif
 
 export USER_PROJECT_VERILOG := $(abspath ../../../verilog)
-export CHIPFOUNDRY_SUBMISSION = $(abspath ../../../chipfoundry/)
+export FOUNDRY_SUBMISSION = $(abspath ../../../foundry_submission/)
 export TT_GL_VERILOG := $(abspath ../../../tt-multiplexer/ol2/tt_top/verilog/)
 
 SIM                 ?= icarus

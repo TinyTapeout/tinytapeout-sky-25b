@@ -19,6 +19,7 @@ chipfoundry/README.md
 efabless/
 # IHP submission files:
 ihp/
-
+# Auto generated foundry submission folder:
+foundry_submission/
 # pip-compile
 *.egg-info

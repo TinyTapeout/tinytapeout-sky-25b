@@ -44,7 +44,7 @@ jobs:
           workflow: gds.yaml
           run_id: ${{ github.event.workflow_run.id }}
           workflow_conclusion: success
-          name: chipfoundry_submission
+          name: foundry_submission
           path: tinytapeout-submission
 
       - name: Patch FEOL deck to disable MR_tunm.CON.1
@@ -137,7 +137,7 @@ jobs:
           workflow: gds.yaml
           run_id: ${{ github.event.workflow_run.id }}
           workflow_conclusion: success
-          name: chipfoundry_submission
+          name: foundry_submission
           path: tinytapeout-submission
 
       - name: Create final .oas file
